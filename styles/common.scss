@@ -1,0 +1,143 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@import "./reset.scss";
+@import "./variables.scss";
+
+/* common */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: map-get($map: $font, $key: pretendard);
+  color: map-get($map: $color, $key: dark);
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: map-get($map: $color, $key: light);
+  width: 100%;
+  height: map-get($map: $headerHeight, $key: header_default);
+  .header_wrap {
+    margin: 0 60px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header_left {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      .header_logo {
+        a {
+          display: block;
+          font-size: 0;
+          img {
+            width: 197px;
+            object-fit: cover;
+          }
+        }
+      }
+      .gnb {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        li {
+          a {
+            display: block;
+            font-size: 2rem;
+            font-weight: 600;
+            transition: color 0.3s;
+          }
+          &:hover a {
+            color: map-get($map: $color, $key: main);
+          }
+        }
+      }
+    }
+    .header_right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
+      .search_bar {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        .search_btn {
+          border: none;
+          background: none;
+          font-size: 0;
+          cursor: pointer;
+          img {
+            width: 16px;
+            aspect-ratio: 1;
+            object-fit: cover;
+          }
+        }
+        .search_txt {
+          width: 180px;
+          padding-bottom: 3px;
+          font-size: 1.4rem;
+          border: none;
+          border-bottom: 1px solid map-get($map: $color, $key: gray9);
+          font-family: map-get($map: $font, $key: pretendard);
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: map-get($map: $color, $key: grayLight);
+          }
+        }
+      }
+      .signup_btn {
+        padding: 7px 15px 10px;
+        border: 1px solid map-get($map: $color, $key: main);
+        border-radius: 5px;
+        font-size: 0;
+        text-align: center;
+        color: map-get($map: $color, $key: main);
+        span {
+          display: inline-block;
+          font-size: 15px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+// 임시 비주얼, 콘텐츠 영역
+.visual {
+  margin-top: 100px;
+  margin-left: 35px;
+  margin-right: 35px;
+  .box {
+    width: 100%;
+    height: 320px;
+    background: #ddd;
+    border-radius: 40px;
+  }
+}
+
+.content {
+  margin-top: 80px;
+  .wrapper {
+    border: 1px solid #000;
+    height: 600px;
+  }
+}

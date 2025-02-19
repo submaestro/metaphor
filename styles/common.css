@@ -1,0 +1,156 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+/*color*/
+/* font */
+/*header height*/
+/* common */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: pretendard;
+  color: #222;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100px;
+}
+.header .header_wrap {
+  margin: 0 60px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header_wrap .header_left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header .header_wrap .header_left .header_logo a {
+  display: block;
+  font-size: 0;
+}
+.header .header_wrap .header_left .header_logo a img {
+  width: 197px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .header_wrap .header_left .gnb {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header .header_wrap .header_left .gnb li a {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.header .header_wrap .header_left .gnb li:hover a {
+  color: #03d8c5;
+}
+.header .header_wrap .header_right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+.header .header_wrap .header_right .search_bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.header .header_wrap .header_right .search_bar .search_btn {
+  border: none;
+  background: none;
+  font-size: 0;
+  cursor: pointer;
+}
+.header .header_wrap .header_right .search_bar .search_btn img {
+  width: 16px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .header_wrap .header_right .search_bar .search_txt {
+  width: 180px;
+  padding-bottom: 3px;
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: pretendard;
+}
+.header .header_wrap .header_right .search_bar .search_txt:focus {
+  outline: none;
+}
+.header .header_wrap .header_right .search_bar .search_txt::-moz-placeholder {
+  color: #dedede;
+}
+.header .header_wrap .header_right .search_bar .search_txt::placeholder {
+  color: #dedede;
+}
+.header .header_wrap .header_right .signup_btn {
+  padding: 7px 15px 10px;
+  border: 1px solid #03d8c5;
+  border-radius: 5px;
+  font-size: 0;
+  text-align: center;
+  color: #03d8c5;
+}
+.header .header_wrap .header_right .signup_btn span {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.visual {
+  margin-top: 100px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.visual .box {
+  width: 100%;
+  height: 320px;
+  background: #ddd;
+  border-radius: 40px;
+}
+
+.content {
+  margin-top: 80px;
+}
+.content .wrapper {
+  border: 1px solid #000;
+  height: 600px;
+}
