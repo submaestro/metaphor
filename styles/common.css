@@ -64,18 +64,18 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header .header_wrap .header_left .gnb {
+.header .header_wrap .header_left .gnb ul {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.header .header_wrap .header_left .gnb li a {
+.header .header_wrap .header_left .gnb ul li a {
   display: block;
   font-size: 2rem;
   font-weight: 600;
   transition: color 0.3s;
 }
-.header .header_wrap .header_left .gnb li:hover a {
+.header .header_wrap .header_left .gnb ul li:hover a {
   color: #03d8c5;
 }
 .header .header_wrap .header_right {
@@ -108,6 +108,7 @@ body {
   border: none;
   border-bottom: 1px solid #999;
   font-family: pretendard;
+  background: none;
 }
 .header .header_wrap .header_right .search_bar .search_txt:focus {
   outline: none;
@@ -130,6 +131,9 @@ body {
   display: inline-block;
   font-size: 15px;
   line-height: 1;
+}
+.header .header_wrap .header_right .signup_btn i {
+  display: none;
 }
 
 .visual {
