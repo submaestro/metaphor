@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+@media screen and (max-width: 1440px) {
+  .header {
+    height: map-get($map: $headerHeight, $key: pc2);
+    .header_wrap {
+      .header_left {
+        .header_logo {
+          a {
+            img {
+              zoom: 0.9;
+            }
+          }
+        }
+        .gnb {
+          li {
+            a {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

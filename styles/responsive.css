@@ -1,0 +1,14 @@
+/*color*/
+/* font */
+/*header height*/
+@media screen and (max-width: 1440px) {
+  .header {
+    height: 80px;
+  }
+  .header .header_wrap .header_left .header_logo a img {
+    zoom: 0.9;
+  }
+  .header .header_wrap .header_left .gnb li a {
+    font-size: 1.8rem;
+  }
+}

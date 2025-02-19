@@ -4,7 +4,7 @@
 @import "./reset.scss";
 @import "./variables.scss";
 
-/* common */
+// common
 html {
   font-size: 62.5%;
 }
@@ -21,14 +21,14 @@ body {
   width: 1100px;
 }
 
-/* header */
+// header
 .header {
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   background: map-get($map: $color, $key: light);
   width: 100%;
-  height: map-get($map: $headerHeight, $key: header_default);
+  height: map-get($map: $headerHeight, $key: pc);
   .header_wrap {
     margin: 0 60px;
     height: 100%;
@@ -91,13 +91,13 @@ body {
           padding-bottom: 3px;
           font-size: 1.4rem;
           border: none;
-          border-bottom: 1px solid map-get($map: $color, $key: gray9);
+          border-bottom: 1px solid map-get($map: $color, $key: gray_9);
           font-family: map-get($map: $font, $key: pretendard);
           &:focus {
             outline: none;
           }
           &::placeholder {
-            color: map-get($map: $color, $key: grayLight);
+            color: map-get($map: $color, $key: gray_de);
           }
         }
       }
@@ -118,12 +118,9 @@ body {
   }
 }
 
-@media screen and (max-width: 1440px) {
-}
-
 // 임시 비주얼, 콘텐츠 영역
 .visual {
-  margin-top: 100px;
+  // margin-top: 100px;
   margin-left: 35px;
   margin-right: 35px;
   .box {
