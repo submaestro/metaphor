@@ -15,6 +15,19 @@ body {
   color: map-get($map: $color, $key: dark);
   position: relative;
   overflow-x: hidden;
+  background: #000;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 815px;
+    background: linear-gradient(
+      180deg,
+      rgba(37, 112, 181, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
 }
 
 .wrapper {
@@ -24,14 +37,27 @@ body {
 
 // header
 #header {
-  position: static;
+  position: fixed;
   height: map-get($map: $headerHeight, $key: height_pc);
   top: 0;
   left: 0;
   width: 100%;
+  transform: translateY(0);
+  transition: transform 0.3s;
+  background: transparent;
   &.scroll {
-    position: fixed;
-    background: blur(10px);
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 100vw;
+      height: map-get($map: $headerHeight, $key: height_pc);
+      backdrop-filter: blur(10px);
+    }
+  }
+  &.hidden {
+    transform: translateY(-100%);
   }
   .header_wrap {
     margin: 0 60px;
@@ -50,6 +76,9 @@ body {
           img {
             width: 197px;
             object-fit: cover;
+            &:nth-child(2) {
+              display: none;
+            }
           }
         }
       }
@@ -130,17 +159,53 @@ body {
       display: none;
     }
   }
+  &.bg_black {
+    .header_wrap {
+      .header_left {
+        .header_logo {
+          a {
+            img {
+              &:nth-child(1) {
+                display: none;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+        }
+        #gnb {
+          li {
+            a {
+              color: map-get($map: $color, $key: light);
+            }
+            &:hover a {
+              color: map-get($map: $color, $key: main);
+            }
+          }
+        }
+      }
+      .header_right {
+        .search_bar {
+          .search_txt {
+            color: map-get($map: $color, $key: light);
+          }
+        }
+      }
+    }
+  }
 }
 
 // 임시 비주얼, 콘텐츠 영역
 .visual {
-  // margin-top: 100px;
-  margin-left: 35px;
-  margin-right: 35px;
+  padding-top: 100px;
+  // margin-left: 35px;
+  // margin-right: 35px;
   .box {
-    width: 100%;
-    height: 320px;
-    background: #ddd;
+    width: 1100px;
+    margin: 0 auto;
+    height: 900px;
+    background: url("../imgs/Plave_group.jpg") no-repeat center/cover;
     border-radius: 40px;
   }
 }
@@ -149,6 +214,6 @@ body {
   margin-top: 80px;
   .wrapper {
     border: 1px solid #000;
-    height: 600px;
+    height: 1500px;
   }
 }

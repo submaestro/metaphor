@@ -1,11 +1,17 @@
 @import "./variables.scss";
 
-//common
+//common 공통
 
+// wrapper
 @media screen and (max-width: 1250px) {
   .wrapper {
     width: auto;
     margin: 0 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    margin: 0 20px;
   }
 }
 
@@ -13,6 +19,11 @@
 @media screen and (max-width: 1440px) {
   #header {
     height: map-get($map: $headerHeight, $key: height_tb);
+    &.scroll {
+      &::before {
+        height: map-get($map: $headerHeight, $key: height_tb);
+      }
+    }
     .header_wrap {
       margin: 0 35px;
       .header_left {
@@ -47,6 +58,11 @@
 @media screen and (max-width: 1023px) {
   #header {
     height: map-get($map: $headerHeight, $key: height_mb);
+    &.scroll {
+      &::before {
+        height: map-get($map: $headerHeight, $key: height_mb);
+      }
+    }
     .header_wrap {
       margin: 0 35px;
       .header_left {
@@ -85,13 +101,19 @@
         align-items: center;
         gap: 15px;
         font-size: 0;
-        .search_btn {
+        .search_btn_m {
           background: none;
           border: none;
           cursor: pointer;
           font-size: 0;
           img {
             width: 18px;
+            &:nth-child(1) {
+              display: block;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
           }
         }
         .signup_btn_m {
@@ -99,11 +121,17 @@
           margin-right: 35px;
           img {
             width: 18px;
+            &:nth-child(1) {
+              display: block;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
           }
         }
         .m_trigger_bar {
-          position: fixed;
-          right: 35px;
+          position: absolute;
+          right: 0;
           z-index: 15;
           display: flex;
           flex-direction: column;
@@ -140,7 +168,7 @@
         top: 0;
         left: 100%;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background: rgba(#000, 0.3);
         transition: left 0.4s;
         #m_header_menuBox {
@@ -162,14 +190,55 @@
         }
       }
     }
+    &.bg_black {
+      .header_wrap {
+        .header_left {
+          #gnb {
+            li {
+              a {
+                color: map-get($map: $color, $key: dark);
+              }
+            }
+          }
+        }
+        .header_right_m {
+          .search_btn_m {
+            img {
+              &:nth-child(1) {
+                display: none;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+          .signup_btn_m {
+            img {
+              &:nth-child(1) {
+                display: none;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+          .m_trigger_bar {
+            span {
+              background: map-get($map: $color, $key: light);
+            }
+            &.active {
+              span {
+                background: map-get($map: $color, $key: dark);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .wrapper {
-    margin: 0 20px;
-  }
-
   #header {
     .header_wrap {
       margin: 0 20px;
@@ -184,16 +253,8 @@
       }
       .header_right_m {
         right: 20px;
-        .m_trigger_bar {
-          right: 20px;
-        }
       }
     }
-  }
-
-  .visual {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 

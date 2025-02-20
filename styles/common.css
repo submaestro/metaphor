@@ -30,6 +30,15 @@ body {
   color: #222;
   position: relative;
   overflow-x: hidden;
+  background: #000;
+}
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 815px;
+  background: linear-gradient(180deg, rgb(37, 112, 181) 0%, rgb(0, 0, 0) 100%);
 }
 
 .wrapper {
@@ -38,15 +47,27 @@ body {
 }
 
 #header {
-  position: static;
+  position: fixed;
   height: 100px;
   top: 0;
   left: 0;
   width: 100%;
+  transform: translateY(0);
+  transition: transform 0.3s;
+  background: transparent;
 }
-#header.scroll {
-  position: fixed;
-  background: blur(10px);
+#header.scroll::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#header.hidden {
+  transform: translateY(-100%);
 }
 #header .header_wrap {
   margin: 0 60px;
@@ -66,7 +87,11 @@ body {
 }
 #header .header_wrap .header_left .header_logo a img {
   width: 197px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#header .header_wrap .header_left .header_logo a img:nth-child(2) {
+  display: none;
 }
 #header .header_wrap .header_left #gnb {
   display: flex;
@@ -102,7 +127,8 @@ body {
 #header .header_wrap .header_right .search_bar .search_btn img {
   width: 16px;
   aspect-ratio: 1;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #header .header_wrap .header_right .search_bar .search_txt {
   width: 180px;
@@ -115,6 +141,9 @@ body {
 }
 #header .header_wrap .header_right .search_bar .search_txt:focus {
   outline: none;
+}
+#header .header_wrap .header_right .search_bar .search_txt::-moz-placeholder {
+  color: #dedede;
 }
 #header .header_wrap .header_right .search_bar .search_txt::placeholder {
   color: #dedede;
@@ -141,15 +170,30 @@ body {
 #header .header_wrap #m_header_menu {
   display: none;
 }
+#header.bg_black .header_wrap .header_left .header_logo a img:nth-child(1) {
+  display: none;
+}
+#header.bg_black .header_wrap .header_left .header_logo a img:nth-child(2) {
+  display: block;
+}
+#header.bg_black .header_wrap .header_left #gnb li a {
+  color: #fff;
+}
+#header.bg_black .header_wrap .header_left #gnb li:hover a {
+  color: #03d8c5;
+}
+#header.bg_black .header_wrap .header_right .search_bar .search_txt {
+  color: #fff;
+}
 
 .visual {
-  margin-left: 35px;
-  margin-right: 35px;
+  padding-top: 100px;
 }
 .visual .box {
-  width: 100%;
-  height: 320px;
-  background: #ddd;
+  width: 1100px;
+  margin: 0 auto;
+  height: 900px;
+  background: url("../imgs/Plave_group.jpg") no-repeat center/cover;
   border-radius: 40px;
 }
 
@@ -158,5 +202,5 @@ body {
 }
 .content .wrapper {
   border: 1px solid #000;
-  height: 600px;
+  height: 1500px;
 }
