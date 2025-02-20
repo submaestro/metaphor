@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/chart.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script defer src="./common.js"></script>
+    <title>Music Chart | metaphor</title>
+  </head>
+  <body>
+    <main id="chart_page">
+      <header id="header">
+        <div class="header_wrap">
+          <div class="header_left">
+            <h1 class="header_logo">
+              <a href="#">
+                <img src="./imgs/logo.svg" alt="logo" />
+                <img src="./imgs/logo_w.svg" alt="logo_white" />
+              </a>
+            </h1>
+            <ul id="gnb">
+              <li><a href="#">ARTIST</a></li>
+              <li><a href="#">MUSIC</a></li>
+              <li><a href="#">MAGAZINE</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <form class="search_bar">
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <a class="signup_btn" href="#">
+              <span>sign up</span>
+            </a>
+          </div>
+          <div class="header_right_m">
+            <button class="search_btn_m">
+              <img src="./imgs/h_search_m.svg" alt="search" />
+              <img src="./imgs/h_search_m_w.svg" alt="search" />
+            </button>
+            <a class="signup_btn_m" href="#">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            </a>
+            <div class="m_trigger_bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="m_header_menu">
+            <div id="m_header_menuBox"></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="sub_visual"></section>
+
+      <section class="chart_section">
+        <div class="wrapper">
+          <div class="chart_top">
+            <ul class="chart_cate">
+              <li class="active">
+                <a href="#">TOP100</a>
+              </li>
+              <li>
+                <a href="#">주간</a>
+              </li>
+              <li>
+                <a href="#">월간</a>
+              </li>
+              <li>
+                <a href="#">NEW50</a>
+              </li>
+            </ul>
+            <h6 class="chart_realtime">
+              <span class="date">2025.02.13</span>
+              <span class="time">14:00</span>
+              기준
+            </h6>
+          </div>
+          <div class="chart_head">
+            <div class="head_info">
+              <h3>곡 정보</h3>
+            </div>
+            <div class="head_album">
+              <h3>앨범</h3>
+            </div>
+            <div class="head_favorite">
+              <h3>좋아요</h3>
+            </div>
+            <div class="head_play">
+              <h3>재생</h3>
+            </div>
+          </div>
+          <ul class="chart_list">
+            <li>
+              <div class="ranking">
+                <h4 class="rank_num">1</h4>
+                <figure class="icon">
+                  <img src="./imgs/chart_rank_icon.svg" alt="rankIcon" />
+                  <img src="./imgs/chart_rank_icon_w.svg" alt="rankIcon" />
+                </figure>
+              </div>
+              <div class="music_info">
+                <figure>
+                  <img
+                    src="./imgs/albumcover_ive_rebel.jpg"
+                    alt="rebel heart"
+                  />
+                </figure>
+                <div class="music_names">
+                  <h4>REBEL HEART</h4>
+                  <h5>IVE (아이브)</h5>
+                </div>
+              </div>
+              <div class="music_album">
+                <p>IVE EMPATHY</p>
+              </div>
+              <div class="music_favorite">
+                <button>
+                  <img src="./imgs/favorite_line.svg" alt="Heart1" />
+                  <img src="./imgs/favorite_fill.svg" alt="Heart2" />
+                </button>
+                <span>68,553</span>
+              </div>
+              <div class="music_player">
+                <button>
+                  <img src="./imgs/player_icon.svg" alt="playerIcon" />
+                </button>
+              </div>
+              <div class="chart_bg"></div>
+            </li>
+            <li>
+              <div class="ranking">
+                <h4 class="rank_num">1</h4>
+                <figure class="icon">
+                  <img src="./imgs/chart_rank_icon.svg" alt="rankIcon" />
+                  <img src="./imgs/chart_rank_icon_w.svg" alt="rankIcon" />
+                </figure>
+              </div>
+              <div class="music_info">
+                <figure>
+                  <img
+                    src="./imgs/albumcover_ive_rebel.jpg"
+                    alt="rebel heart"
+                  />
+                </figure>
+                <div class="music_names">
+                  <h4>HOME SWEET HOME (feat. 태양, 대성)</h4>
+                  <h5>G-DRAGON</h5>
+                </div>
+              </div>
+              <div class="music_album">
+                <p>HOME SWEET HOME (feat. 태양, 대성)</p>
+              </div>
+              <div class="music_favorite">
+                <button>
+                  <img src="./imgs/favorite_line.svg" alt="Heart1" />
+                  <img src="./imgs/favorite_fill.svg" alt="Heart2" />
+                </button>
+                <span>187,128</span>
+              </div>
+              <div class="music_player">
+                <button>
+                  <img src="./imgs/player_icon.svg" alt="playerIcon" />
+                </button>
+              </div>
+              <div class="chart_bg"></div>
+            </li>
+            <li>
+              <div class="ranking">
+                <h4 class="rank_num">1</h4>
+                <figure class="icon">
+                  <img src="./imgs/chart_rank_icon.svg" alt="rankIcon" />
+                  <img src="./imgs/chart_rank_icon_w.svg" alt="rankIcon" />
+                </figure>
+              </div>
+              <div class="music_info">
+                <figure>
+                  <img
+                    src="./imgs/albumcover_ive_rebel.jpg"
+                    alt="rebel heart"
+                  />
+                </figure>
+                <div class="music_names">
+                  <h4>REBEL HEART</h4>
+                  <h5>IVE (아이브)</h5>
+                </div>
+              </div>
+              <div class="music_album">
+                <p>IVE EMPATHY</p>
+              </div>
+              <div class="music_favorite">
+                <button>
+                  <img src="./imgs/favorite_line.svg" alt="Heart1" />
+                  <img src="./imgs/favorite_fill.svg" alt="Heart2" />
+                </button>
+                <span>68,553</span>
+              </div>
+              <div class="music_player">
+                <button>
+                  <img src="./imgs/player_icon.svg" alt="playerIcon" />
+                </button>
+              </div>
+              <div class="chart_bg"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

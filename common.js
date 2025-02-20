@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scroll");
   }
 
-  // 사이드 메뉴 바 열였을 때는 hidden 막기
+  // 사이드 메뉴 바 열었을 때는 hidden 막기
   if (m_trigger_bar.classList.contains("active")) {
     header.classList.remove("hidden");
   }
