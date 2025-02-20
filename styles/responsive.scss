@@ -11,7 +11,7 @@
 
 // header
 @media screen and (max-width: 1440px) {
-  .header {
+  #header {
     height: map-get($map: $headerHeight, $key: height_tb);
     .header_wrap {
       margin: 0 35px;
@@ -24,7 +24,7 @@
             }
           }
         }
-        .gnb {
+        #gnb {
           ul {
             gap: 30px;
             li {
@@ -47,7 +47,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .header {
+  #header {
     height: map-get($map: $headerHeight, $key: height_mb);
     .header_wrap {
       margin: 0 35px;
@@ -59,7 +59,7 @@
             }
           }
         }
-        //   .gnb {
+        //   #gnb {
         //     z-index: 2;
         //     position: absolute;
         //     top: 0;
@@ -94,19 +94,100 @@
         //   }
       }
       .header_right {
-        .search_bar {
-          .search_txt {
-            width: 160px;
+        display: none;
+      }
+      .header_right_m {
+        position: absolute;
+        right: 35px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .search_btn {
+          background: none;
+          border: none;
+          cursor: pointer;
+          img {
+            width: 20px;
           }
         }
-        .signup_btn {
-          span {
-            display: none;
-          }
+        .signup_btn_m {
+          display: block;
+          margin-right: 30px;
           i {
-            display: block;
-            font-size: 14px;
+            font-size: 19px;
           }
+        }
+        .m_trigger_bar {
+          position: fixed;
+          right: 35px;
+          z-index: 15;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          cursor: pointer;
+          span {
+            width: 20px;
+            height: 2px;
+            background: map-get($map: $color, $key: dark);
+            transition: all 0.4s;
+          }
+          &.active {
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg);
+                transform-origin: left center;
+              }
+              &:nth-child(2) {
+                opacity: 0;
+                transform: translateX(100%);
+              }
+              &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: left center;
+              }
+            }
+          }
+        }
+      }
+      #m_header_menu {
+        display: block;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.3);
+        transition: left 0.4s;
+        #m_header_menuBox {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 300px;
+          height: 100vh;
+          z-index: 5;
+          background: map-get($map: $color, $key: light);
+          transition: right 0.3s;
+          // transition-delay: 0.1s;
+          transition-timing-function: linear;
+        }
+        &.active {
+          left: 0;
+          #m_header_menuBox {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #header {
+    .header_wrap {
+      #m_header_menu {
+        #m_header_menuBox {
+          width: 100%;
         }
       }
     }
