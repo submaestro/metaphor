@@ -20,10 +20,10 @@
   #header .header_wrap .header_left .header_logo a img {
     zoom: 0.9;
   }
-  #header .header_wrap .header_left #gnb ul {
+  #header .header_wrap .header_left #gnb {
     gap: 30px;
   }
-  #header .header_wrap .header_left #gnb ul li a {
+  #header .header_wrap .header_left #gnb li a {
     font-size: 1.8rem;
   }
   #header .header_wrap .header_right .search_bar .search_txt {
@@ -40,6 +40,21 @@
   #header .header_wrap .header_left .header_logo a img {
     zoom: 0.6;
   }
+  #header .header_wrap .header_left #gnb {
+    position: absolute;
+    z-index: 10;
+    top: 110px;
+    right: -100%;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s;
+  }
+  #header .header_wrap .header_left #gnb li a {
+    font-size: 2rem;
+  }
+  #header .header_wrap .header_left #gnb.active {
+    right: 150px;
+  }
   #header .header_wrap .header_right {
     display: none;
   }
@@ -48,22 +63,24 @@
     right: 35px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    font-size: 0;
   }
   #header .header_wrap .header_right_m .search_btn {
     background: none;
     border: none;
     cursor: pointer;
+    font-size: 0;
   }
   #header .header_wrap .header_right_m .search_btn img {
-    width: 20px;
+    width: 18px;
   }
   #header .header_wrap .header_right_m .signup_btn_m {
     display: block;
-    margin-right: 30px;
+    margin-right: 35px;
   }
-  #header .header_wrap .header_right_m .signup_btn_m i {
-    font-size: 19px;
+  #header .header_wrap .header_right_m .signup_btn_m img {
+    width: 18px;
   }
   #header .header_wrap .header_right_m .m_trigger_bar {
     position: fixed;
@@ -95,7 +112,7 @@
   #header .header_wrap #m_header_menu {
     display: block;
     position: fixed;
-    z-index: 10;
+    z-index: 0;
     top: 0;
     left: 100%;
     width: 100%;
@@ -109,7 +126,7 @@
     right: -100%;
     width: 300px;
     height: 100vh;
-    z-index: 5;
+    z-index: 1;
     background: #fff;
     transition: right 0.3s;
     transition-timing-function: linear;
@@ -121,8 +138,36 @@
     right: 0;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
+  .wrapper {
+    margin: 0 20px;
+  }
+  #header .header_wrap {
+    margin: 0 20px;
+  }
+  #header .header_wrap .header_left #gnb li a {
+    font-size: 1.9rem;
+  }
+  #header .header_wrap .header_right_m {
+    right: 20px;
+  }
+  #header .header_wrap .header_right_m .m_trigger_bar {
+    right: 20px;
+  }
+  .visual {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #header .header_wrap .header_left #gnb.active {
+    right: calc(65vw - 45px);
+    transform: translateX(100%);
+  }
+  #header .header_wrap .header_left #gnb.active li a {
+    font-size: 1.7rem;
+  }
   #header .header_wrap #m_header_menu #m_header_menuBox {
-    width: 100%;
+    width: 65vw;
   }
 }

@@ -29,6 +29,7 @@ body {
   font-family: pretendard;
   color: #222;
   position: relative;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -37,12 +38,15 @@ body {
 }
 
 #header {
-  position: block;
+  position: static;
   height: 100px;
-  background: #fff;
   top: 0;
   left: 0;
   width: 100%;
+}
+#header.scroll {
+  position: fixed;
+  background: blur(10px);
 }
 #header .header_wrap {
   margin: 0 60px;
@@ -62,21 +66,20 @@ body {
 }
 #header .header_wrap .header_left .header_logo a img {
   width: 197px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-#header .header_wrap .header_left #gnb ul {
+#header .header_wrap .header_left #gnb {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-#header .header_wrap .header_left #gnb ul li a {
+#header .header_wrap .header_left #gnb li a {
   display: block;
   font-size: 2rem;
   font-weight: 600;
   transition: color 0.3s;
 }
-#header .header_wrap .header_left #gnb ul li:hover a {
+#header .header_wrap .header_left #gnb li:hover a {
   color: #03d8c5;
 }
 #header .header_wrap .header_right {
@@ -99,8 +102,7 @@ body {
 #header .header_wrap .header_right .search_bar .search_btn img {
   width: 16px;
   aspect-ratio: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #header .header_wrap .header_right .search_bar .search_txt {
   width: 180px;
@@ -113,9 +115,6 @@ body {
 }
 #header .header_wrap .header_right .search_bar .search_txt:focus {
   outline: none;
-}
-#header .header_wrap .header_right .search_bar .search_txt::-moz-placeholder {
-  color: #dedede;
 }
 #header .header_wrap .header_right .search_bar .search_txt::placeholder {
   color: #dedede;

@@ -14,6 +14,7 @@ body {
   font-family: map-get($map: $font, $key: pretendard);
   color: map-get($map: $color, $key: dark);
   position: relative;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -23,12 +24,15 @@ body {
 
 // header
 #header {
-  position: block;
+  position: static;
   height: map-get($map: $headerHeight, $key: height_pc);
-  background: map-get($map: $color, $key: light);
   top: 0;
   left: 0;
   width: 100%;
+  &.scroll {
+    position: fixed;
+    background: blur(10px);
+  }
   .header_wrap {
     margin: 0 60px;
     height: 100%;
@@ -50,20 +54,18 @@ body {
         }
       }
       #gnb {
-        ul {
-          display: flex;
-          align-items: center;
-          gap: 40px;
-          li {
-            a {
-              display: block;
-              font-size: 2rem;
-              font-weight: 600;
-              transition: color 0.3s;
-            }
-            &:hover a {
-              color: map-get($map: $color, $key: main);
-            }
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        li {
+          a {
+            display: block;
+            font-size: 2rem;
+            font-weight: 600;
+            transition: color 0.3s;
+          }
+          &:hover a {
+            color: map-get($map: $color, $key: main);
           }
         }
       }

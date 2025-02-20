@@ -25,12 +25,10 @@
           }
         }
         #gnb {
-          ul {
-            gap: 30px;
-            li {
-              a {
-                font-size: 1.8rem;
-              }
+          gap: 30px;
+          li {
+            a {
+              font-size: 1.8rem;
             }
           }
         }
@@ -59,39 +57,23 @@
             }
           }
         }
-        //   #gnb {
-        //     z-index: 2;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 100%;
-        //     &::before {
-        //       content: "";
-        //       position: absolute;
-        //       width: 100%;
-        //       height: 100%;
-        //       background: rgba(#000, 0.3);
-        //       z-index: -1;
-        //     }
-        //     &::after {
-        //       content: "";
-        //       position: absolute;
-        //       top: 0;
-        //       right: 0;
-        //       width: map-get($map: $headerHeight, $key: mgnb_width);
-        //       height: 100%;
-        //       background: map-get($map: $color, $key: light);
-        //     }
-        //     ul {
-        //       position: absolute;
-        //       z-index: 1;
-        //       top: 80px;
-        //       right: calc(map-get($map: $headerHeight, $key: mgnb_width) - 140px);
-        //       flex-direction: column;
-        //       align-items: flex-start;
-        //     }
-        //   }
+        #gnb {
+          position: absolute;
+          z-index: 10;
+          top: 110px;
+          right: -100%;
+          flex-direction: column;
+          align-items: flex-start;
+          transition: all 0.3s;
+          li {
+            a {
+              font-size: 2rem;
+            }
+          }
+          &.active {
+            right: 150px;
+          }
+        }
       }
       .header_right {
         display: none;
@@ -101,20 +83,22 @@
         right: 35px;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
+        font-size: 0;
         .search_btn {
           background: none;
           border: none;
           cursor: pointer;
+          font-size: 0;
           img {
-            width: 20px;
+            width: 18px;
           }
         }
         .signup_btn_m {
           display: block;
-          margin-right: 30px;
-          i {
-            font-size: 19px;
+          margin-right: 35px;
+          img {
+            width: 18px;
           }
         }
         .m_trigger_bar {
@@ -152,7 +136,7 @@
       #m_header_menu {
         display: block;
         position: fixed;
-        z-index: 10;
+        z-index: 0;
         top: 0;
         left: 100%;
         width: 100%;
@@ -165,10 +149,9 @@
           right: -100%;
           width: 300px;
           height: 100vh;
-          z-index: 5;
+          z-index: 1;
           background: map-get($map: $color, $key: light);
           transition: right 0.3s;
-          // transition-delay: 0.1s;
           transition-timing-function: linear;
         }
         &.active {
@@ -182,12 +165,57 @@
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
+  .wrapper {
+    margin: 0 20px;
+  }
+
   #header {
     .header_wrap {
+      margin: 0 20px;
+      .header_left {
+        #gnb {
+          li {
+            a {
+              font-size: 1.9rem;
+            }
+          }
+        }
+      }
+      .header_right_m {
+        right: 20px;
+        .m_trigger_bar {
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  .visual {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header {
+    .header_wrap {
+      .header_left {
+        #gnb {
+          &.active {
+            right: calc(65vw - 45px);
+            transform: translateX(100%);
+            li {
+              a {
+                font-size: 1.7rem;
+              }
+            }
+          }
+        }
+      }
       #m_header_menu {
         #m_header_menuBox {
-          width: 100%;
+          width: 65vw;
         }
       }
     }
