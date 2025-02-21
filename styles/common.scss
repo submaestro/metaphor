@@ -183,25 +183,3 @@ body {
     }
   }
 }
-
-// 임시 비주얼, 콘텐츠 영역
-.visual {
-  padding-top: 100px;
-  // margin-left: 35px;
-  // margin-right: 35px;
-  .box {
-    width: 1100px;
-    margin: 0 auto;
-    height: 900px;
-    background: url("../imgs/Plave_group.jpg") no-repeat center/cover;
-    border-radius: 40px;
-  }
-}
-
-.content {
-  margin-top: 80px;
-  .wrapper {
-    border: 1px solid #000;
-    height: 1500px;
-  }
-}
