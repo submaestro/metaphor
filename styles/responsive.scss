@@ -171,6 +171,7 @@
         height: 100vh;
         background: rgba(#000, 0.3);
         transition: left 0.4s;
+        transition-timing-function: ease-in-out;
         #m_header_menuBox {
           position: fixed;
           top: 0;
@@ -180,7 +181,7 @@
           z-index: 900;
           background: map-get($map: $color, $key: light);
           transition: right 0.3s;
-          transition-timing-function: linear;
+          transition-timing-function: ease-in-out;
         }
         &.active {
           left: 0;
