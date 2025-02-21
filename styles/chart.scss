@@ -26,13 +26,13 @@
       align-items: flex-end;
       .chart_cate {
         display: flex;
-        gap: 8px;
+        gap: 10px;
         align-items: center;
         li {
           a {
             display: block;
             font-size: 1.6rem;
-            padding: 7px 18px;
+            padding: 10px 20px;
             border: 1px solid map-get($map: $color, $key: dark);
             border-radius: 100px;
             background: map-get($map: $color, $key: light);
