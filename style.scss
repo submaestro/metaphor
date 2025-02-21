@@ -1,0 +1,281 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@import "./styles/reset.scss";
+@import "./styles/variables.scss";
+
+// common
+html {
+  font-size: 62.5%;
+}
+//log in scss
+body {
+  font-size: 1.6rem;
+  font-family: map-get($map: $font, $key: pretendard);
+  color: map-get($map: $color, $key: dark);
+  position: relative;
+  background: map-get($map: $color, $key: gray_6);
+}
+
+.login_wrapper {
+  padding: 60px 75px;
+  width: 600px;
+  height: 800px;
+  border: none;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  // border: none;
+  position: relative;
+  margin-top: 58px;
+  border-radius: 40px;
+  // margin-left: 250px;
+  .logo {
+    width: 197px;
+    // margin-left: 75px;
+    // padding-top: 59px;
+    
+  }
+  .login {
+    // margin-left: 75px;
+    margin-top: 50px;
+  }
+  .id{
+    input {
+      width: 450px;
+      height: 27px;
+      margin-top: 28px;
+      border: none;
+      border-bottom: 1px solid #000;
+      &::placeholder{
+        transition: 0.3s;
+      }
+      &:focus {
+        &::placeholder{
+          opacity: none;
+        }
+      }
+    }
+  }
+ 
+    .eye {
+      position: relative;
+      // position: relative;
+      // .fas fa-eye-slash {
+        // cursor: pointer;
+        // position: absolute;
+        // transform: translateX(-50%);
+      // }
+      input{
+        width: 450px;
+        height: 27px;
+        margin-top: 18px;
+        border: none;
+        border-bottom: 1px solid #000;
+        // display: flex;
+        &::placeholder {
+          transition: opacity 0.3s;
+        }
+        &:focus{
+          outline: none;
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+      }
+
+      i{
+        color: map-get($map: $color, $key: gray_9);
+        position: absolute;
+        // display: flex;
+        top: 50%;
+        right: 8px;
+        cursor: pointer;
+
+      }
+    }
+  
+  #identity{
+    color: map-get($map: $color, $key: gray_6);
+  }
+  #lock {
+    margin-top: 27px;
+    // margin-bottom: 22px;
+    color: map-get($map: $color, $key: gray_6);
+  }
+
+  
+  .save {
+    color: map-get($map: $color, $key: #999);
+    margin-top: 22px;
+    margin-bottom: 50px;
+    label {
+      // width: 121px;
+      // height: 18px;
+      // margin-left: 76px;
+      color: map-get($map: $color, $key: #999);
+      // display: flex;
+      // margin-top: 22px;
+      // margin-bottom: 50px;
+      cursor: pointer;
+      input{
+        // cursor: pointer;
+
+        color: map-get($map: $color, $key: #999);
+      }
+    }
+  }
+  button {
+    width: 450px;
+    height: 59px;
+    // margin-left: 75px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: map-get($map: $color, $key: main);
+    color: map-get($map: $color, $key: light);
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  #search {
+    display: flex;
+    color: map-get($map: $color, $key: gray_9);
+    // gap: 10px;
+    // margin-left: 170px;
+    justify-content: center;
+    margin-bottom: 50px;
+    // font-size: 12px; //common 연결하면 지우기
+    // > li:nth-child(2)::before {
+    //   content: "|";
+    //   padding-right: 19px;
+    //   // padding-left: 19px;
+    // }
+    // > li:nth-child(3)::before {
+    //   content: "|";
+    //   margin-right: 19px;
+    // }
+    // cursor: pointer;
+    gap: 19px
+    ;
+    .line{
+      background: map-get($map: $color, $key: gray_9);
+      width: 1px;
+      height: 18px;
+      cursor: none;
+    }
+  }
+  .continue {
+    // gap: 10px;
+    li {
+      a{
+      display: flex;
+      width: 450px;
+      height: 60px;
+      // margin-left: 75px;
+      color: map-get($map: $color, $key: gray_6);
+      border: 1px solid map-get($map: $color, $key: gray_9);
+      align-items: center;
+      border-radius: 50px;
+      padding-left: 90px;
+      margin-bottom: 8px;
+      gap: 35px;
+      #Google {
+        margin-right: 35px;
+      }
+      &> #apple {
+        // margin-left: 35px;s
+        width: 20px;
+        height: 23px;
+        // padding-right: 45px;
+      }
+      #Facebook {
+        margin-right: 35px;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+  }
+}
+
+//log on scss
+.log_onwrapper{
+  width: 600px;
+  height: 800px;
+  // border: 1px solid crimson;
+  background: #fff;
+  padding: 44px 75px;
+  position: absolute;
+  justify-content: center;
+  border-radius: 40px;
+  .logo2{
+    width: 197px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  .contents{
+    padding: 0;
+    width: 450px;
+    height: 750px;
+    position: absolute;
+    // border: 1px solid #000;
+    // transition: tranlateX(-50px
+    // );
+    li{
+      width: 450px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 27px;
+      // padding-left: 10px;
+      input{
+        height: 27px;
+        border: none;
+        border-bottom: map-get($map: $color, $key: black);
+      }
+    }
+    .fourbox{
+      
+      // flex-direction: column;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      button{
+        // display: inline;
+        // display: flex;
+        width: 108px;
+        height: 40px;
+        &:first-child {
+          border-radius: 8px 0 0 8px;
+          border-right: none;
+        }
+        &:nth-child(2){
+          margin-right: 21px ;
+          border-radius: 0px 8px 8px 0px; 
+        }
+        &:nth-child(3){
+          border-radius: 8px 0px 0px 8px; 
+          border-right: none;
+        }
+        &:nth-child(4){
+          border-radius: 0px 8px 8px 0px; 
+        }
+      }
+    }
+    .number{
+    padding-top: 12px;
+    }
+  }
+  .signup{
+    button{
+      width: 450px;
+      height: 60px;
+    }
+  }
+}
+
+
+
