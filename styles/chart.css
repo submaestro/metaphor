@@ -1,5 +1,6 @@
 /* font */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 * {
   margin: 0;
   padding: 0;
@@ -183,34 +184,6 @@ body {
 }
 #header.bg_black .header_wrap .header_right .search_bar .search_txt {
   color: #fff;
-}
-
-.visual {
-  padding-top: 100px;
-}
-.visual .box {
-  width: 1100px;
-  margin: 0 auto;
-  height: 900px;
-  background: url("../imgs/Plave_group.jpg") no-repeat center/cover;
-  border-radius: 40px;
-}
-
-.content {
-  margin-top: 80px;
-}
-.content .wrapper {
-  border: 1px solid #000;
-  height: 1500px;
-}
-
-.sub_visual {
-  margin-top: 100px;
-  margin-left: 35px;
-  margin-right: 35px;
-  background: #ddd;
-  border-radius: 40px;
-  height: 320px;
 }
 
 .chart_section {
@@ -438,4 +411,47 @@ body {
 }
 .chart_section .wrapper .chart_list li:hover .chart_bg {
   opacity: 1;
+}
+
+.paging_area .paging_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.paging_area .paging_wrap .paging_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.paging_area .paging_wrap .paging_list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-size: 1.9rem;
+}
+.paging_area .paging_wrap .paging_list li.active a {
+  background: #222;
+}
+.paging_area .paging_wrap .paging_list li.active a span {
+  color: #fff;
+  font-weight: 300;
+}
+.paging_area .paging_wrap .paging_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+}
+.paging_area .paging_wrap .paging_btn span {
+  font-size: 2.2rem;
+  color: #666;
+  transform: translateX(3%);
 }

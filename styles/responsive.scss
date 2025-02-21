@@ -283,3 +283,115 @@
     }
   }
 }
+
+// sub_visual
+@media screen and (max-width: 1440px) {
+  .sub_visual {
+    padding-top: map-get($map: $headerHeight, $key: height_tb);
+    .sub_visual_wrap {
+      height: 280px;
+      border-radius: 35px;
+      .wrapper {
+        padding: 50px 0;
+        margin: 0 auto;
+        .sub_text {
+          align-items: center;
+          justify-content: center;
+          gap: 14px;
+          h2 {
+            padding-top: 10px;
+            font-size: 6.5rem;
+            span {
+              &::after {
+                width: 20px;
+              }
+            }
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .sub_visual {
+    padding-top: map-get($map: $headerHeight, $key: height_mb);
+    .sub_visual_wrap {
+      height: 230px;
+      border-radius: 25px;
+      .wrapper {
+        padding: 0;
+        .sub_text {
+          gap: 12px;
+          h2 {
+            padding-top: 6px;
+            font-size: 5.8rem;
+            span {
+              &::after {
+                width: 16px;
+              }
+            }
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sub_visual {
+    margin: 0 20px;
+    .sub_visual_wrap {
+      height: 180px;
+      .wrapper {
+        .sub_text {
+          gap: 10px;
+          h2 {
+            padding-top: 4px;
+            font-size: 4.4rem;
+            span {
+              &::after {
+                width: 14px;
+                left: calc(100% + 4px);
+              }
+            }
+          }
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sub_visual {
+    .sub_visual_wrap {
+      height: 160px;
+      .wrapper {
+        .sub_text {
+          h2 {
+            font-size: 3.4rem;
+            span {
+              &::after {
+                width: 12px;
+              }
+            }
+          }
+          p {
+            font-size: 1.2rem;
+            text-align: center;
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
