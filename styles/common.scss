@@ -36,13 +36,29 @@ body {
 }
 
 /* header */
-.header {
-  position: block;
+#header {
+  position: fixed;
+  height: map-get($map: $headerHeight, $key: height_pc);
   top: 0;
   left: 0;
-  background: rgb(17, 93, 168);
   width: 100%;
-  height: map-get($map: $headerHeight, $key: header_default);
+  transform: translateY(0);
+  transition: transform 0.3s;
+  background: transparent;
+  &.scroll {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 100vw;
+      height: map-get($map: $headerHeight, $key: height_pc);
+      backdrop-filter: blur(10px);
+    }
+  }
+  &.hidden {
+    transform: translateY(-100%);
+  }
   .header_wrap {
     margin: 0 60px;
     height: 100%;
@@ -60,10 +76,13 @@ body {
           img {
             width: 197px;
             object-fit: cover;
+            &:nth-child(2) {
+              display: none;
+            }
           }
         }
       }
-      .gnb {
+      #gnb {
         display: flex;
         align-items: center;
         gap: 40px;
@@ -105,13 +124,14 @@ body {
           padding-bottom: 3px;
           font-size: 1.4rem;
           border: none;
-          border-bottom: 1px solid map-get($map: $color, $key: gray9);
+          border-bottom: 1px solid map-get($map: $color, $key: gray_9);
           font-family: map-get($map: $font, $key: pretendard);
+          background: none;
           &:focus {
             outline: none;
           }
           &::placeholder {
-            color: map-get($map: $color, $key: grayLight);
+            color: map-get($map: $color, $key: gray_de);
           }
         }
       }
@@ -126,6 +146,50 @@ body {
           display: inline-block;
           font-size: 15px;
           line-height: 1;
+        }
+        i {
+          display: none;
+        }
+      }
+    }
+    .header_right_m {
+      display: none;
+    }
+    #m_header_menu {
+      display: none;
+    }
+  }
+  &.bg_black {
+    .header_wrap {
+      .header_left {
+        .header_logo {
+          a {
+            img {
+              &:nth-child(1) {
+                display: none;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+        }
+        #gnb {
+          li {
+            a {
+              color: map-get($map: $color, $key: light);
+            }
+            &:hover a {
+              color: map-get($map: $color, $key: main);
+            }
+          }
+        }
+      }
+      .header_right {
+        .search_bar {
+          .search_txt {
+            color: map-get($map: $color, $key: light);
+          }
         }
       }
     }

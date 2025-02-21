@@ -9,20 +9,22 @@
     ></script>
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/detail.css" />
-    <title>Header</title>
+    <script defer src="./detail.js"></script>
+    <title>Detail</title>
   </head>
   <body>
     <main id="detail_page">
       <!-- header -->
-      <!-- <header class="header">
+      <header id="header">
         <div class="header_wrap">
           <div class="header_left">
             <h1 class="header_logo">
               <a href="#">
-                <img src="./imgs/logo.png" alt="logo" />
+                <img src="./imgs/logo.svg" alt="logo" />
+                <img src="./imgs/logo_w.svg" alt="logo_white" />
               </a>
             </h1>
-            <ul class="gnb">
+            <ul id="gnb">
               <li><a href="#">ARTIST</a></li>
               <li><a href="#">MUSIC</a></li>
               <li><a href="#">MAGAZINE</a></li>
@@ -31,7 +33,7 @@
           <div class="header_right">
             <form class="search_bar">
               <button class="search_btn">
-                <img src="./imgs/h_search.png" alt="search" />
+                <img src="./imgs/h_search.svg" alt="search" />
               </button>
               <input
                 class="search_txt"
@@ -43,8 +45,26 @@
               <span>sign up</span>
             </a>
           </div>
+          <div class="header_right_m">
+            <button class="search_btn_m">
+              <img src="./imgs/h_search_m.svg" alt="search" />
+              <img src="./imgs/h_search_m_w.svg" alt="search" />
+            </button>
+            <a class="signup_btn_m" href="#">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            </a>
+            <div class="m_trigger_bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="m_header_menu">
+            <div id="m_header_menuBox"></div>
+          </div>
         </div>
-      </header> -->
+      </header>
 
       <div class="main_color">
         <div class="main_gradient"></div>
@@ -95,7 +115,7 @@
                   />
                   <span>434,086</span>
                 </button>
-                <button>
+                <button class="modal_open">
                   <span>아티스트 정보</span>
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -120,27 +140,27 @@
           </div>
           <div class="detail_introduce_mem">
             <div class="plave_mem1">
-              <img src="./imgs/members/mem_yejun.jpg" alt="mem_yejun" />
+              <img src="./imgs/members/mem_1.png" alt="mem_yejun" />
               <b>YEJUN</b>
               <span>예준</span>
             </div>
             <div class="plave_mem2">
-              <img src="./imgs/members/mem-noah.jpg" alt="mem-noah" />
+              <img src="./imgs/members/mem_2.png" alt="mem-noah" />
               <b>NOAH</b>
               <span>노아</span>
             </div>
             <div class="plave_mem3">
-              <img src="./imgs/members/mem_bamby.jpg" alt="mem_bamby" />
+              <img src="./imgs/members/mem_3.png" alt="mem_bamby" />
               <b>BAMBY</b>
               <span>밤비</span>
             </div>
             <div class="plave_mem4">
-              <img src="./imgs/members/mem_eunho.jpg" alt="mem_eunho" />
+              <img src="./imgs/members/mem_4.png" alt="mem_eunho" />
               <b>EUNHO</b>
               <span>은호</span>
             </div>
             <div class="plave_mem5">
-              <img src="./imgs/members/mem_hamin.jpg" alt="mem_hamin" />
+              <img src="./imgs/members/mem_5.png" alt="mem_hamin" />
               <b>HAMIN</b>
               <span>하민</span>
             </div>
@@ -329,6 +349,28 @@
             <a href="https://www.tiktok.com/@plave_official?lang=ko-KR"
               ><i class="fab fa-tiktok"></i
             ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal after -->
+      <div id="detail_blackbx"></div>
+      <section id="modal_section">
+        <div class="modal">
+          <div class="modal_img">
+            <img src="./imgs/members/mem_1.png" alt="mem_1" />
+          </div>
+          <div class="modal_text">
+            <h2>BAMBY</h2>
+            <h3>밤비</h3>
+            <p>
+              밤비는 대한민국의 5인조 버추얼 보이그룹 PLAVE의 멤버로 그룹 내
+              댄스와 보컬을 담당하고 있다.
+            </p>
+          </div>
+          <div class="modal_close">
+            <div></div>
+            <div></div>
           </div>
         </div>
       </section>
