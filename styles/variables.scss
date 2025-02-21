@@ -20,7 +20,18 @@ $font: (
 
 /*header height*/
 $headerHeight: (
-  header_default: 100px,
-  header_1440: 80px,
-  header_1023: 52px,
+  height_pc: 100px,
+  height_tb: 80px,
+  height_mb: 60px,
+);
+
+// chart
+$chartWidth: (
+  info: 57%,
+  album: 17%,
+  favorite: 14%,
+  play: 12%,
+);
+$albumCover: (
+  pc: 70px,
 );

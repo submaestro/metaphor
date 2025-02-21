@@ -14,3 +14,10 @@ ul,
 li {
   list-style: none;
 }
+
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}/*# sourceMappingURL=reset.css.map */

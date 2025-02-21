@@ -1,84 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
-    <title>index_page</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f37fd463ce.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script defer src="./common.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>header</title>
   </head>
   <body>
-    <div class="MainVisual_slider">
-      <div class="MainVisual_slider">
-        <img src="main_slide1.jpg" alt="MainVisual_slider1" />
-      </div>
-      <div class="MainVisual_slider">
-        <img src="main_slide2.jpg" alt="MainVisual_slider2" />
-      </div>
-      <div class="MainVisual_slider">
-        <img src="main_slide3.jpg" alt="MainVisual_slider3" />
-      </div>
-      <div class="MainVisual_slider">
-        <img src="main_slide4.jpg" alt="MainVisual_slider4" />
-      </div>
-    </div>
-
-    <div class="favorite_artist">
-      <h3>관심있는 아티스트</h3>
-      <div class="artist_icons">
-        <img src="PLAVE.png" alt="icon_1" />
-        <img src="BABYMONSTER.png" alt="icon_2" />
-        <img src="New_Jeans.png" alt="icon_3" />
-        <img src="aespa.png" alt="icon_4" />
-      </div>
-    </div>
-
-    <div class="music_chart">
-      <h3>Music chart</h3>
-    </div>
-
-    <div class="magazine">
-      <h3>Magazine</h3>
-      <div class="magazine_slider">
-        <div class="magazine_slider">
-          <img src="mz_slide1.jpg" alt="magazine_slider1" />
+    <main id="header">
+      <header class="header">
+        <div class="header_wrap">
+          <div class="header_left">
+            <h1 class="header_logo">
+              <a href="#">
+                <img src="./imgs/logo.svg" alt="logo" />
+              </a>
+            </h1>
+            <nav class="gnb">
+              <ul>
+                <li><a href="#">ARTIST</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">MAGAZINE</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_right">
+            <form class="search_bar">
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <a class="signup_btn" href="#">
+              <span>sign up</span>
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </div>
         </div>
-        <div class="magazine_slider">
-          <img src="mz_slide2.jpg" alt="magazine_slider2" />
-        </div>
-        <div class="magazine_slider">
-          <img src="mz_slide3.jpg" alt="magazine_slider3" />
-        </div>
-        <div class="magazine_slider">
-          <img src="mz_slide4.jpg" alt="magazine_slider4" />
-        </div>
+      </header>
+    </main>
+    <section class="main_visual">
+      <div class="box">
+        <ul class="mainVisual_slider">
+          <li>
+            <img src="./imgs/main_slider1.png" alt="mainVisual_slider1" />
+          </li>
+          <!-- <div class="mainVisual_slider">
+<img src="./imgs/main_slider2.png" alt="mainVisual_slider2" />
+</div>
+<div class="mainVisual_slider">
+<img src="./imgs/main_slider3.png" alt="mainVisual_slider3" />
+</div>
+<div class="mainVisual_slider">
+<img src="./imgs/main_slider4.png" alt="mainVisual_slider4" />
+</div> -->
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="new_artists">
-      <h3>새로운 아티스트를 만나보세요!</h3>
-      <div class="new_artist_icons">
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
-        <div class="icon"><img src="TWS.png" alt="icon_5" /></div>
+    <section class="favorite_artist_content">
+      <div class="wrapper">
+        <div class="favorite_artist">
+          <h2>관심있는 아티스트 <i class="fas fa-angle-right"></i></h2>
+          <div class="artist_icons">
+            <img src="./imgs/PLAVE.png" alt="icon_1" />
+            <img src="./imgs/BABYMONSTER.png" alt="icon_2" />
+            <img src="./imgs/New_Jeans.png" alt="icon_3" />
+            <img src="./imgs/aespa.png" alt="icon_4" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="chart">
+      <div class="wrapper">
+        <div class="metaphor_chart">
+          <h2>Music Chart <i class="fas fa-angle-right"></i></h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="magazine_content">
+      <div class="wrapper">
+        <div class="magazine">
+          <h2>Magazine <i class="fas fa-angle-right"></i></h2>
+          <div class="magazine_slider">
+            <div class="magazine_slider">
+              <img src="./imgs/mz_slide1.png" alt="magazine_slider1" />
+            </div>
+            <!-- <div class="magazine_slider">
+<img src="./imgs/mz_slide2.png" alt="magazine_slider2" />
+</div>
+<div class="magazine_slider">
+<img src="./imgs/mz_slide3.png" alt="magazine_slider3" />
+</div>
+<div class="magazine_slider">
+<img src="./imgs/mz_slide4.png" alt="magazine_slider4" />
+</div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new_artist_content">
+      <div class="wrapper">
+        <div class="new_artists">
+          <h2>
+            새로운 아티스트를 만나보세요! <i class="fas fa-angle-right"></i>
+          </h2>
+          <div class="new_artist_icons">
+            <div class="icon">
+              <img src="./imgs/TREASURE.png" alt="icon_5" />
+            </div>
+            <div class="icon"><img src="./imgs/IVE.png" alt="icon_6" /></div>
+            <div class="icon">
+              <img src="./imgs/NCT_127.png" alt="icon_7" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/NCT_WISH.png" alt="icon_8" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/SEVENTEEN.png" alt="icon_9" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/JENNIE.png" alt="icon_10" />
+            </div>
+            <div class="icon"><img src="./imgs/BTS.png" alt="icon_11" /></div>
+            <div class="icon">
+              <img src="./imgs/BABYMONSTER.png" alt="icon_12" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/LE_SSERAFIM.png" alt="icon_13" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/BLACK_PINK.png" alt="icon_14" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/G_Dragon.png" alt="icon_15" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/ILLIT.png" alt="icon_16" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/GI_DLE.png" alt="icon_17" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/ZICO.png" alt="icon_18" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/RIIZE.png" alt="icon_19" />
+            </div>
+            <div class="icon"><img src="./imgs/IU.png" alt="icon_20" /></div>
+            <div class="icon">
+              <img src="./imgs/MOONBYUL.png" alt="icon_21" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/MAVE.png" alt="icon_22" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/KWON_EUN_BI.png" alt="icon_23" />
+            </div>
+            <div class="icon">
+              <img src="./imgs/FIFTY_FIFTY.png" alt="icon_24" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

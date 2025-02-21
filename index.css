@@ -1,0 +1,135 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.main_visual .box {
+  margin: 0 35px;
+}
+.main_visual .box .mainVisual_slider {
+  overflow: hidden;
+}
+.main_visual .box .mainVisual_slider li img {
+  max-width: 100%;
+  padding: 0 0 30px 0;
+  cursor: pointer;
+}
+
+.favorite_artist_content {
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  margin: auto;
+}
+.favorite_artist_content h2 {
+  margin: 60px 0 40px 0;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.favorite_artist_content .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+  height: 600px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.favorite_artist_content .wrapper .artist_icons {
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+}
+.favorite_artist_content .wrapper .artist_icons img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.favorite_artist_content .wrapper .artist_icons img:hover {
+  transform: scale(1.1);
+}
+
+.magazine_content {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  margin: auto;
+}
+.magazine_content h2 {
+  margin: 60px 0 40px 0;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.magazine_content .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.magazine_content .magazine_slider {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.new_artist_content {
+  padding-bottom: 60px;
+  width: 100%;
+  margin: auto;
+  background-color: #f0f0f0;
+}
+.new_artist_content h2 {
+  margin: 60px 0 40px 0;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.new_artist_content .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.new_artist_content .wrapper .new_artist_icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  gap: 32px;
+  padding: 0;
+}
+.new_artist_content .wrapper .new_artist_icons .icon {
+  width: 250.25px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.new_artist_content .wrapper .new_artist_icons .icon img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.new_artist_content .wrapper .new_artist_icons .icon img:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=index.css.map */
