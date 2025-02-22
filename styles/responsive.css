@@ -53,7 +53,7 @@
   }
   #header .header_wrap .header_left #gnb {
     position: absolute;
-    z-index: 10;
+    z-index: 1500;
     top: 110px;
     right: -100%;
     flex-direction: column;
@@ -108,7 +108,7 @@
   #header .header_wrap .header_right_m .m_trigger_bar {
     position: absolute;
     right: 0;
-    z-index: 15;
+    z-index: 1500;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -135,13 +135,14 @@
   #header .header_wrap #m_header_menu {
     display: block;
     position: fixed;
-    z-index: 0;
+    z-index: 900;
     top: 0;
     left: 100%;
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.3);
     transition: left 0.4s;
+    transition-timing-function: ease-in-out;
   }
   #header .header_wrap #m_header_menu #m_header_menuBox {
     position: fixed;
@@ -149,10 +150,10 @@
     right: -100%;
     width: 300px;
     height: 100vh;
-    z-index: 1;
+    z-index: 900;
     background: #fff;
     transition: right 0.3s;
-    transition-timing-function: linear;
+    transition-timing-function: ease-in-out;
   }
   #header .header_wrap #m_header_menu.active {
     left: 0;
@@ -203,5 +204,96 @@
   }
   #header .header_wrap #m_header_menu #m_header_menuBox {
     width: 65vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sub_visual {
+    padding-top: 80px;
+  }
+  .sub_visual .sub_visual_wrap {
+    height: 280px;
+    border-radius: 35px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper {
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text {
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 {
+    padding-top: 10px;
+    font-size: 6.5rem;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 span::after {
+    width: 20px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .sub_visual {
+    padding-top: 60px;
+  }
+  .sub_visual .sub_visual_wrap {
+    height: 230px;
+    border-radius: 25px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper {
+    padding: 0;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text {
+    gap: 12px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 {
+    padding-top: 6px;
+    font-size: 5.8rem;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 span::after {
+    width: 16px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sub_visual {
+    margin: 0 20px;
+  }
+  .sub_visual .sub_visual_wrap {
+    height: 180px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text {
+    gap: 10px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 {
+    padding-top: 4px;
+    font-size: 4.4rem;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 span::after {
+    width: 14px;
+    left: calc(100% + 4px);
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sub_visual .sub_visual_wrap {
+    height: 160px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 {
+    font-size: 3.4rem;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text h2 span::after {
+    width: 12px;
+  }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text p {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 180px;
   }
 }
