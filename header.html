@@ -31,7 +31,13 @@
           </ul>
         </div>
         <div class="header_right">
-          <form class="search_bar">
+          <form
+            id="search_form_pc"
+            name="search_bar_pc"
+            method="#"
+            action="post"
+            class="search_bar"
+          >
             <button class="search_btn">
               <img src="./imgs/h_search.svg" alt="search" />
             </button>
@@ -50,14 +56,31 @@
             <img src="./imgs/h_signup_m.svg" alt="search" />
             <img src="./imgs/h_signup_m_w.svg" alt="search" />
           </a>
-          <div class="m_trigger_bar">
+          <div class="trigger_bar_m">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
-        <div id="m_header_menu">
-          <div id="m_header_menuBox"></div>
+        <div id="header_menu_m">
+          <div id="header_menuBox"></div>
+        </div>
+        <div id="search_area_m">
+          <form
+            id="search_form_mb"
+            name="search_bar_mb"
+            method="#"
+            action="post"
+            class="search_bar"
+          >
+            <button class="search_btn">
+              <img src="./imgs/h_search.svg" alt="search" />
+            </button>
+            <input class="search_txt" type="text" placeholder="아티스트 검색" />
+          </form>
+          <button class="search_close_m">
+            <img src="./imgs/h_search__back_m.svg" alt="SearchCloseBtn" />
+          </button>
         </div>
       </div>
     </header>

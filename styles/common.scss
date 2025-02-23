@@ -7,6 +7,38 @@
 @import "./reset.scss";
 @import "./variables.scss";
 
+@mixin header_search_style {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  .search_btn {
+    border: none;
+    background: none;
+    font-size: 0;
+    cursor: pointer;
+    img {
+      width: 16px;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+  .search_txt {
+    width: 180px;
+    padding-bottom: 3px;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 1px solid map-get($map: $color, $key: gray_9);
+    font-family: map-get($map: $font, $key: pretendard);
+    background: none;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: map-get($map: $color, $key: gray_de);
+    }
+  }
+}
+
 // common
 html {
   font-size: 62.5%;
@@ -35,7 +67,7 @@ body {
   width: 100%;
   transform: translateY(0);
   transition: transform 0.3s;
-  background: transparent;
+  background: map-get($map: $color, $key: light);
   &.scroll {
     &::before {
       content: "";
@@ -96,35 +128,7 @@ body {
       align-items: center;
       gap: 16px;
       .search_bar {
-        display: flex;
-        align-items: flex-start;
-        gap: 8px;
-        .search_btn {
-          border: none;
-          background: none;
-          font-size: 0;
-          cursor: pointer;
-          img {
-            width: 16px;
-            aspect-ratio: 1;
-            object-fit: cover;
-          }
-        }
-        .search_txt {
-          width: 180px;
-          padding-bottom: 3px;
-          font-size: 1.4rem;
-          border: none;
-          border-bottom: 1px solid map-get($map: $color, $key: gray_9);
-          font-family: map-get($map: $font, $key: pretendard);
-          background: none;
-          &:focus {
-            outline: none;
-          }
-          &::placeholder {
-            color: map-get($map: $color, $key: gray_de);
-          }
-        }
+        @include header_search_style();
       }
       .signup_btn {
         padding: 7px 15px 10px;
@@ -146,11 +150,18 @@ body {
     .header_right_m {
       display: none;
     }
-    #m_header_menu {
+    #header_menu_m {
       display: none;
+    }
+    #search_area_m {
+      display: none;
+      .search_bar {
+        @include header_search_style();
+      }
     }
   }
   &.bg_black {
+    background: transparent;
     .header_wrap {
       .header_left {
         .header_logo {
@@ -232,6 +243,7 @@ body {
           font-weight: 300;
           line-height: 1.4;
           color: map-get($map: $color, $key: light);
+          word-break: keep-all;
         }
       }
     }

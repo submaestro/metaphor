@@ -20,6 +20,7 @@
 .chart_section {
   margin-top: 115px;
   .wrapper {
+    // chart_top
     .chart_top {
       display: flex;
       justify-content: space-between;
@@ -69,19 +70,18 @@
         }
       }
       .head_info {
-        width: map-get($map: $chartWidth, $key: info);
+        width: 57%;
         text-align: left;
         padding-left: 40px;
       }
       .head_album {
-        width: map-get($map: $chartWidth, $key: album);
-        // text-align: left;
+        width: 17%;
       }
       .head_favorite {
-        width: map-get($map: $chartWidth, $key: favorite);
+        width: 14%;
       }
       .head_play {
-        width: map-get($map: $chartWidth, $key: play);
+        width: 12%;
       }
     }
 
@@ -91,9 +91,10 @@
         display: flex;
         align-items: flex-start;
         position: relative;
+        height: 130px;
         padding: 30px 0;
         transition: all 0.4s;
-        height: 130px;
+
         .ranking {
           position: absolute;
           z-index: -1;
@@ -104,7 +105,7 @@
           align-items: center;
           gap: 44px;
           h4 {
-            font-size: 20px;
+            font-size: 2rem;
             font-weight: 400;
           }
           .icon {
@@ -121,12 +122,12 @@
         }
 
         .music_info {
-          width: map-get($map: $chartWidth, $key: info);
+          width: 57%;
           display: flex;
           justify-content: space-between;
           align-items: center;
           figure {
-            width: map-get($map: $albumCover, $key: pc);
+            width: 70px;
             aspect-ratio: 1;
             font-size: 0;
             img {
@@ -152,14 +153,16 @@
         }
 
         .music_album {
-          width: map-get($map: $chartWidth, $key: album);
-          height: map-get($map: $albumCover, $key: pc);
+          width: 17%;
+          height: 70px;
           display: flex;
           justify-content: center;
           align-items: center;
           p {
+            font-size: 1.6rem;
             color: map-get($map: $color, $key: gray_6);
             text-align: center;
+            word-break: keep-all;
             line-height: 1.3;
             @include text_over();
             line-clamp: 2;
@@ -168,8 +171,8 @@
         }
 
         .music_favorite {
-          width: map-get($map: $chartWidth, $key: favorite);
-          height: map-get($map: $albumCover, $key: pc);
+          width: 14%;
+          height: 70px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -194,11 +197,17 @@
         }
 
         .music_player {
-          width: map-get($map: $chartWidth, $key: play);
-          height: map-get($map: $albumCover, $key: pc);
+          width: 12%;
+          height: 70px;
           display: flex;
           align-items: center;
           justify-content: center;
+          button {
+            font-size: 0;
+            img {
+              width: 35px;
+            }
+          }
         }
 
         .chart_bg {
@@ -266,6 +275,7 @@
 }
 
 .paging_area {
+  margin-top: 50px;
   .paging_wrap {
     display: flex;
     justify-content: center;

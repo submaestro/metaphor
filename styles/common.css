@@ -54,7 +54,7 @@ body {
   width: 100%;
   transform: translateY(0);
   transition: transform 0.3s;
-  background: transparent;
+  background: #fff;
 }
 #header.scroll::before {
   content: "";
@@ -63,8 +63,7 @@ body {
   z-index: -1;
   width: 100vw;
   height: 100px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 #header.hidden {
   transform: translateY(-100%);
@@ -87,8 +86,7 @@ body {
 }
 #header .header_wrap .header_left .header_logo a img {
   width: 197px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #header .header_wrap .header_left .header_logo a img:nth-child(2) {
   display: none;
@@ -127,8 +125,7 @@ body {
 #header .header_wrap .header_right .search_bar .search_btn img {
   width: 16px;
   aspect-ratio: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #header .header_wrap .header_right .search_bar .search_txt {
   width: 180px;
@@ -141,9 +138,6 @@ body {
 }
 #header .header_wrap .header_right .search_bar .search_txt:focus {
   outline: none;
-}
-#header .header_wrap .header_right .search_bar .search_txt::-moz-placeholder {
-  color: #dedede;
 }
 #header .header_wrap .header_right .search_bar .search_txt::placeholder {
   color: #dedede;
@@ -167,8 +161,45 @@ body {
 #header .header_wrap .header_right_m {
   display: none;
 }
-#header .header_wrap #m_header_menu {
+#header .header_wrap #header_menu_m {
   display: none;
+}
+#header .header_wrap #search_area_m {
+  display: none;
+}
+#header .header_wrap #search_area_m .search_bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+#header .header_wrap #search_area_m .search_bar .search_btn {
+  border: none;
+  background: none;
+  font-size: 0;
+  cursor: pointer;
+}
+#header .header_wrap #search_area_m .search_bar .search_btn img {
+  width: 16px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+#header .header_wrap #search_area_m .search_bar .search_txt {
+  width: 180px;
+  padding-bottom: 3px;
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: pretendard;
+  background: none;
+}
+#header .header_wrap #search_area_m .search_bar .search_txt:focus {
+  outline: none;
+}
+#header .header_wrap #search_area_m .search_bar .search_txt::placeholder {
+  color: #dedede;
+}
+#header.bg_black {
+  background: transparent;
 }
 #header.bg_black .header_wrap .header_left .header_logo a img:nth-child(1) {
   display: none;
@@ -234,4 +265,5 @@ body {
   font-weight: 300;
   line-height: 1.4;
   color: #fff;
+  word-break: keep-all;
 }

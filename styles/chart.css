@@ -54,7 +54,7 @@ body {
   width: 100%;
   transform: translateY(0);
   transition: transform 0.3s;
-  background: transparent;
+  background: #fff;
 }
 #header.scroll::before {
   content: "";
@@ -63,8 +63,7 @@ body {
   z-index: -1;
   width: 100vw;
   height: 100px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 #header.hidden {
   transform: translateY(-100%);
@@ -87,8 +86,7 @@ body {
 }
 #header .header_wrap .header_left .header_logo a img {
   width: 197px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #header .header_wrap .header_left .header_logo a img:nth-child(2) {
   display: none;
@@ -127,8 +125,7 @@ body {
 #header .header_wrap .header_right .search_bar .search_btn img {
   width: 16px;
   aspect-ratio: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #header .header_wrap .header_right .search_bar .search_txt {
   width: 180px;
@@ -141,9 +138,6 @@ body {
 }
 #header .header_wrap .header_right .search_bar .search_txt:focus {
   outline: none;
-}
-#header .header_wrap .header_right .search_bar .search_txt::-moz-placeholder {
-  color: #dedede;
 }
 #header .header_wrap .header_right .search_bar .search_txt::placeholder {
   color: #dedede;
@@ -170,6 +164,43 @@ body {
 #header .header_wrap #m_header_menu {
   display: none;
 }
+#header .header_wrap .m_search_area {
+  display: none;
+}
+#header .header_wrap .m_search_area .search_bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+#header .header_wrap .m_search_area .search_bar .search_btn {
+  border: none;
+  background: none;
+  font-size: 0;
+  cursor: pointer;
+}
+#header .header_wrap .m_search_area .search_bar .search_btn img {
+  width: 16px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+#header .header_wrap .m_search_area .search_bar .search_txt {
+  width: 180px;
+  padding-bottom: 3px;
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: pretendard;
+  background: none;
+}
+#header .header_wrap .m_search_area .search_bar .search_txt:focus {
+  outline: none;
+}
+#header .header_wrap .m_search_area .search_bar .search_txt::placeholder {
+  color: #dedede;
+}
+#header.bg_black {
+  background: transparent;
+}
 #header.bg_black .header_wrap .header_left .header_logo a img:nth-child(1) {
   display: none;
 }
@@ -184,6 +215,57 @@ body {
 }
 #header.bg_black .header_wrap .header_right .search_bar .search_txt {
   color: #fff;
+}
+
+.sub_visual {
+  padding-top: 100px;
+  margin: 0 35px;
+}
+.sub_visual .sub_visual_wrap {
+  width: 100%;
+  height: 320px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: url("../imgs/sub_visual_bg.jpg") no-repeat center/cover;
+}
+.sub_visual .sub_visual_wrap .wrapper {
+  height: 100%;
+  padding-bottom: 55px;
+}
+.sub_visual .sub_visual_wrap .wrapper .sub_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 18px;
+}
+.sub_visual .sub_visual_wrap .wrapper .sub_text h2 {
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+}
+.sub_visual .sub_visual_wrap .wrapper .sub_text h2 span {
+  color: #03d8c5;
+  position: relative;
+}
+.sub_visual .sub_visual_wrap .wrapper .sub_text h2 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(100% + 8px);
+  width: 22px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #03d8c5;
+  opacity: 0.6;
+}
+.sub_visual .sub_visual_wrap .wrapper .sub_text p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #fff;
+  word-break: keep-all;
 }
 
 .chart_section {
@@ -250,9 +332,9 @@ body {
   display: flex;
   align-items: flex-start;
   position: relative;
+  height: 130px;
   padding: 30px 0;
   transition: all 0.4s;
-  height: 130px;
 }
 .chart_section .wrapper .chart_list li .ranking {
   position: absolute;
@@ -265,7 +347,7 @@ body {
   gap: 44px;
 }
 .chart_section .wrapper .chart_list li .ranking h4 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }
 .chart_section .wrapper .chart_list li .ranking .icon {
@@ -323,8 +405,10 @@ body {
   align-items: center;
 }
 .chart_section .wrapper .chart_list li .music_album p {
+  font-size: 1.6rem;
   color: #666;
   text-align: center;
+  word-break: keep-all;
   line-height: 1.3;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -365,6 +449,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.chart_section .wrapper .chart_list li .music_player button {
+  font-size: 0;
+}
+.chart_section .wrapper .chart_list li .music_player button img {
+  width: 35px;
 }
 .chart_section .wrapper .chart_list li .chart_bg {
   width: calc(100% + (100vw - 1100px) / 2 + 150px);
@@ -413,6 +503,9 @@ body {
   opacity: 1;
 }
 
+.paging_area {
+  margin-top: 50px;
+}
 .paging_area .paging_wrap {
   display: flex;
   justify-content: center;
