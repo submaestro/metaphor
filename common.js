@@ -54,7 +54,7 @@ search_close_m.addEventListener("click", () => {
   search_area_m.classList.remove("active");
 });
 
-// 헤더 검색 이벤트 (서버제출 일단 막기)
+// 헤더 검색 이벤트 (서버제출x)
 const header_search = (e) => {
   e.preventDefault();
 };

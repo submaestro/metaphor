@@ -312,19 +312,12 @@
       .header_left {
         #gnb {
           &.active {
-            right: calc(65vw - 45px);
-            transform: translateX(100%);
             li {
               a {
                 font-size: 1.7rem;
               }
             }
           }
-        }
-      }
-      #m_header_menu {
-        #m_header_menuBox {
-          width: 65vw;
         }
       }
     }

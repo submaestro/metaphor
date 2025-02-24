@@ -161,29 +161,29 @@ body {
 #header .header_wrap .header_right_m {
   display: none;
 }
-#header .header_wrap #m_header_menu {
+#header .header_wrap #header_menu_m {
   display: none;
 }
-#header .header_wrap .m_search_area {
+#header .header_wrap #search_area_m {
   display: none;
 }
-#header .header_wrap .m_search_area .search_bar {
+#header .header_wrap #search_area_m .search_bar {
   display: flex;
   align-items: flex-start;
   gap: 8px;
 }
-#header .header_wrap .m_search_area .search_bar .search_btn {
+#header .header_wrap #search_area_m .search_bar .search_btn {
   border: none;
   background: none;
   font-size: 0;
   cursor: pointer;
 }
-#header .header_wrap .m_search_area .search_bar .search_btn img {
+#header .header_wrap #search_area_m .search_bar .search_btn img {
   width: 16px;
   aspect-ratio: 1;
   object-fit: cover;
 }
-#header .header_wrap .m_search_area .search_bar .search_txt {
+#header .header_wrap #search_area_m .search_bar .search_txt {
   width: 180px;
   padding-bottom: 3px;
   font-size: 1.4rem;
@@ -192,10 +192,10 @@ body {
   font-family: pretendard;
   background: none;
 }
-#header .header_wrap .m_search_area .search_bar .search_txt:focus {
+#header .header_wrap #search_area_m .search_bar .search_txt:focus {
   outline: none;
 }
-#header .header_wrap .m_search_area .search_bar .search_txt::placeholder {
+#header .header_wrap #search_area_m .search_bar .search_txt::placeholder {
   color: #dedede;
 }
 #header.bg_black {

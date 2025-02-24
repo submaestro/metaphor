@@ -240,15 +240,8 @@
   }
 }
 @media screen and (max-width: 500px) {
-  #header .header_wrap .header_left #gnb.active {
-    right: calc(65vw - 45px);
-    transform: translateX(100%);
-  }
   #header .header_wrap .header_left #gnb.active li a {
     font-size: 1.7rem;
-  }
-  #header .header_wrap #m_header_menu #m_header_menuBox {
-    width: 65vw;
   }
 }
 @media screen and (max-width: 1440px) {
