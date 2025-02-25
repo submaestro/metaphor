@@ -359,6 +359,27 @@ body {
 .chart_section .wrapper .chart_list li .ranking .icon img:nth-child(2) {
   display: none;
 }
+.chart_section .wrapper .chart_list li .ranking .icon img:nth-child(3) {
+  display: none;
+}
+.chart_section .wrapper .chart_list li .ranking .icon.up img {
+  transform: rotate(0);
+}
+.chart_section .wrapper .chart_list li .ranking .icon.down img {
+  transform: rotate(180deg);
+}
+.chart_section .wrapper .chart_list li .ranking .icon.none img {
+  transform: rotate(0);
+}
+.chart_section .wrapper .chart_list li .ranking .icon.none img:nth-child(1) {
+  display: none;
+}
+.chart_section .wrapper .chart_list li .ranking .icon.none img:nth-child(2) {
+  display: none;
+}
+.chart_section .wrapper .chart_list li .ranking .icon.none img:nth-child(3) {
+  display: inline-block;
+}
 .chart_section .wrapper .chart_list li .music_info {
   width: 57%;
   display: flex;
@@ -439,6 +460,12 @@ body {
 .chart_section .wrapper .chart_list li .music_favorite button img:nth-child(2) {
   display: none;
 }
+.chart_section .wrapper .chart_list li .music_favorite button.click img:nth-child(1) {
+  display: none;
+}
+.chart_section .wrapper .chart_list li .music_favorite button.click img:nth-child(2) {
+  display: inline-block;
+}
 .chart_section .wrapper .chart_list li .music_favorite span {
   font-size: 1.5rem;
   color: #666;
@@ -455,6 +482,18 @@ body {
 }
 .chart_section .wrapper .chart_list li .music_player button img {
   width: 35px;
+}
+.chart_section .wrapper .chart_list li .music_player button img:nth-child(1) {
+  display: inline-block;
+}
+.chart_section .wrapper .chart_list li .music_player button img:nth-child(2) {
+  display: none;
+}
+.chart_section .wrapper .chart_list li .music_player button.playing img:nth-child(1) {
+  display: none;
+}
+.chart_section .wrapper .chart_list li .music_player button.playing img:nth-child(2) {
+  display: inline-block;
 }
 .chart_section .wrapper .chart_list li .chart_bg {
   width: calc(100% + (100vw - 1100px) / 2 + 150px);
@@ -483,10 +522,10 @@ body {
 .chart_section .wrapper .chart_list li:hover .ranking .rank_num {
   color: #fff;
 }
-.chart_section .wrapper .chart_list li:hover .ranking .icon img:nth-child(1) {
+.chart_section .wrapper .chart_list li:hover .ranking .icon.up img:nth-child(1), .chart_section .wrapper .chart_list li:hover .ranking .icon.down img:nth-child(1) {
   display: none;
 }
-.chart_section .wrapper .chart_list li:hover .ranking .icon img:nth-child(2) {
+.chart_section .wrapper .chart_list li:hover .ranking .icon.up img:nth-child(2), .chart_section .wrapper .chart_list li:hover .ranking .icon.down img:nth-child(2) {
   display: inline-block;
 }
 .chart_section .wrapper .chart_list li:hover .music_names h4,
