@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "albumimg": "./imgs/chart/albumcover_plave_dash.jpg",
+      "title": "Dash",
+      "singer": "PLAVE",
+      "album": "Caligo Pt.1",
+      "favorite": 48394,
+      "player_music": "./musics/PLAVE 'Dash' MV.mp3"
+    },
+    {
+      "albumimg": "./imgs/chart/albumcover_plave_pump.jpg",
+      "title": "Pump Up The Volume!",
+      "singer": "PLAVE",
+      "album": "Pump Up The Volume!",
+      "favorite": 63154,
+      "player_music": "./musics/PLAVE 'Pump Up The Volume!'.mp3"
+    },
+    {
+      "albumimg": "./imgs/chart/albumcover_plave_way4luv.jpg",
+      "title": "WAY 4 LUV",
+      "singer": "PLAVE",
+      "album": "ASTERUM : 134-1",
+      "favorite": 75373,
+      "player_music": "./musics/PLAVE (플레이브) 'WAY 4 LUV' Official Audio.mp3"
+    }
+  ]
+}

@@ -1,37 +1,6 @@
 /*color*/
 /* font */
 /*header height*/
-.chart_section {
-  margin-top: 115px;
-}
-.chart_section .wrapper .chart_top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.chart_section .wrapper .chart_top .chart_cate {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.chart_section .wrapper .chart_top .chart_cate li a {
-  display: block;
-  font-size: 1.6rem;
-  padding: 10px 20px;
-  border: 1px solid #222;
-  border-radius: 100px;
-  background: #fff;
-}
-.chart_section .wrapper .chart_top .chart_cate li.active a {
-  font-weight: 600;
-  color: #fff;
-  background: #222;
-}
-.chart_section .wrapper .chart_top .chart_realtime {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #666;
-}
 .chart_section .wrapper .chart_head {
   margin-top: 25px;
   height: 90px;
@@ -273,79 +242,4 @@
 }
 .chart_section .wrapper .chart_list li:hover .chart_bg {
   opacity: 1;
-}
-
-.paging_area {
-  margin-top: 50px;
-}
-.paging_area .paging_wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-}
-.paging_area .paging_wrap .paging_list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-}
-.paging_area .paging_wrap .paging_list li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  font-size: 1.9rem;
-}
-.paging_area .paging_wrap .paging_list li.active a {
-  background: #222;
-}
-.paging_area .paging_wrap .paging_list li.active a span {
-  color: #fff;
-  font-weight: 300;
-}
-.paging_area .paging_wrap .paging_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 1px solid #dedede;
-}
-.paging_area .paging_wrap .paging_btn span {
-  font-size: 2.2rem;
-  color: #666;
-  transform: translateX(3%);
-}
-
-.chart_section.detailinfo_chart {
-  margin-top: 0;
-}
-.chart_section.detailinfo_chart .wrapper .chart_head {
-  margin-top: 0;
-}
-.chart_section.detailinfo_chart .wrapper .chart_head h3 {
-  color: #fff;
-}
-.chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
-  padding-left: 40px;
-}
-.chart_section.detailinfo_chart .wrapper .chart_list li .music_info .music_names h4 {
-  color: #fff;
-}
-.chart_section.detailinfo_chart .wrapper .chart_list li .music_info .music_names h5 {
-  color: #999;
-}
-.chart_section.detailinfo_chart .wrapper .chart_list li .music_album p {
-  color: #999;
-}
-.chart_section.detailinfo_chart .wrapper .chart_list li .music_favorite span {
-  width: 52px;
-  color: #fff;
-}
-.chart_section.detailinfo_chart .wrapper .chart_list li:hover {
-  height: inherit;
 }

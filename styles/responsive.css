@@ -423,6 +423,7 @@
     width: 16px;
   }
   .chart_section .wrapper .chart_list li .music_favorite span {
+    width: 51px;
     font-size: 1.3rem;
   }
   .chart_section .wrapper .chart_list li .music_player {
@@ -548,6 +549,7 @@
     width: 13px;
   }
   .chart_section .wrapper .chart_list li .music_favorite span {
+    width: 44px;
     font-size: 1.1rem;
   }
   .chart_section .wrapper .chart_list li .music_player {
@@ -636,5 +638,65 @@
   }
   .chart_section .wrapper .chart_list li:hover {
     height: 130px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .chart_section.detailinfo_chart {
+    margin-top: inherit;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_head {
+    margin-top: 0;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 57%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .chart_section.detailinfo_chart {
+    margin-top: inherit;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 57%;
+    padding-left: calc(10px + 3vw);
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_favorite span {
+    width: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .chart_section.detailinfo_chart {
+    margin-top: inherit;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 53%;
+    padding-left: 14px;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_favorite span {
+    width: 39px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .chart_section.detailinfo_chart {
+    margin-top: inherit;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 66%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .chart_section.main_chart5 {
+    margin-top: inherit;
+  }
+  .chart_section.main_chart5 .wrapper .chart_head {
+    margin-top: inherit;
+  }
+}
+@media screen and (max-width: 767px) {
+  .chart_section.main_chart5 {
+    margin-top: inherit;
+  }
+  .chart_section.main_chart5 .wrapper .chart_head {
+    margin-top: inherit;
   }
 }
