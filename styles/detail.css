@@ -16,26 +16,23 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
 /*color*/
 /* font */
 /*header height*/
-/* common */
-html {
-  font-size: 62.5%;
+/* wrapper exam */
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    width: auto;
+    margin: 0 35px;
+  }
 }
-
-body {
-  font-size: 1.6rem;
-  font-family: pretendard;
-  color: #222;
-  position: relative;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 1100px;
-}
-
 .detail_hr {
   width: 1100px;
   height: 1px;
@@ -80,23 +77,38 @@ body {
   background: linear-gradient(180deg, rgb(37, 112, 181) 0%, rgb(0, 0, 0) 100%);
 }
 #detail_page .detail_main_section {
-  height: 1100px;
+  padding-top: 100px;
   margin-bottom: 150px;
+  border: 1px solid #f00;
 }
 #detail_page .detail_main_section .detail_main {
   position: relative;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
-#detail_page .detail_main_section .detail_main > img {
-  height: 700px;
+#detail_page .detail_main_section .detail_main .detail_main_img {
+  width: 100%;
+  height: 1000px;
+  border: 1px solid #f00;
   border-radius: 40px 40px 0 0;
   background: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#detail_page .detail_main_section .detail_main .detail_main_img img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner {
-  height: 400px;
+  width: 100%;
+  height: 100%;
   background: #fff;
   border-radius: 0 0 40px 40px;
   display: flex;
@@ -105,10 +117,11 @@ body {
   gap: 40px;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text {
-  width: 750px;
-  top: 30px;
+  width: 80%;
+  bottom: 100px;
   left: 60px;
   position: absolute;
+  word-break: keep-all;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text p {
   font-size: 1.6rem;
@@ -151,7 +164,7 @@ body {
   cursor: pointer;
   transition: all 0.4s;
 }
-#detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button > img {
+#detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button img {
   width: 16px;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button span {
@@ -175,10 +188,10 @@ body {
   color: #fff;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner > img {
-  right: 50px;
-  bottom: 70px;
+  right: 10%;
+  bottom: 10%;
   position: absolute;
-  width: 193px;
+  width: 20%;
 }
 #detail_page .detail_introduce_section {
   margin-bottom: 150px;
@@ -237,6 +250,7 @@ body {
   overflow: hidden;
 }
 #detail_page .detail_MV_section .plave_official_MV .youtube iframe {
+  max-width: 100%;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -305,13 +319,13 @@ body {
   font-weight: 200;
   color: #fff;
 }
-#detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart i {
-  font-size: 1.5rem;
-  color: #03d8c5;
+#detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart img {
+  cursor: pointer;
+  width: 17px;
 }
 #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart span {
   font-size: 1.6rem;
-  color: #fff;
+  color: #03d8c5;
 }
 #detail_page .detail_hr {
   margin-bottom: 33px;
@@ -346,7 +360,7 @@ body {
   display: block;
 }
 #detail_page #modal_section {
-  z-index: 3;
+  z-index: 4;
   display: none;
   position: fixed;
   top: 10vh;
@@ -363,36 +377,86 @@ body {
   height: 100%;
   border-radius: 40px;
   background: linear-gradient(180deg, rgb(37, 112, 181) 0%, rgb(0, 0, 0) 100%);
+}
+#detail_page #modal_section .modal .mslide_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#detail_page #modal_section .modal .mslide_wrapper .mslides {
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -850px;
+  gap: 100px;
+}
+#detail_page #modal_section .modal .mslide_wrapper .mslides.animated {
+  transition: all 0.5s;
+}
+#detail_page #modal_section .modal .mslide_wrapper .mslides li {
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 70px;
 }
-#detail_page #modal_section .modal .modal_img img {
-  width: 250px;
-  border-radius: 24px;
-  opacity: 0.7;
+#detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
 }
-#detail_page #modal_section .modal .modal_text {
-  width: 500px;
+#detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_text {
+  top: 440px;
+  position: absolute;
+  width: 300px;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 1;
 }
-#detail_page #modal_section .modal .modal_text h2 {
+#detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_text h2 {
   font-size: 3.3rem;
 }
-#detail_page #modal_section .modal .modal_text h3 {
+#detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_text h3 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-#detail_page #modal_section .modal .modal_text p {
+#detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_text p {
+  word-break: keep-all;
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 2.4rem;
   text-align: center;
+}
+#detail_page #modal_section .modal .modal_slide_arrow {
+  position: absolute;
+  display: flex;
+  gap: 480px;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#detail_page #modal_section .modal .modal_slide_arrow i {
+  color: #fff;
+  font-size: 4rem;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+#detail_page #modal_section .modal .modal_slide_arrow i:hover {
+  opacity: 1;
 }
 #detail_page #modal_section .modal .modal_close {
   width: 30px;

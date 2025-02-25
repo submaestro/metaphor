@@ -3,21 +3,12 @@
 @import "./reset.scss";
 @import "./variables.scss";
 
-/* common */
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: map-get($map: $font, $key: pretendard);
-  color: map-get($map: $color, $key: dark);
-  position: relative;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 1100px;
+/* wrapper exam */
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    width: auto;
+    margin: 0 35px;
+  }
 }
 
 .detail_hr {
@@ -70,23 +61,37 @@ body {
 
   .detail_main_section {
     // position: relative;
-    height: 1100px;
+    padding-top: 100px;
     margin-bottom: 150px;
+    border: 1px solid #f00;
 
     .detail_main {
       position: relative;
       width: 100%;
-      height: 100%;
-
       display: flex;
       flex-direction: column;
-      & > img {
-        height: 700px;
+
+      .detail_main_img {
+        width: 100%;
+        height: 1000px;
+        border: 1px solid #f00;
         border-radius: 40px 40px 0 0;
         background: map-get($map: $color, $key: light);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          object-fit: cover;
+        }
       }
       .detail_main_inner {
-        height: 400px;
+        width: 100%;
+        height: 100%;
         background: map-get($map: $color, $key: light);
         border-radius: 0 0 40px 40px;
         display: flex;
@@ -94,10 +99,11 @@ body {
         position: relative;
         gap: 40px;
         .detail_main_text {
-          width: 750px;
-          top: 30px;
+          width: 80%;
+          bottom: 100px;
           left: 60px;
           position: absolute;
+          word-break: keep-all;
           p {
             font-size: 1.6rem;
             line-height: 130%;
@@ -138,7 +144,7 @@ body {
             gap: 10px;
             cursor: pointer;
             transition: all 0.4s;
-            & > img {
+            img {
               width: 16px;
             }
             span {
@@ -164,10 +170,10 @@ body {
           }
         }
         & > img {
-          right: 50px;
-          bottom: 70px;
+          right: 10%;
+          bottom: 10%;
           position: absolute;
-          width: 193px;
+          width: 20%;
         }
       }
     }
@@ -231,6 +237,7 @@ body {
         border-radius: 20px;
         overflow: hidden;
         iframe {
+          max-width: 100%;
           position: absolute;
           width: 100%;
           height: 100%;
@@ -310,13 +317,13 @@ body {
           }
         }
         .detail_fantalk_heart {
-          i {
-            font-size: 1.5rem;
-            color: map-get($map: $color, $key: main);
+          img {
+            cursor: pointer;
+            width: 17px;
           }
           span {
             font-size: 1.6rem;
-            color: map-get($map: $color, $key: light);
+            color: map-get($map: $color, $key: main);
           }
         }
       }
@@ -357,8 +364,9 @@ body {
       display: block;
     }
   }
+
   #modal_section {
-    z-index: 3;
+    z-index: 4;
     display: none;
     position: fixed;
     top: 10vh;
@@ -378,37 +386,97 @@ body {
         rgba(37, 112, 181, 1) 0%,
         rgba(0, 0, 0, 1) 100%
       );
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 70px;
-      .modal_img {
-        img {
-          width: 250px;
-          border-radius: 24px;
-          opacity: 0.7;
+
+      .mslide_wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .mslides {
+          position: absolute;
+          top: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: -850px;
+          gap: 100px;
+          &.animated {
+            transition: all 0.5s;
+          }
+
+          li {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+            // &.active {
+            //   opacity: 1;
+            //   transform: scale(1.2);
+            // }
+
+            .modal_img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              // opacity: 0.7;
+              overflow: hidden;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .modal_text {
+              top: 440px;
+              position: absolute;
+              width: 300px;
+              color: map-get($map: $color, $key: light);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              opacity: 1;
+              // &.mtext_middle {
+              //   opacity: 0;
+              // }
+
+              h2 {
+                font-size: 3.3rem;
+              }
+              h3 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+              }
+              p {
+                word-break: keep-all;
+                font-size: 1.6rem;
+                font-weight: 200;
+                line-height: 2.4rem;
+                text-align: center;
+              }
+            }
+          }
         }
       }
-      .modal_text {
-        width: 500px;
-        color: map-get($map: $color, $key: light);
+      .modal_slide_arrow {
+        position: absolute;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2 {
-          font-size: 3.3rem;
-        }
-        h3 {
-          font-size: 2.5rem;
-          margin-bottom: 30px;
-        }
-        p {
-          font-size: 1.6rem;
-          font-weight: 200;
-          line-height: 2.4rem;
-          text-align: center;
+        gap: 480px;
+        top: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+        i {
+          color: map-get($map: $color, $key: light);
+          font-size: 4rem;
+          opacity: 0.5;
+          transition: all 0.4s;
+          &:hover {
+            opacity: 1;
+          }
         }
       }
       .modal_close {
