@@ -7,7 +7,6 @@ whiteheart.addEventListener("click", () => {
   let whiteheartcount = parseInt(whiteheartspan.innerText.replace(/,/g, ""));
 
   if (whiteheart.src.includes("imgs/icon_detailmain_whiteheartb.png")) {
-    console.log("click");
     whiteheart.src = "imgs/icon_detailmain_whiteheart.png";
     whiteheartcount += 1;
   } else {

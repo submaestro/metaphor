@@ -84,3 +84,22 @@ up_btn.addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
+
+// footer button bottom event
+document.addEventListener("scroll", function () {
+  const button = document.querySelector(".up_btn");
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY;
+  const documentHeight = document.documentElement.scrollHeight;
+  const footerThreshold = 240;
+
+  const maxBottom = documentHeight - footerThreshold - windowHeight;
+
+  if (scrollY >= maxBottom) {
+    button.style.position = "absolute";
+    button.style.bottom = `${footerThreshold}px`;
+  } else {
+    button.style.position = "fixed"; // 기본 상태 유지
+    button.style.bottom = "7vh"; // 기본 위치 유지
+  }
+});

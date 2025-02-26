@@ -6,6 +6,7 @@
 
 @import "./reset.scss";
 @import "./variables.scss";
+@import "./responsive.scss";
 
 @mixin header_search_style {
   display: flex;
@@ -252,21 +253,21 @@ body {
 
 /* footer */
 .footer {
-  // display: none;
   left: 0;
   background: map-get($map: $color, $key: dark);
   width: 100%;
   height: 214px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   .up_btn {
     width: 54px;
     height: 54px;
-    right: 102px;
+    right: 7vh;
     bottom: 7vh;
     position: fixed;
     opacity: 0;
-    transition: all 0.4s;
+    transition: opacity 0.4s;
     a {
       div {
         width: 100%;
@@ -286,10 +287,7 @@ body {
       opacity: 1;
     }
   }
-
   .footer_wrap {
-    width: 1100px;
-    margin: 0 auto;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -312,7 +310,16 @@ body {
         }
       }
       p {
-        font-size: 16px;
+        font-size: 1.6rem;
+      }
+    }
+    .footer_logo {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
       }
     }
   }
