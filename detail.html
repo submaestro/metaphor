@@ -3,35 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/c268412579.js"
       crossorigin="anonymous"
     ></script>
+    <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/detail.css" />
-    <title>Header</title>
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script defer src="./detail.js"></script>
+    <script defer src="./common.js"></script>
+    <title>Detail</title>
   </head>
   <body>
     <main id="detail_page">
       <!-- header -->
-      <!-- <header class="header">
+      <header id="header" class="bg_black">
         <div class="header_wrap">
           <div class="header_left">
             <h1 class="header_logo">
-              <a href="#">
-                <img src="./imgs/logo.png" alt="logo" />
+              <a href="./index.html">
+                <img src="./imgs/logo.svg" alt="logo" />
+                <img src="./imgs/logo_w.svg" alt="logo_white" />
               </a>
             </h1>
-            <ul class="gnb">
+            <ul id="gnb">
               <li><a href="#">ARTIST</a></li>
-              <li><a href="#">MUSIC</a></li>
+              <li><a href="./chart.html">MUSIC</a></li>
               <li><a href="#">MAGAZINE</a></li>
             </ul>
           </div>
           <div class="header_right">
-            <form class="search_bar">
+            <form
+              id="search_form_pc"
+              name="search_bar_pc"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
               <button class="search_btn">
-                <img src="./imgs/h_search.png" alt="search" />
+                <img src="./imgs/h_search.svg" alt="search" />
               </button>
               <input
                 class="search_txt"
@@ -43,8 +55,47 @@
               <span>sign up</span>
             </a>
           </div>
+          <div class="header_right_m">
+            <button class="search_btn_m">
+              <img src="./imgs/h_search_m.svg" alt="search" />
+              <img src="./imgs/h_search_m_w.svg" alt="search" />
+            </button>
+            <a class="signup_btn_m" href="#">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            </a>
+            <div class="trigger_bar_m">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="header_menu_m">
+            <div id="header_menuBox"></div>
+          </div>
+          <div id="search_area_m">
+            <form
+              id="search_form_mb"
+              name="search_bar_mb"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <button class="search_close_m">
+              <img src="./imgs/h_search__back_m.svg" alt="SearchCloseBtn" />
+            </button>
+          </div>
         </div>
-      </header> -->
+      </header>
 
       <div class="main_color">
         <div class="main_gradient"></div>
@@ -55,7 +106,9 @@
       <section class="detail_main_section">
         <div class="wrapper">
           <div class="detail_main">
-            <img src="./imgs/Plave_group.jpg" alt="Plave_group" />
+            <div class="detail_main_img">
+              <img src="./imgs/Plave_group.jpg" alt="Plave_group" />
+            </div>
             <div class="detail_main_inner">
               <div class="detail_main_text">
                 <p>
@@ -90,12 +143,13 @@
                 </button>
                 <button>
                   <img
-                    src="./imgs/icon_detailmain_heart.png"
+                    class="whiteheart"
+                    src="./imgs/icon_detailmain_whiteheartb.png"
                     alt="detailmain_heart"
                   />
-                  <span>434,086</span>
+                  <span class="whiteheartspan"> 434,086</span>
                 </button>
-                <button>
+                <button class="modal_open">
                   <span>아티스트 정보</span>
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -120,27 +174,27 @@
           </div>
           <div class="detail_introduce_mem">
             <div class="plave_mem1">
-              <img src="./imgs/members/mem_yejun.jpg" alt="mem_yejun" />
+              <img src="./imgs/members/mem_1.png" alt="mem_yejun" />
               <b>YEJUN</b>
               <span>예준</span>
             </div>
             <div class="plave_mem2">
-              <img src="./imgs/members/mem-noah.jpg" alt="mem-noah" />
+              <img src="./imgs/members/mem_2.png" alt="mem-noah" />
               <b>NOAH</b>
               <span>노아</span>
             </div>
             <div class="plave_mem3">
-              <img src="./imgs/members/mem_bamby.jpg" alt="mem_bamby" />
+              <img src="./imgs/members/mem_3.png" alt="mem_bamby" />
               <b>BAMBY</b>
               <span>밤비</span>
             </div>
             <div class="plave_mem4">
-              <img src="./imgs/members/mem_eunho.jpg" alt="mem_eunho" />
+              <img src="./imgs/members/mem_4.png" alt="mem_eunho" />
               <b>EUNHO</b>
               <span>은호</span>
             </div>
             <div class="plave_mem5">
-              <img src="./imgs/members/mem_hamin.jpg" alt="mem_hamin" />
+              <img src="./imgs/members/mem_5.png" alt="mem_hamin" />
               <b>HAMIN</b>
               <span>하민</span>
             </div>
@@ -164,8 +218,6 @@
             <div class="plave_official_MV">
               <div class="youtube">
                 <iframe
-                  width="560"
-                  height="315"
                   src="https://www.youtube.com/embed/EYG4ROejmyI?si=99Dul5v8nTiNGiSw"
                   title="YouTube video player"
                   frameborder="0"
@@ -180,15 +232,29 @@
       </section>
 
       <!-- detail_music_section -->
-      <section class="detail_music_section">
+      <section class="detail_music_section chart_section detailinfo_chart">
         <div class="wrapper">
           <div class="detail_music">
             <div class="detail_subtitle">
               <h3>PLAVE Music</h3>
               <i class="fa-solid fa-chevron-right"></i>
             </div>
-            <div class="detail_music_box"></div>
           </div>
+          <div class="chart_head">
+            <div class="head_info">
+              <h3>곡 정보</h3>
+            </div>
+            <div class="head_album">
+              <h3>앨범</h3>
+            </div>
+            <div class="head_favorite">
+              <h3>좋아요</h3>
+            </div>
+            <div class="head_play">
+              <h3>재생</h3>
+            </div>
+          </div>
+          <ul class="chart_list"></ul>
         </div>
       </section>
 
@@ -204,7 +270,7 @@
               <li>
                 <div class="youtube">
                   <iframe
-                    src="https://www.youtube.com/embed/gB6sMunf5Ws?si=ud2elGHtR2O_k9oF"
+                    src="https://www.youtube.com/embed/8DkKbA1l8SI?si=m37dWPsLQo77WVIx"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -213,14 +279,16 @@
                   ></iframe>
                 </div>
                 <p class="detail_media_text">
-                  [하이라이트] 3세대 MC와 함께하는 🎤 노래 가사 퀴즈쇼 🎶 |
-                  PLAVE Highlight Clip
+                  (SUB) [LASSGO PLAVE] EP.38 | 아스테룸에서 테라까지 🌏💫
+                  테라마블 🎲
                 </p>
               </li>
               <li>
                 <div class="youtube">
                   <iframe
-                    src="https://www.youtube.com/embed/GoS7xYkWiwc?si=MKakN53CGPnZeM6y"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/LDemgZcBj7o?si=qS-jHqFpTwqv9DOI"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -229,14 +297,14 @@
                   ></iframe>
                 </div>
                 <p class="detail_media_text">
-                  [하이라이트] 3세대 MC와 함께하는 🎤 노래 가사 퀴즈쇼 🎶 |
-                  PLAVE Highlight Clip
+                  PLAVE (플레이브)의 킬링보이스를 라이브로!ㅣ딩고뮤직ㅣDingo
+                  Music
                 </p>
               </li>
               <li>
                 <div class="youtube">
                   <iframe
-                    src="https://www.youtube.com/embed/2g5suTacBVY?si=fShbeY6owf_pw3Rl"
+                    src="https://www.youtube.com/embed/pBRnXwZIzSg?si=FoSeW4D2NQZtjC2M"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -245,8 +313,7 @@
                   ></iframe>
                 </div>
                 <p class="detail_media_text">
-                  [하이라이트] 3세대 MC와 함께하는 🎤 노래 가사 퀴즈쇼 🎶 |
-                  PLAVE Highlight Clip
+                  PLAVE(플레이브) 'Dash' Dance Practice
                 </p>
               </li>
             </ul>
@@ -270,8 +337,12 @@
                   <p>음중 1위 축하해🎉 💙💜💗❤️🖤</p>
                 </div>
                 <div class="detail_fantalk_heart">
-                  <i class="fas fa-heart"></i>
-                  <span>13</span>
+                  <img
+                    class="mintheart"
+                    src="./imgs/icon_detailmain_mintheartb.png"
+                    alt="heart"
+                  />
+                  <span class="mintheartspan">13</span>
                 </div>
               </div>
               <div class="detail_fantalk_content">
@@ -284,8 +355,12 @@
                   </p>
                 </div>
                 <div class="detail_fantalk_heart">
-                  <i class="fas fa-heart"></i>
-                  <span>3</span>
+                  <img
+                    class="mintheart"
+                    src="./imgs/icon_detailmain_mintheartb.png"
+                    alt="heart"
+                  />
+                  <span class="mintheartspan">3</span>
                 </div>
               </div>
               <div class="detail_fantalk_content">
@@ -298,8 +373,12 @@
                   </p>
                 </div>
                 <div class="detail_fantalk_heart">
-                  <i class="fas fa-heart"></i>
-                  <span>7</span>
+                  <img
+                    class="mintheart"
+                    src="./imgs/icon_detailmain_mintheartb.png"
+                    alt="heart"
+                  />
+                  <span class="mintheartspan">7</span>
                 </div>
               </div>
             </div>
@@ -309,7 +388,7 @@
 
       <!-- detail_hr -->
       <div class="wrapper">
-        <div class="detail_hr"></div>
+        <div class="detail_hr detail_end_hr"></div>
       </div>
 
       <!-- detail_sns_section -->
@@ -333,28 +412,114 @@
         </div>
       </section>
 
+      <!-- modal after -->
+      <div id="detail_blackbx"></div>
+      <section id="modal_section">
+        <div class="modal">
+          <div class="mslide_wrapper">
+            <ul class="mslides">
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_1.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>YEJUN</h2>
+                  <h3>예준</h3>
+                  <p>
+                    예준은 대한민국의 5인조 버추얼 보이그룹 PLAVE에서 리더이자,
+                    보컬과 프로듀싱을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_2.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>NOAH</h2>
+                  <h3>노아</h3>
+                  <p>
+                    노아는 대한민국의 5인조 버추얼 보이그룹 PLAVE에서 맏형이자,
+                    보컬과 프로듀싱을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_3.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>BAMBY</h2>
+                  <h3>밤비</h3>
+                  <p>
+                    밤비는 대한민국의 5인조 버추얼 보이그룹 PLAVE의 멤버로 그룹
+                    내 댄스와 보컬을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_4.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>EUNHO</h2>
+                  <h3>은호</h3>
+                  <p>
+                    은호는 대한민국의 5인조 버추얼 보이그룹 PLAVE의 멤버. 그룹
+                    내 랩, 보컬, 프로듀싱을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_5.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>HAMIN</h2>
+                  <h3>하민</h3>
+                  <p>
+                    하민은 대한민국의 5인조 버추얼 보이그룹 PLAVE의 멤버로 그룹
+                    내 랩과 댄스를 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal_slide_arrow">
+            <i class="fa-solid fa-chevron-left slide_left"></i>
+            <i class="fa-solid fa-chevron-right slide_right"></i>
+          </div>
+          <div class="modal_close">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
       <!-- footer -->
       <footer class="footer">
-        <div class="up_btn">
-          <a href="#">
-            <div class="up_arrow_container">
-              <i class="fas fa-chevron-up"></i>
-            </div>
-          </a>
-        </div>
-        <div class="footer_wrap">
-          <div class="footer_left">
-            <div class="footer_leftup">
-              <a href="#">ARTIST</a>
-              <div></div>
-              <a href="#">MUSIC</a>
-              <div></div>
-              <a href="#">MAGAZINE</a>
-            </div>
-            <p>Copyright Ⓒ 2025 Metaphor. All rights reserved.</p>
+        <div class="wrapper">
+          <div class="up_btn">
+            <a href="#header">
+              <div class="up_arrow_container">
+                <i class="fas fa-chevron-up"></i>
+              </div>
+            </a>
           </div>
-          <div class="foorter_logo">
-            <img src="./imgs/logo_footer.svg" alt="logo" />
+          <div class="footer_wrap">
+            <div class="footer_left">
+              <div class="footer_leftup">
+                <a href="#">ARTIST</a>
+                <div></div>
+                <a href="#">MUSIC</a>
+                <div></div>
+                <a href="#">MAGAZINE</a>
+              </div>
+              <p>Copyright Ⓒ 2025 Metaphor. All rights reserved.</p>
+            </div>
+            <div class="footer_logo">
+              <img src="./imgs/logo_footer.svg" alt="logo" />
+            </div>
           </div>
         </div>
       </footer>
