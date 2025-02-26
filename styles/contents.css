@@ -432,8 +432,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner {
   width: 100%;
@@ -753,8 +752,7 @@
 #detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #detail_page #modal_section .modal .mslide_wrapper .mslides li .modal_text {
   top: 440px;
@@ -815,4 +813,70 @@
 }
 #detail_page #modal_section .modal .modal_close div:last-child {
   transform: rotate(135deg);
+}
+
+.magazine_area h3 {
+  margin: 80px 0 35px;
+  font-size: 3rem;
+}
+.magazine_area .magazine_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -15px;
+}
+.magazine_area .magazine_list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33.33%;
+  font-size: 0;
+  padding: 15px;
+}
+.magazine_area .magazine_list li .inner {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.magazine_area .magazine_list li .inner .img {
+  width: 100%;
+  font-size: 0;
+}
+.magazine_area .magazine_list li .inner .img img {
+  width: 100%;
+  object-fit: cover;
+}
+.magazine_area .magazine_list li .inner .con {
+  background: #f3f3f3;
+  padding: 20px 22px;
+}
+.magazine_area .magazine_list li .inner .con .txt {
+  position: relative;
+}
+.magazine_area .magazine_list li .inner .con .txt h4,
+.magazine_area .magazine_list li .inner .con .txt p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 90%;
+}
+.magazine_area .magazine_list li .inner .con .txt h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.magazine_area .magazine_list li .inner .con .txt p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+.magazine_area .magazine_list li .inner .con .txt i {
+  position: absolute;
+  font-size: 1.8rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }

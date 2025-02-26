@@ -331,6 +331,9 @@
     text-align: center;
     width: 180px;
   }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text p.magazine_svp {
+    width: inherit;
+  }
 }
 @media screen and (max-width: 1440px) {
   .footer {
@@ -960,5 +963,70 @@
   }
   #detail_page .detail_sns_section .detail_sns img {
     width: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .magazine_area h3 {
+    margin: 70px 0 28px;
+    font-size: 2.6rem;
+  }
+  .magazine_area .magazine_list {
+    margin: -10px;
+  }
+  .magazine_area .magazine_list li {
+    padding: 10px;
+  }
+  .magazine_area .magazine_list li .inner .con {
+    padding: 18px 20px;
+  }
+  .magazine_area .magazine_list li .inner .con .txt h4,
+  .magazine_area .magazine_list li .inner .con .txt p {
+    width: 86%;
+  }
+  .magazine_area .magazine_list li .inner .con .txt h4 {
+    font-size: 1.7rem;
+  }
+  .magazine_area .magazine_list li .inner .con .txt p {
+    font-size: 1.4rem;
+  }
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .magazine_area h3 {
+    margin: 60px 0 22px;
+    font-size: 2.2rem;
+  }
+  .magazine_area .magazine_list li {
+    width: 50%;
+  }
+  .magazine_area .magazine_list li .inner .con {
+    padding: 16px;
+  }
+  .magazine_area .magazine_list li .inner .con .txt h4 {
+    font-size: 1.6rem;
+  }
+  .magazine_area .magazine_list li .inner .con .txt p {
+    font-size: 1.3rem;
+    margin-top: 2px;
+  }
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .magazine_area h3 {
+    margin: 45px 0 18px;
+    font-size: 2.2rem;
+  }
+  .magazine_area .magazine_list li {
+    width: 100%;
+  }
+  .magazine_area .magazine_list li .inner .con .txt p {
+    margin-top: 2px;
+  }
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.5rem;
   }
 }

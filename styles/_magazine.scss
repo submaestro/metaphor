@@ -1,0 +1,71 @@
+@mixin text_over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.magazine_area {
+  h3 {
+    margin: 80px 0 35px;
+    font-size: 3rem;
+  }
+  .magazine_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 33.33%;
+      font-size: 0;
+      padding: 15px;
+      .inner {
+        display: block;
+        border-radius: 20px;
+        overflow: hidden;
+        .img {
+          width: 100%;
+          font-size: 0;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .con {
+          background: map-get($map: $color, $key: gray_f3);
+          padding: 20px 22px;
+          .txt {
+            position: relative;
+            h4,
+            p {
+              @include text_over();
+              width: 90%;
+            }
+            h4 {
+              font-size: 1.8rem;
+              font-weight: bold;
+              line-height: 1.4;
+            }
+            p {
+              font-size: 1.4rem;
+              line-height: 1.4;
+              margin-top: 5px;
+            }
+            i {
+              position: absolute;
+              font-size: 1.8rem;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

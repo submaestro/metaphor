@@ -1,0 +1,93 @@
+@import "./_variables.scss";
+
+@media screen and (max-width: 1023px) {
+  .magazine_area {
+    h3 {
+      margin: 70px 0 28px;
+      font-size: 2.6rem;
+    }
+    .magazine_list {
+      margin: -10px;
+      li {
+        padding: 10px;
+        .inner {
+          .con {
+            padding: 18px 20px;
+            .txt {
+              h4,
+              p {
+                width: 86%;
+              }
+              h4 {
+                font-size: 1.7rem;
+              }
+              p {
+                font-size: 1.4rem;
+              }
+              i {
+                font-size: 1.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .magazine_area {
+    h3 {
+      margin: 60px 0 22px;
+      font-size: 2.2rem;
+    }
+    .magazine_list {
+      li {
+        width: 50%;
+        .inner {
+          .con {
+            padding: 16px;
+            .txt {
+              h4 {
+                font-size: 1.6rem;
+              }
+              p {
+                font-size: 1.3rem;
+                margin-top: 2px;
+              }
+              i {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .magazine_area {
+    h3 {
+      margin: 45px 0 18px;
+      font-size: 2.2rem;
+    }
+    .magazine_list {
+      li {
+        width: 100%;
+        .inner {
+          .con {
+            .txt {
+              p {
+                margin-top: 2px;
+              }
+              i {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
