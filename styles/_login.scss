@@ -8,15 +8,16 @@
 html {
   font-size: 62.5%;
 }
-//log in scss
+
+
 body {
   font-size: 1.6rem;
   font-family: map-get($map: $font, $key: pretendard);
   color: map-get($map: $color, $key: dark);
   position: relative;
-  background: map-get($map: $color, $key: gray_6);
+  background: map-get($map: $color, $key: gray_f3);
 }
-
+// login scss
 .login_wrapper {
   padding: 60px 75px;
   width: 600px;
@@ -37,42 +38,16 @@ body {
     
   }
   .login {
-    // margin-left: 75px;
     margin-top: 50px;
   }
-  .id{
-    input {
-      width: 450px;
-      height: 27px;
-      margin-top: 28px;
-      border: none;
-      border-bottom: 1px solid #000;
-      &::placeholder{
-        transition: 0.3s;
-      }
-      &:focus {
-        &::placeholder{
-          opacity: none;
-        }
-      }
-    }
-  }
- 
     .eye {
       position: relative;
-      // position: relative;
-      // .fas fa-eye-slash {
-        // cursor: pointer;
-        // position: absolute;
-        // transform: translateX(-50%);
-      // }
       input{
         width: 450px;
         height: 27px;
         margin-top: 18px;
         border: none;
-        border-bottom: 1px solid #000;
-        // display: flex;
+        border-bottom: 1px solid map-get($map: $color, $key: gray_9);
         &::placeholder {
           transition: opacity 0.3s;
         }
@@ -83,15 +58,12 @@ body {
           }
         }
       }
-
       i{
         color: map-get($map: $color, $key: gray_9);
         position: absolute;
-        // display: flex;
         top: 50%;
         right: 8px;
         cursor: pointer;
-
       }
     }
   
@@ -100,7 +72,6 @@ body {
   }
   #lock {
     margin-top: 27px;
-    // margin-bottom: 22px;
     color: map-get($map: $color, $key: gray_6);
   }
 
@@ -110,17 +81,9 @@ body {
     margin-top: 22px;
     margin-bottom: 50px;
     label {
-      // width: 121px;
-      // height: 18px;
-      // margin-left: 76px;
       color: map-get($map: $color, $key: #999);
-      // display: flex;
-      // margin-top: 22px;
-      // margin-bottom: 50px;
       cursor: pointer;
       input{
-        // cursor: pointer;
-
         color: map-get($map: $color, $key: #999);
       }
     }
@@ -128,7 +91,6 @@ body {
   button {
     width: 450px;
     height: 59px;
-    // margin-left: 75px;
     margin-bottom: 12px;
     border-radius: 10px;
     background: map-get($map: $color, $key: main);
@@ -141,23 +103,9 @@ body {
   #search {
     display: flex;
     color: map-get($map: $color, $key: gray_9);
-    // gap: 10px;
-    // margin-left: 170px;
     justify-content: center;
     margin-bottom: 50px;
-    // font-size: 12px; //common 연결하면 지우기
-    // > li:nth-child(2)::before {
-    //   content: "|";
-    //   padding-right: 19px;
-    //   // padding-left: 19px;
-    // }
-    // > li:nth-child(3)::before {
-    //   content: "|";
-    //   margin-right: 19px;
-    // }
-    // cursor: pointer;
-    gap: 19px
-    ;
+    gap: 19px;
     .line{
       background: map-get($map: $color, $key: gray_9);
       width: 1px;
@@ -166,13 +114,10 @@ body {
     }
   }
   .continue {
-    // gap: 10px;
-    li {
       a{
       display: flex;
       width: 450px;
       height: 60px;
-      // margin-left: 75px;
       color: map-get($map: $color, $key: gray_6);
       border: 1px solid map-get($map: $color, $key: gray_9);
       align-items: center;
@@ -184,10 +129,8 @@ body {
         margin-right: 35px;
       }
       &> #apple {
-        // margin-left: 35px;s
         width: 20px;
         height: 23px;
-        // padding-right: 45px;
       }
       #Facebook {
         margin-right: 35px;
@@ -197,32 +140,32 @@ body {
       }
     }
   }
-  }
 }
 
-//log on scss
+
+//logon scss
 .log_onwrapper{
   width: 600px;
   height: 800px;
-  // border: 1px solid crimson;
   background: #fff;
   padding: 44px 75px;
   position: absolute;
   justify-content: center;
   border-radius: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   .logo2{
     width: 197px;
     height: 30px;
     margin-bottom: 30px;
+    position: relative;
   }
-  .contents{
+  .logon_contents{
     padding: 0;
     width: 450px;
     height: 750px;
     position: absolute;
-    // border: 1px solid #000;
-    // transition: tranlateX(-50px
-    // );
+
     li{
       width: 450px;
       height: 60px;
@@ -230,24 +173,61 @@ body {
       flex-direction: column;
       gap: 12px;
       margin-bottom: 27px;
-      // padding-left: 10px;
+      position: relative;
       input{
+        &::placeholder{
+          transition: all 0.3s;
+        }
+        &:focus{
+            &::placeholder{
+              opacity: 0;
+            }
+            outline: none;
+        }
+      }
+        
+      
+      .border{
+        width: 100%;
         height: 27px;
         border: none;
-        border-bottom: map-get($map: $color, $key: black);
+        border-bottom:1px solid map-get($map: $color, $key: gray_9);
+        
       }
+      i{
+        color: map-get($map: $color, $key: gray_9);
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        cursor: pointer;
+      }
+      .number{
+        padding-top: 12px;
+        input{
+          position: relative;
+          i{
+            color: map-get($map: $color, $key: gray_9);
+            position: absolute;
+            top: 50%;
+            right: 8px;
+          }
+        }
+        }
     }
     .fourbox{
-      
-      // flex-direction: column;
       margin-top: 15px;
       margin-bottom: 15px;
       display: flex;
       button{
-        // display: inline;
-        // display: flex;
         width: 108px;
         height: 40px;
+        color: map-get($map: $color, $key: gray_6);
+        border: 1px solid map-get($map: $color, $key: gray_9);
+        cursor: pointer;
+        &:active{
+          background-color: map-get($map: $color, $key: main);
+          transform: scale(1);
+      }
         &:first-child {
           border-radius: 8px 0 0 8px;
           border-right: none;
@@ -265,17 +245,106 @@ body {
         }
       }
     }
-    .number{
-    padding-top: 12px;
-    }
+
   }
   .signup{
     button{
       width: 450px;
       height: 60px;
+      border-radius: 10px;
+      background: map-get($map: $color, $key: main);
+      font-size: 2rem;
+      font-weight: bold;
+      color: map-get($map: $color, $key: light);
+      border: none;
     }
   }
 }
 
+
+// mypage scss
+.mypage{
+  width: 600px;
+  // height: 1237px;
+  margin-top: 150px;
+  padding: 60px 90px;
+  // margin-left: 660px;
+  background: map-get($map: $color, $key: light);
+  border-radius: 40px;
+  position: relative;
+  margin-bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  .info{
+    width: 100%;
+    // height: 705px;
+    
+    .myinfo{
+      font-size: 3.2rem;
+      margin-bottom: 32px;
+    }
+    .info_list{
+      display: flex;
+      flex-direction: column;
+      gap: 43px;
+      li{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-size: 2rem;
+        span{
+          display: flex;
+          justify-content: space-between;
+          button{
+            position: absolute;
+            color: map-get($map: $color, $key:main);
+            background: map-get($map: $color, $key: light);
+            top: 15%;
+            left: 85%;
+            width: 65px;
+            height: 45px;
+            border-radius: 10px;
+            border: 2px solid map-get($map: $color, $key: main);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .agree{
+      font-size: 3.2rem;
+      margin-top: 115px;
+      margin-bottom: 49px;
+    }
+    .personal_info{
+      position: relative;
+      li{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        span{
+          cursor: pointer;
+          font-size: 2rem;
+          i{
+            margin-left: 10px;
+            color: map-get($map: $color, $key: gray_9);
+          }
+        }
+      }
+      
+    }
+    .logout{
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      font-size: 1.5rem;
+      color: map-get($map: $color, $key: gray_9);
+      cursor: pointer;
+      :hover{
+        border-bottom:1px solid map-get($map: $color, $key: gray_9);
+      }
+    }
+  }
+}
 
 
