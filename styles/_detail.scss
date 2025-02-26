@@ -375,7 +375,7 @@
     top: 10vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 700px;
+    width: 600px;
     height: 800px;
     &.active {
       display: block;
@@ -402,7 +402,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-left: -850px;
+          margin-left: -900px;
           gap: 100px;
           &.animated {
             transition: all 0.5s;

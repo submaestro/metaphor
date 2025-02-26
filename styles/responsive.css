@@ -218,6 +218,10 @@
   #header.bg_black .header_wrap .header_right_m .trigger_bar_m.active span {
     background: #222;
   }
+  #header.bg_black .header_wrap #search_area_m {
+    background: none;
+    border-bottom: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   #header .header_wrap {
@@ -842,6 +846,9 @@
   #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart span {
     font-size: 1.4rem;
   }
+  #detail_page #modal_section {
+    zoom: 0.8;
+  }
 }
 @media screen and (max-width: 767px) {
   .detail_subtitle {
@@ -960,5 +967,8 @@
   }
   #detail_page .detail_sns_section .detail_sns img {
     width: 20px;
+  }
+  #detail_page #modal_section {
+    zoom: 0.7;
   }
 }
