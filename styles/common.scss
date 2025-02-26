@@ -275,11 +275,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid map-get($map: $color, $key: light);
+        border: 1px solid map-get($map: $color, $key: dark);
         border-radius: 27px;
         i {
           font-size: 2rem;
-          color: map-get($map: $color, $key: light);
+          color: map-get($map: $color, $key: dark);
         }
       }
     }
@@ -320,6 +320,17 @@ body {
       align-items: center;
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+#detail_page {
+  .up_btn {
+    div {
+      border: 1px solid map-get($map: $color, $key: light);
+      i {
+        color: map-get($map: $color, $key: light);
       }
     }
   }

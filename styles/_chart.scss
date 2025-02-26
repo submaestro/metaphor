@@ -333,6 +333,7 @@
 
 .paging_area {
   margin-top: 50px;
+  margin-bottom: 120px;
   .paging_wrap {
     display: flex;
     justify-content: center;
@@ -387,6 +388,7 @@
       // chart_list style
       .chart_list {
         li {
+          transition: none;
           .music_info {
             padding-left: 40px;
 
