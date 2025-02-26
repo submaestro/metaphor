@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c268412579.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/detail.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script defer src="./detail.js"></script>
+    <script defer src="./common.js"></script>
+    <title>Detail</title>
+  </head>
+  <body>
+    <main id="detail_page">
+      <!-- header -->
+      <header id="header" class="bg_black">
+        <div class="header_wrap">
+          <div class="header_left">
+            <h1 class="header_logo">
+              <a href="./index.html">
+                <img src="./imgs/logo.svg" alt="logo" />
+                <img src="./imgs/logo_w.svg" alt="logo_white" />
+              </a>
+            </h1>
+            <ul id="gnb">
+              <li><a href="#">ARTIST</a></li>
+              <li><a href="./chart.html">MUSIC</a></li>
+              <li><a href="#">MAGAZINE</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <form
+              id="search_form_pc"
+              name="search_bar_pc"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <a class="signup_btn" href="#">
+              <span>sign up</span>
+            </a>
+          </div>
+          <div class="header_right_m">
+            <button class="search_btn_m">
+              <img src="./imgs/h_search_m.svg" alt="search" />
+              <img src="./imgs/h_search_m_w.svg" alt="search" />
+            </button>
+            <a class="signup_btn_m" href="#">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            </a>
+            <div class="trigger_bar_m">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="header_menu_m">
+            <div id="header_menuBox"></div>
+          </div>
+          <div id="search_area_m">
+            <form
+              id="search_form_mb"
+              name="search_bar_mb"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <button class="search_close_m">
+              <img src="./imgs/h_search__back_m.svg" alt="SearchCloseBtn" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="main_color">
+        <div class="main_gradient"></div>
+        <div class="main_black"></div>
+      </div>
+
+      <!-- detail_main_section -->
+      <section class="detail_main_section">
+        <div class="wrapper">
+          <div class="detail_main">
+            <div class="detail_main_img">
+              <img src="./imgs/Plave_group.jpg" alt="Plave_group" />
+            </div>
+            <div class="detail_main_inner">
+              <div class="detail_main_text">
+                <p>
+                  플레이브(PLAVE)는 블래스트 소속의 대한민국 버추얼 아이돌
+                  보이그룹이다. 이 그룹은 예준,노아,밤비,은호,하민으로
+                  구성된다.2023년 3월 12일 에 데뷔했으며 당시 첫 번째 싱글 음반
+                  Asterum이 발매 되었다."PLAVE"는 'Play'와 'Rêve(꿈)'를 결합시켜
+                  만든 이름이며, 자신들의 꿈을 이루기 위해 새로운 세상을
+                  만들어간다는 의미를 담고 있다. 작사, 작곡, 프로듀싱, 안무 창작
+                  등 음반 제작과 무대 활동에 필요한 모든 음악과 퍼포먼스를 멤버
+                  5명이 만드는 자체 제작돌이기도 하다.
+                </p>
+                <div class="detail_main_text_inner">
+                  <h3>배경</h3>
+                  <p>
+                    가상 세계 카엘룸에 살던 캐릭터들이 지구의 개발자로부터
+                    능력을 부여받아 아스테룸으로 오게 되었고, 지구(테라)와
+                    소통할 수 있게 되었다는 세계관이다. 아스테룸은 지구와 카엘룸
+                    사이에 존재하는 신비한 공간을 의미하며, 기다릴게의
+                    뮤직비디오에서 멤버들이 카엘룸에서 아스테룸으로 오는 여정을
+                    확인할 수 있다.
+                  </p>
+                </div>
+              </div>
+              <div class="detail_main_btn">
+                <button>
+                  <img
+                    src="./imgs/icon_detailmain_chat.png"
+                    alt="detailmain_chat"
+                  />
+                  <span> 34,566</span>
+                </button>
+                <button>
+                  <img
+                    class="whiteheart"
+                    src="./imgs/icon_detailmain_whiteheartb.png"
+                    alt="detailmain_heart"
+                  />
+                  <span class="whiteheartspan"> 434,086</span>
+                </button>
+                <button class="modal_open">
+                  <span>아티스트 정보</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <img src="./imgs/Plave_logo.jpg" alt="Plave_logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- detail_introduce_section -->
+      <section class="detail_introduce_section">
+        <div class="wrapper">
+          <div class="detail_introduce_text">
+            <h1>PLAVE</h1>
+            <div class="detail_introduce_main">
+              <div><b>데뷔</b>2023.3.12</div>
+              <div><b>연대</b>2020</div>
+              <div><b>장르</b>댄스</div>
+              <div><b>멤버</b>노아, 밤비, 예준, 은호, 하민</div>
+            </div>
+          </div>
+          <div class="detail_introduce_mem">
+            <div class="plave_mem1">
+              <img src="./imgs/members/mem_1.png" alt="mem_yejun" />
+              <b>YEJUN</b>
+              <span>예준</span>
+            </div>
+            <div class="plave_mem2">
+              <img src="./imgs/members/mem_2.png" alt="mem-noah" />
+              <b>NOAH</b>
+              <span>노아</span>
+            </div>
+            <div class="plave_mem3">
+              <img src="./imgs/members/mem_3.png" alt="mem_bamby" />
+              <b>BAMBY</b>
+              <span>밤비</span>
+            </div>
+            <div class="plave_mem4">
+              <img src="./imgs/members/mem_4.png" alt="mem_eunho" />
+              <b>EUNHO</b>
+              <span>은호</span>
+            </div>
+            <div class="plave_mem5">
+              <img src="./imgs/members/mem_5.png" alt="mem_hamin" />
+              <b>HAMIN</b>
+              <span>하민</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- detail_hr -->
+      <div class="wrapper">
+        <div class="detail_hr"></div>
+      </div>
+
+      <!-- detail_MV_section -->
+      <section class="detail_MV_section">
+        <div class="wrapper">
+          <div class="detail_MV">
+            <div class="detail_subtitle">
+              <h3>PLAVE Official M/V</h3>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="plave_official_MV">
+              <div class="youtube">
+                <iframe
+                  src="https://www.youtube.com/embed/EYG4ROejmyI?si=99Dul5v8nTiNGiSw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- detail_music_section -->
+      <section class="detail_music_section chart_section detailinfo_chart">
+        <div class="wrapper">
+          <div class="detail_music">
+            <div class="detail_subtitle">
+              <h3>PLAVE Music</h3>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="chart_head">
+            <div class="head_info">
+              <h3>곡 정보</h3>
+            </div>
+            <div class="head_album">
+              <h3>앨범</h3>
+            </div>
+            <div class="head_favorite">
+              <h3>좋아요</h3>
+            </div>
+            <div class="head_play">
+              <h3>재생</h3>
+            </div>
+          </div>
+          <ul class="chart_list"></ul>
+        </div>
+      </section>
+
+      <!-- detail_media_section -->
+      <section class="detail_media_section">
+        <div class="wrapper">
+          <div class="detail_media">
+            <div class="detail_subtitle">
+              <h3>Media</h3>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <ul class="media-list">
+              <li>
+                <div class="youtube">
+                  <iframe
+                    src="https://www.youtube.com/embed/8DkKbA1l8SI?si=m37dWPsLQo77WVIx"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="detail_media_text">
+                  (SUB) [LASSGO PLAVE] EP.38 | 아스테룸에서 테라까지 🌏💫
+                  테라마블 🎲
+                </p>
+              </li>
+              <li>
+                <div class="youtube">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/LDemgZcBj7o?si=qS-jHqFpTwqv9DOI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="detail_media_text">
+                  PLAVE (플레이브)의 킬링보이스를 라이브로!ㅣ딩고뮤직ㅣDingo
+                  Music
+                </p>
+              </li>
+              <li>
+                <div class="youtube">
+                  <iframe
+                    src="https://www.youtube.com/embed/pBRnXwZIzSg?si=FoSeW4D2NQZtjC2M"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="detail_media_text">
+                  PLAVE(플레이브) 'Dash' Dance Practice
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- detail_fantalk_section -->
+      <section class="detail_fantalk_section">
+        <div class="wrapper">
+          <div class="detail_fantalk">
+            <div class="detail_subtitle">
+              <h3>Fan Talk</h3>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="detail_fantalk_contents">
+              <div class="detail_fantalk_content">
+                <div class="detail_fantalk_text">
+                  <h5>우리가나디</h5>
+                  <h6>2025. 01. 04 19:24 | <a>신고</a></h6>
+                  <p>음중 1위 축하해🎉 💙💜💗❤️🖤</p>
+                </div>
+                <div class="detail_fantalk_heart">
+                  <img
+                    class="mintheart"
+                    src="./imgs/icon_detailmain_mintheartb.png"
+                    alt="heart"
+                  />
+                  <span class="mintheartspan">13</span>
+                </div>
+              </div>
+              <div class="detail_fantalk_content">
+                <div class="detail_fantalk_text">
+                  <h5>럭키밤비자냥</h5>
+                  <h6>2025. 01. 04 19:27 | <a>신고</a></h6>
+                  <p>
+                    플레이브의 축복이 끝이 없다 너무좋아😍<br />
+                    언제나 응원하고 있어 사랑해!!!
+                  </p>
+                </div>
+                <div class="detail_fantalk_heart">
+                  <img
+                    class="mintheart"
+                    src="./imgs/icon_detailmain_mintheartb.png"
+                    alt="heart"
+                  />
+                  <span class="mintheartspan">3</span>
+                </div>
+              </div>
+              <div class="detail_fantalk_content">
+                <div class="detail_fantalk_text">
+                  <h5>PLLI는나야</h5>
+                  <h6>2025. 01. 05 02:12 | <a>신고</a></h6>
+                  <p>
+                    아름답던 영원처럼 아득히 펼쳐진 꿈 //이번 신곡 가사
+                    어쩜이래😭 Dash는 갓곡이다....
+                  </p>
+                </div>
+                <div class="detail_fantalk_heart">
+                  <img
+                    class="mintheart"
+                    src="./imgs/icon_detailmain_mintheartb.png"
+                    alt="heart"
+                  />
+                  <span class="mintheartspan">7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- detail_hr -->
+      <div class="wrapper">
+        <div class="detail_hr detail_end_hr"></div>
+      </div>
+
+      <!-- detail_sns_section -->
+      <section class="detail_sns_section">
+        <div class="wrapper">
+          <div class="detail_sns">
+            <a href="https://www.instagram.com/plave_official/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/@plave_official"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="https://x.com/plave_official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2"
+              ><img src="./imgs/twitter_logo.png" alt="twitter_logo"
+            /></a>
+            <a href="https://www.tiktok.com/@plave_official?lang=ko-KR"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal after -->
+      <div id="detail_blackbx"></div>
+      <section id="modal_section">
+        <div class="modal">
+          <div class="mslide_wrapper">
+            <ul class="mslides">
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_1.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>YEJUN</h2>
+                  <h3>예준</h3>
+                  <p>
+                    예준은 대한민국의 5인조 버추얼 보이그룹 PLAVE에서 리더이자,
+                    보컬과 프로듀싱을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_2.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>NOAH</h2>
+                  <h3>노아</h3>
+                  <p>
+                    노아는 대한민국의 5인조 버추얼 보이그룹 PLAVE에서 맏형이자,
+                    보컬과 프로듀싱을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_3.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>BAMBY</h2>
+                  <h3>밤비</h3>
+                  <p>
+                    밤비는 대한민국의 5인조 버추얼 보이그룹 PLAVE의 멤버로 그룹
+                    내 댄스와 보컬을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_4.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>EUNHO</h2>
+                  <h3>은호</h3>
+                  <p>
+                    은호는 대한민국의 5인조 버추얼 보이그룹 PLAVE의 멤버. 그룹
+                    내 랩, 보컬, 프로듀싱을 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img">
+                  <img src="./imgs/members/mem_5.png" alt="mem_1" />
+                </div>
+                <div class="modal_text">
+                  <h2>HAMIN</h2>
+                  <h3>하민</h3>
+                  <p>
+                    하민은 대한민국의 5인조 버추얼 보이그룹 PLAVE의 멤버로 그룹
+                    내 랩과 댄스를 담당하고 있다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal_slide_arrow">
+            <i class="fa-solid fa-chevron-left slide_left"></i>
+            <i class="fa-solid fa-chevron-right slide_right"></i>
+          </div>
+          <div class="modal_close">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="up_btn">
+            <a href="#header">
+              <div class="up_arrow_container">
+                <i class="fas fa-chevron-up"></i>
+              </div>
+            </a>
+          </div>
+          <div class="footer_wrap">
+            <div class="footer_left">
+              <div class="footer_leftup">
+                <a href="#">ARTIST</a>
+                <div></div>
+                <a href="#">MUSIC</a>
+                <div></div>
+                <a href="#">MAGAZINE</a>
+              </div>
+              <p>Copyright Ⓒ 2025 Metaphor. All rights reserved.</p>
+            </div>
+            <div class="footer_logo">
+              <img src="./imgs/logo_footer.svg" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
