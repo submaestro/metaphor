@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_ive_rebel.jpg",
+      "title": "REBEL HEART",
+      "singer": "IVE (아이브)",
+      "album": "IVE EMPATHY",
+      "favorite": 76357,
+      "player_music": "./musics/IVE 아이브 'REBEL HEART' MV.mp3",
+      "chart_bg": "./imgs/chart/chart_bg_ive.jpg"
+    },
+    {
+      "rank": 2,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_gdragon_home.jpg",
+      "title": "HOME SWEET HOME (feat. 태양, 대성)",
+      "singer": "G-DRAGON",
+      "album": "HOME SWEET HOME (feat. 태양, 대성)",
+      "favorite": 190500,
+      "player_music": "./musics/G-DRAGON - HOME SWEET HOME (Official Audio) (feat. TAEYANG & DAESUNG).mp3",
+      "chart_bg": "./imgs/chart/chart_bg_gdragon.jpg"
+    },
+    {
+      "rank": 3,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_hwang_imfirefly.jpg",
+      "title": "나는 반딧불",
+      "singer": "황가람",
+      "album": "나는 반딧불",
+      "favorite": 114586,
+      "player_music": "./musics/I`m Firefly (나는 반딧불).mp3",
+      "chart_bg": "./imgs/chart/chart_bg_hwang.jpg"
+    },
+    {
+      "rank": 4,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_aespa_whiplash.jpg",
+      "title": "Whiplash",
+      "singer": "aespa",
+      "album": "Whiplash - The 5th Mini Album",
+      "favorite": 120390,
+      "player_music": "./musics/aespa (에스파) 'Whiplash' Official Audio.mp3",
+      "chart_bg": "./imgs/chart/chart_bg_aespa.jpg"
+    },
+    {
+      "rank": 5,
+      "updown": "up",
+      "albumimg": "./imgs/chart/albumcover_plave_dash.jpg",
+      "title": "Dash",
+      "singer": "PLAVE",
+      "album": "Caligo Pt.1",
+      "favorite": 48117,
+      "player_music": "./musics/PLAVE 'Dash' MV.mp3",
+      "chart_bg": "./imgs/chart/chart_bg_plave.jpg"
+    },
+    {
+      "rank": 6,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_woodz_drowning.jpg",
+      "title": "Drowning",
+      "singer": "WOODZ",
+      "album": "OO-LI",
+      "favorite": 134513,
+      "player_music": "./musics/Drowning (Drowning).mp3",
+      "chart_bg": "./imgs/chart/chart_bg_woodz.jpg"
+    },
+    {
+      "rank": 7,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_rose_apt.jpg",
+      "title": "APT.",
+      "singer": "로제 (ROSÉ), Bruno Mars",
+      "album": "APT.",
+      "favorite": 206237,
+      "player_music": "./musics/ROSÉ & Bruno Mars - APT. (Official Music Video).mp3",
+      "chart_bg": "./imgs/chart/chart_bg_rose.jpg"
+    },
+    {
+      "rank": 8,
+      "updown": "down",
+      "albumimg": "./imgs/chart/albumcover_bnxd_iloveyou.jpg",
+      "title": "오늘만 I LOVE YOU",
+      "singer": "BOYNEXTDOOR",
+      "album": "오늘만 I LOVE YOU",
+      "favorite": 101131,
+      "player_music": "./musics/BOYNEXTDOOR (보이넥스트도어) '오늘만 I LOVE YOU' Official MV.mp3",
+      "chart_bg": "./imgs/chart/chart_bg_bnxd.jpg"
+    },
+    {
+      "rank": 9,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_ive_rebel.jpg",
+      "title": "ATTITUDE",
+      "singer": "IVE (아이브)",
+      "album": "IVE EMPATHY",
+      "favorite": 76357,
+      "player_music": "./musics/IVE 아이브 'ATTITUDE' MV.mp3",
+      "chart_bg": "./imgs/chart/chart_bg_ive.jpg"
+    },
+    {
+      "rank": 10,
+      "updown": "none",
+      "albumimg": "./imgs/chart/albumcover_day6_happy.jpg",
+      "title": "HAPPY",
+      "singer": "DAY6 (데이식스)",
+      "album": "Fourever",
+      "favorite": 177134,
+      "player_music": "./musics/DAY6 - HAPPY (Official Audio).mp3",
+      "chart_bg": "./imgs/chart/chart_bg_day6.jpg"
+    }
+  ]
+}

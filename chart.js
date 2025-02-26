@@ -1,4 +1,4 @@
-const chart_info = "./plavedb.json";
+const chart_info = "./chartdb.json";
 const chart_list = document.querySelector(".chart_list");
 
 // chartdb.json
@@ -14,12 +14,23 @@ fetch(chart_info)
     // 찾아온 json chart data로 dom 생성 함수
     const createList = (chart) => {
       const li = document.createElement("li");
+      const chart_bg = document.createElement("div");
+      chart_bg.className = "chart_bg";
+      chart_bg.style.backgroundImage = `url("${chart.chart_bg}")`;
 
       const favorite_number = new Intl.NumberFormat("ko-kr", {
         currency: "KRW",
       }).format(chart.favorite);
 
       li.innerHTML = `
+        <div class="ranking">
+          <h4 class="rank_num">${chart.rank}</h4>
+          <figure class="icon ${chart.updown}">
+            <img src="./imgs/chart_rank_icon.svg" alt="rankIconblack" />
+            <img src="./imgs/chart_rank_icon_w.svg" alt="rankIconwhite" />
+            <img src="./imgs/chart_rank_icon_no.svg" alt="rankIconnone" />
+            </figure>
+        </div>
         <div class="music_info">
           <figure>
             <img
@@ -50,6 +61,8 @@ fetch(chart_info)
           <audio src="${chart.player_music}"></audio>
         </div>
         `;
+
+      li.append(chart_bg);
 
       chart_list.append(li);
     };
@@ -119,3 +132,21 @@ fetch(chart_info)
   .catch((error) => {
     console.error(error);
   });
+
+// 차트 시간 실시간 연동
+const chart_realtime = document.querySelector(".chart_realtime");
+const chart_date = chart_realtime.querySelector(".date");
+const chart_time = chart_realtime.querySelector(".time");
+
+let chart_current = new Date();
+let currentYear = chart_current.getFullYear();
+let currentMonth = chart_current.getMonth() + 1;
+let currentDate = chart_current.getDate();
+let currentHours = chart_current.getHours();
+
+currentMonth = currentMonth < 10 ? "0" + currentMonth : currentMonth;
+currentDate = currentDate < 10 ? "0" + currentDate : currentDate;
+currentHours = currentHours < 10 ? "0" + currentHours : currentHours;
+
+chart_date.innerText = `${currentYear}.${currentMonth}.${currentDate}`;
+chart_time.innerText = `${currentHours}:00 기준`;

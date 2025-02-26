@@ -1,4 +1,4 @@
-const chart_info = "./plavedb.json";
+const chart_info = "./chartdb.json";
 const chart_list = document.querySelector(".chart_list");
 
 // chartdb.json
@@ -14,12 +14,23 @@ fetch(chart_info)
     // 찾아온 json chart data로 dom 생성 함수
     const createList = (chart) => {
       const li = document.createElement("li");
+      const chart_bg = document.createElement("div");
+      chart_bg.className = "chart_bg";
+      chart_bg.style.backgroundImage = `url("${chart.chart_bg}")`;
 
       const favorite_number = new Intl.NumberFormat("ko-kr", {
         currency: "KRW",
       }).format(chart.favorite);
 
       li.innerHTML = `
+        <div class="ranking">
+          <h4 class="rank_num">${chart.rank}</h4>
+          <figure class="icon ${chart.updown}">
+            <img src="./imgs/chart_rank_icon.svg" alt="rankIconblack" />
+            <img src="./imgs/chart_rank_icon_w.svg" alt="rankIconwhite" />
+            <img src="./imgs/chart_rank_icon_no.svg" alt="rankIconnone" />
+            </figure>
+        </div>
         <div class="music_info">
           <figure>
             <img
@@ -51,12 +62,14 @@ fetch(chart_info)
         </div>
         `;
 
+      li.append(chart_bg);
+
       chart_list.append(li);
     };
 
     // json chart data로 dom 생성 및 브라우저 출력
     const importData = () => {
-      charts.data.map((chart) => {
+      charts.data.slice(0, 5).map((chart) => {
         createList(chart);
       });
     };
