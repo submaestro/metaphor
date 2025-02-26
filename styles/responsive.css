@@ -1,64 +1,3 @@
-/*color*/
-/* font */
-/*header height*/
-/*color*/
-/* font */
-/*header height*/
-@media screen and (max-width: 1440px) {
-  .main_visual {
-    padding-top: 80px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .main_visual {
-    padding-top: 60px;
-  }
-  .artist_contents {
-    padding: 50px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
-  }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 670px) {
-  .artist_contents {
-    padding: 40px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
-  }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 33.33%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .artist_contents {
-    padding: 40px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
-  }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
-  }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 50%;
-  }
-}
 @media screen and (max-width: 1250px) {
   .wrapper {
     width: auto;
@@ -279,6 +218,10 @@
   #header.bg_black .header_wrap .header_right_m .trigger_bar_m.active span {
     background: #222;
   }
+  #header.bg_black .header_wrap #search_area_m {
+    background: none;
+    border-bottom: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   #header .header_wrap {
@@ -394,6 +337,63 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .footer {
+    height: 180px;
+  }
+  .footer .up_btn {
+    width: 48px;
+    height: 48px;
+  }
+  .footer .up_btn a div i {
+    font-size: 1.6rem;
+  }
+  .footer .footer_wrap .footer_left {
+    font-size: 1.6rem;
+    gap: 16px;
+  }
+  .footer .footer_wrap .footer_left .footer_leftup {
+    gap: 20px;
+  }
+  .footer .footer_wrap .footer_left .footer_leftup div {
+    height: 15px;
+  }
+  .footer .footer_wrap .footer_left p {
+    font-size: 1.4rem;
+  }
+  .footer .footer_wrap .footer_logo {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    height: 140px;
+  }
+  .footer .up_btn {
+    width: 40px;
+    height: 40px;
+    right: 4vh;
+  }
+  .footer .up_btn a div i {
+    font-size: 1.6rem;
+  }
+  .footer .footer_wrap .footer_left {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+  .footer .footer_wrap .footer_left .footer_leftup {
+    gap: 18px;
+  }
+  .footer .footer_wrap .footer_left .footer_leftup div {
+    height: 14px;
+  }
+  .footer .footer_wrap .footer_left p {
+    font-size: 1.1rem;
+  }
+  .footer .footer_wrap .footer_logo {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 1440px) {
   .chart_section .wrapper .chart_list li .ranking {
     width: 8%;
     height: 70px;
@@ -481,6 +481,7 @@
     width: 16px;
   }
   .chart_section .wrapper .chart_list li .music_favorite span {
+    width: 51px;
     font-size: 1.3rem;
   }
   .chart_section .wrapper .chart_list li .music_player {
@@ -606,6 +607,7 @@
     width: 13px;
   }
   .chart_section .wrapper .chart_list li .music_favorite span {
+    width: 44px;
     font-size: 1.1rem;
   }
   .chart_section .wrapper .chart_list li .music_player {
@@ -694,5 +696,279 @@
   }
   .chart_section .wrapper .chart_list li:hover {
     height: 130px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .chart_section.detailinfo_chart {
+    margin-top: inherit;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_head {
+    margin-top: 0;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 57%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 57%;
+    padding-left: calc(10px + 3vw);
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_favorite span {
+    width: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 53%;
+    padding-left: 14px;
+  }
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_favorite span {
+    width: 39px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .chart_section.detailinfo_chart .wrapper .chart_list li .music_info {
+    width: 66%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .chart_section.main_chart5 {
+    margin-top: inherit;
+  }
+  .chart_section.main_chart5 .wrapper .chart_head {
+    margin-top: inherit;
+  }
+}
+@media screen and (max-width: 767px) {
+  .chart_section.main_chart5 {
+    margin-top: inherit;
+  }
+  .chart_section.main_chart5 .wrapper .chart_head {
+    margin-top: inherit;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .detail_subtitle {
+    margin-bottom: 25px;
+  }
+  .detail_subtitle h3 {
+    font-size: 2.5rem;
+  }
+  .detail_subtitle i {
+    font-size: 2rem;
+  }
+  #detail_page .detail_main_section {
+    padding-top: 80px;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_text h1 {
+    font-size: 8.5rem;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_text .detail_introduce_main {
+    font-size: 1.4rem;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_mem {
+    gap: 25px;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_mem > div b {
+    font-size: 2.2rem;
+    margin-top: 20px;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_mem > div span {
+    font-size: 1.8rem;
+  }
+  #detail_page .detail_media_section .detail_media .media-list {
+    justify-content: start;
+    gap: 20px;
+  }
+  #detail_page .detail_media_section .detail_media .media-list li {
+    width: 30vw;
+  }
+  #detail_page .detail_media_section .detail_media .media-list li .youtube {
+    border-radius: 15px;
+  }
+  #detail_page .detail_media_section .detail_media .media-list li .detail_media_text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents {
+    gap: 35px;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h5 {
+    font-size: 1.4rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h6 {
+    font-size: 1.3rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text p {
+    font-size: 1.5rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart img {
+    width: 16px;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #detail_page .detail_main_section {
+    padding-top: 60px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_img {
+    height: 950px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text {
+    width: 70%;
+    bottom: 80px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn {
+    bottom: 50px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button span {
+    font: 300 1.4rem/34px pretendard;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents {
+    gap: 35px;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h5 {
+    font-size: 1.3rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h6 {
+    font-size: 1.2rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text p {
+    font-size: 1.4rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart img {
+    width: 15px;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart span {
+    font-size: 1.4rem;
+  }
+  #detail_page #modal_section {
+    zoom: 0.8;
+  }
+}
+@media screen and (max-width: 767px) {
+  .detail_subtitle {
+    margin-bottom: 15px;
+  }
+  .detail_subtitle h3 {
+    font-size: 2rem;
+  }
+  .detail_subtitle i {
+    font-size: 1.5rem;
+  }
+  #detail_page .detail_main_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_img {
+    height: 780px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text {
+    bottom: 70px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text .detail_main_text_inner h3 {
+    font-size: 1.8rem;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text .detail_main_text_inner p {
+    font-size: 1.4rem;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn {
+    bottom: 40px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button {
+    width: 100px;
+    height: 32px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button img {
+    width: 14px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button span {
+    font: 300 1.2rem/34px pretendard;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button:last-child {
+    width: 120px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner > img {
+    right: 3.5vh;
+    bottom: 10vh;
+  }
+  #detail_page .detail_introduce_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_text h1 {
+    font-size: 7rem;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_text .detail_introduce_main {
+    font-size: 1.2rem;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_mem {
+    gap: 26px;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_mem > div b {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  #detail_page .detail_introduce_section .detail_introduce_mem > div span {
+    font-size: 1.6rem;
+  }
+  #detail_page .detail_media_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_media_section .detail_media .media-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #detail_page .detail_media_section .detail_media .media-list li {
+    width: 100%;
+  }
+  #detail_page .detail_media_section .detail_media .media-list li .detail_media_text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  #detail_page .detail_fantalk_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents {
+    gap: 30px;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h5 {
+    font-size: 1.2rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h6 {
+    font-size: 1.1rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text p {
+    font-size: 1.2rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart img {
+    width: 14px;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart span {
+    font-size: 1.2rem;
+  }
+  #detail_page .detail_end_hr {
+    margin-bottom: 20px;
+  }
+  #detail_page .detail_sns_section {
+    margin-bottom: 40px;
+  }
+  #detail_page .detail_sns_section .detail_sns {
+    width: 140px;
+  }
+  #detail_page .detail_sns_section .detail_sns i {
+    font-size: 2rem;
+  }
+  #detail_page .detail_sns_section .detail_sns img {
+    width: 20px;
+  }
+  #detail_page #modal_section {
+    zoom: 0.7;
   }
 }/*# sourceMappingURL=responsive.css.map */

@@ -60,3 +60,46 @@ const header_search = (e) => {
 };
 search_form_pc.addEventListener("submit", header_search);
 search_form_mb.addEventListener("submit", header_search);
+
+// footer 이벤트
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    document.querySelector(".up_btn").classList.add("active");
+  } else {
+    document.querySelector(".up_btn").classList.remove("active");
+  }
+});
+
+// footer topscroll event
+const up_btn = document.querySelector(".up_btn > a");
+
+up_btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  const targetId = this.getAttribute("href");
+  const targetElement = document.querySelector(targetId);
+  const targetPosition = targetElement.offsetTop;
+
+  window.scrollTo({
+    top: targetPosition,
+    behavior: "smooth",
+  });
+});
+
+// footer button bottom event
+document.addEventListener("scroll", function () {
+  const button = document.querySelector(".up_btn");
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY;
+  const documentHeight = document.documentElement.scrollHeight;
+  const footerThreshold = 240;
+
+  const maxBottom = documentHeight - footerThreshold - windowHeight;
+
+  if (scrollY >= maxBottom) {
+    button.style.position = "absolute";
+    button.style.bottom = `${footerThreshold}px`;
+  } else {
+    button.style.position = "fixed"; // 기본 상태 유지
+    button.style.bottom = "7vh"; // 기본 위치 유지
+  }
+});

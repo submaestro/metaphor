@@ -1,11 +1,12 @@
-/* font */
+// font
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 // google icon
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
-@import "./reset.scss";
-@import "./variables.scss";
+// import
+@import "./_reset.scss";
+@import "./_variables.scss";
 
 @mixin header_search_style {
   display: flex;
@@ -245,6 +246,91 @@ body {
           color: map-get($map: $color, $key: light);
           word-break: keep-all;
         }
+      }
+    }
+  }
+}
+
+/* footer */
+.footer {
+  left: 0;
+  background: map-get($map: $color, $key: dark);
+  width: 100%;
+  height: 214px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .up_btn {
+    width: 54px;
+    height: 54px;
+    right: 7vh;
+    bottom: 7vh;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.4s;
+    a {
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid map-get($map: $color, $key: dark);
+        border-radius: 27px;
+        i {
+          font-size: 2rem;
+          color: map-get($map: $color, $key: dark);
+        }
+      }
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+  .footer_wrap {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: map-get($map: $color, $key: gray_9);
+      font-size: 1.8rem;
+      gap: 14px;
+      .footer_leftup {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        div {
+          width: 1.5px;
+          height: 16px;
+          background: map-get($map: $color, $key: gray_9);
+        }
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    .footer_logo {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#detail_page {
+  .up_btn {
+    div {
+      border: 1px solid map-get($map: $color, $key: light);
+      i {
+        color: map-get($map: $color, $key: light);
       }
     }
   }
