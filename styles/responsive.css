@@ -1002,7 +1002,7 @@
     width: 50%;
   }
   .magazine_area .magazine_list li .inner .con {
-    padding: 16px;
+    padding: 16px 18px;
   }
   .magazine_area .magazine_list li .inner .con .txt h4 {
     font-size: 1.6rem;
@@ -1022,6 +1022,9 @@
   }
   .magazine_area .magazine_list li {
     width: 100%;
+  }
+  .magazine_area .magazine_list li .inner .con {
+    padding: 20px 22px;
   }
   .magazine_area .magazine_list li .inner .con .txt p {
     margin-top: 2px;
