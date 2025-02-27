@@ -6,6 +6,13 @@
 @media screen and (max-width: 1440px) {
   .main_visual {
     padding-top: map-get($headerHeight, height_tb);
+    .single-item {
+      .slick-prev,
+      .slick-next {
+        bottom: 6%;
+        width: 20px;
+      }
+    }
   }
   // common artist_list
   .artist_contents {
@@ -26,23 +33,6 @@
     }
   }
 }
-@media screen and (max-width: 1440px) {
-  .main_visual {
-    .single-item {
-      .slick-prev,
-      .slick-next {
-        bottom: 6%;
-        width: 20px;
-        &.slick-prev {
-          left: 11%;
-        }
-        &.slick-next {
-          left: 13%;
-        }
-      }
-    }
-  }
-}
 
 @media screen and (max-width: 1023px) {
   .main_visual {
@@ -54,7 +44,7 @@
 
   // common artist_list
   .artist_contents {
-    padding: 50px 0;
+    padding: 70px 0;
 
     // 4개 아티스트 아이콘
     .wrapper {
@@ -71,7 +61,7 @@
             .icon_text {
               padding: 16px 10px;
               .artist_name {
-                font-size: 2rem;
+                font-size: 1.8rem;
               }
             }
           }
@@ -82,6 +72,7 @@
 
   // magazine_text
   .magazine_content {
+    margin: 90px 0;
     h2 {
       margin-bottom: 30px;
       font-size: 2.5rem;
@@ -159,8 +150,8 @@
   // magazine_text
   .magazine_content {
     h2 {
-      margin-bottom: 40px;
-      font-size: 3rem;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
     }
 
     // Magazine Slider
@@ -181,6 +172,7 @@
           .slider-line {
             bottom: 4px;
             width: calc(17px + 8vw);
+            height: 1px;
           }
         }
       }
@@ -189,13 +181,13 @@
       .slick-next {
         bottom: 9%;
         &.slick-prev {
-          left: 22%;
+          left: 20%;
         }
         &.slick-next {
-          left: 24.7%;
+          left: 23.7%;
         }
         &::before {
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -205,7 +197,7 @@
 @media screen and (max-width: 670px) {
   // common artist_list
   .artist_contents {
-    padding: 40px 0;
+    padding: 55px 0;
 
     // 4개 아티스트 아이콘
     .wrapper {
@@ -223,7 +215,7 @@
             .icon_text {
               padding: 16px 10px;
               .artist_name {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
               }
             }
           }
@@ -233,6 +225,7 @@
   }
 
   .magazine_content {
+    margin: 70px 0;
     h2 {
       margin-bottom: 20px;
     }
@@ -254,7 +247,7 @@
 
   // common artist_list
   .artist_contents {
-    padding: 40px 0;
+    padding: 50px 0;
 
     // 4개 아티스트 아이콘
     .wrapper {
@@ -282,6 +275,7 @@
   .magazine_content {
     h2 {
       font-size: 2.1rem;
+      margin-bottom: 20px;
     }
 
     // Magazine Slider
@@ -298,7 +292,7 @@
 
           .slider-line {
             bottom: 4px;
-            width: calc(14px + 8vw);
+            width: calc(16px + 8vw);
           }
         }
       }
@@ -310,10 +304,10 @@
           left: 22%;
         }
         &.slick-next {
-          left: 24.7%;
+          left: 25.7%;
         }
         &::before {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
         }
       }
     }

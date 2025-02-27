@@ -113,14 +113,25 @@
     transform: translateX(-50%);
     .info {
       margin-top: 60px;
-      li {
-        font-size: 1.5rem;
-        // span{
-        //   font-size: 2rem;
-        // }
+      .myinfo {
+        font-size: 2.7rem;
+        margin-bottom: 28px;
+      }
+      .info_list {
+        li {
+          font-size: 1.8rem;
+          // span{
+          //   font-size: 2rem;
+          // }
+        }
+      }
+      .agree {
+        font-size: 2.7rem;
       }
       .personal_info {
-        font-size: 2rem;
+        li {
+          font-size: 1.8rem;
+        }
       }
     }
   }
