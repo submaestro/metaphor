@@ -71,7 +71,7 @@
     margin: 0;
     border-radius: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     .logo2 {
       width: 160px;
@@ -79,6 +79,7 @@
     .logon_contents {
       position: relative;
       width: 100%;
+      height: 650px;
       ul {
         position: absolute;
         width: 100%;
@@ -105,7 +106,7 @@
 @media screen and (max-width: 670px) {
   .mypage {
     background-color: map-get($map: $color, $key: light);
-    padding: 50px 50px;
+    padding: 50px 35px;
     margin: 0;
     border-radius: 0;
     width: 100%;
@@ -114,23 +115,26 @@
     .info {
       margin-top: 60px;
       .myinfo {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         margin-bottom: 28px;
       }
       .info_list {
         li {
-          font-size: 1.8rem;
-          // span{
-          //   font-size: 2rem;
-          // }
+          font-size: 1.6rem;
+          span {
+            button {
+              left: initial;
+              right: 0;
+            }
+          }
         }
       }
       .agree {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
       }
       .personal_info {
         li {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
       }
     }
