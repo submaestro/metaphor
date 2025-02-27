@@ -885,6 +885,21 @@
     font-size: 2.1rem;
   }
 }
+@media screen and (max-width: 1023px) {
+  .artist_contents.sub_artist_list {
+    padding: 70px 0 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .artist_contents.sub_artist_list {
+    padding: 60px 0 0 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .artist_contents.sub_artist_list {
+    padding: 45px 0 0 0;
+  }
+}
 @media screen and (max-width: 1440px) {
   #detail_page .detail_main_section {
     padding-top: 80px;
