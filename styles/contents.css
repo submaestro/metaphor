@@ -368,18 +368,14 @@
   background: #dedede;
 }
 
-.detail_subtitle {
-  display: flex;
-  color: #fff;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-.detail_subtitle h3 {
+.subtitles {
   font-size: 3rem;
-}
-.detail_subtitle i {
-  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 #detail_page {
@@ -547,7 +543,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  cursor: pointer;
 }
 #detail_page .detail_introduce_section .detail_introduce_mem > div {
   display: flex;
@@ -1327,4 +1322,4 @@ body {
 }
 .mypage .info .logout :hover {
   border-bottom: 1px solid #999;
-}/*# sourceMappingURL=contents.css.map */
+}
