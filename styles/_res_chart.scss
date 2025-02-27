@@ -497,28 +497,38 @@
 }
 
 // main chart5 style
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1023px) {
   .chart_section {
     &.main_chart5 {
-      margin-top: inherit;
       .wrapper {
-        // chart head
+        h2 {
+          font-size: 2.5rem;
+        }
         .chart_head {
-          margin-top: inherit;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 670px) {
+  .chart_section {
+    &.main_chart5 {
+      .wrapper {
+        .chart_head {
+          margin-top: 20px;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 500px) {
   .chart_section {
     &.main_chart5 {
-      margin-top: inherit;
       .wrapper {
-        // chart head
-        .chart_head {
-          margin-top: inherit;
+        h2 {
+          font-size: 2.1rem;
         }
       }
     }

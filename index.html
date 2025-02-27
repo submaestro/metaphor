@@ -21,9 +21,10 @@
     <link rel="stylesheet" href="./styles/contents.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="./common.js"></script>
+    <script defer src="./mainchart.js"></script>
     <script src="./main_slider.js"></script>
 
-    <title>header</title>
+    <title>Metaphor</title>
   </head>
 
   <body>
@@ -188,16 +189,30 @@
     </section>
 
     <!-- music chart > -->
-    <section class="chart">
+
+    <section class="chart_section main_chart5">
       <div class="wrapper">
-        <div class="metaphor_chart">
-          <h2>
-            <a href="./chart.html">
-              <span class="clickable-text">Music Chart</span>
-              <i class="fas fa-angle-right"></i>
-            </a>
-          </h2>
+        <h2>
+          <a href="./chart.html">
+            <span class="clickable-text">Music Chart</span>
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </h2>
+        <div class="chart_head">
+          <div class="head_info">
+            <h3>곡 정보</h3>
+          </div>
+          <div class="head_album">
+            <h3>앨범</h3>
+          </div>
+          <div class="head_favorite">
+            <h3>좋아요</h3>
+          </div>
+          <div class="head_play">
+            <h3>재생</h3>
+          </div>
         </div>
+        <ul class="chart_list"></ul>
       </div>
     </section>
 

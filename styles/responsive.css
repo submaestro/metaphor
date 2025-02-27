@@ -335,6 +335,9 @@
     text-align: center;
     width: 180px;
   }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text p.magazine_svp {
+    width: inherit;
+  }
 }
 @media screen and (max-width: 1440px) {
   .footer {
@@ -391,6 +394,86 @@
   }
   .footer .footer_wrap .footer_logo {
     width: 120px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main_visual {
+    padding-top: 80px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 20px 14px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main_visual {
+    padding-top: 60px;
+  }
+  .artist_contents {
+    padding: 50px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main_visual .single-item {
+    margin: 0 20px 20px 20px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .artist_contents {
+    padding: 40px 0;
+  }
+  .artist_contents .wrapper h2 {
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 33.33%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .artist_contents {
+    padding: 40px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 50%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 13px 10px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -733,20 +816,22 @@
     padding-left: 0;
   }
 }
-@media screen and (max-width: 1250px) {
-  .chart_section.main_chart5 {
-    margin-top: inherit;
+@media screen and (max-width: 1023px) {
+  .chart_section.main_chart5 .wrapper h2 {
+    font-size: 2.5rem;
   }
   .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: inherit;
+    margin-top: 30px;
   }
 }
-@media screen and (max-width: 767px) {
-  .chart_section.main_chart5 {
-    margin-top: inherit;
-  }
+@media screen and (max-width: 670px) {
   .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: inherit;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .chart_section.main_chart5 .wrapper h2 {
+    font-size: 2.1rem;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -968,80 +1053,72 @@
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 1440px) {
-  .main_visual {
-    padding-top: 80px;
+@media screen and (max-width: 1023px) {
+  .magazine_area h3 {
+    margin: 70px 0 28px;
+    font-size: 2.6rem;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 20px 14px;
+  .magazine_area .magazine_list {
+    margin: -10px;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+  .magazine_area .magazine_list li {
+    padding: 10px;
+  }
+  .magazine_area .magazine_list li .inner .con {
+    padding: 18px 20px;
+  }
+  .magazine_area .magazine_list li .inner .con .txt h4,
+  .magazine_area .magazine_list li .inner .con .txt p {
+    width: 86%;
+  }
+  .magazine_area .magazine_list li .inner .con .txt h4 {
+    font-size: 1.7rem;
+  }
+  .magazine_area .magazine_list li .inner .con .txt p {
+    font-size: 1.4rem;
+  }
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .magazine_area h3 {
+    margin: 60px 0 22px;
     font-size: 2.2rem;
   }
-}
-@media screen and (max-width: 1023px) {
-  .main_visual {
-    padding-top: 60px;
+  .magazine_area .magazine_list li {
+    width: 50%;
   }
-  .artist_contents {
-    padding: 50px 0;
+  .magazine_area .magazine_list li .inner .con {
+    padding: 16px 18px;
   }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+  .magazine_area .magazine_list li .inner .con .txt h4 {
+    font-size: 1.6rem;
   }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
+  .magazine_area .magazine_list li .inner .con .txt p {
+    font-size: 1.3rem;
+    margin-top: 2px;
   }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 16px 10px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 670px) {
-  .artist_contents {
-    padding: 40px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
-  }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 33.33%;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 16px 10px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 1.8rem;
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .artist_contents {
-    padding: 40px 0;
+  .magazine_area h3 {
+    margin: 45px 0 18px;
+    font-size: 2.2rem;
   }
-  .artist_contents .wrapper h2 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
+  .magazine_area .magazine_list li {
+    width: 100%;
   }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
+  .magazine_area .magazine_list li .inner .con {
+    padding: 20px 22px;
   }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 50%;
+  .magazine_area .magazine_list li .inner .con .txt p {
+    margin-top: 2px;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 13px 10px;
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 670px) {
@@ -1068,7 +1145,7 @@
   .login_wrapper .eye input i {
     left: -70px;
   }
-  .login_wrapper button {
+  .login_wrapper .button {
     width: 100%;
   }
   .login_wrapper #search {
@@ -1132,7 +1209,7 @@
   .log_onwrapper .logon_contents ul .fourbox button {
     width: 70%;
   }
-  .log_onwrapper .logon_contents .signup button {
+  .log_onwrapper .logon_contents .signup > div {
     position: relative;
     width: 100%;
   }

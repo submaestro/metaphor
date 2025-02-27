@@ -21,6 +21,44 @@ img {
       }
     }
   }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    z-index: 10;
+    top: initial;
+    bottom: 10%;
+    width: 30px;
+    height: 30px;
+    // border-radius: 50%;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    border: 1px solid #000;
+    &.slick-prev {
+      left: 13.2%;
+    }
+    &.slick-next {
+      left: 15%;
+    }
+
+    &::before {
+      font-family: "fontawesome";
+      font-size: calc(5px + 0.9vw);
+      color: #fff;
+      opacity: 1;
+    }
+  }
+  .slick-prev {
+    &::before {
+      content: "\f053";
+    }
+  }
+  .slick-next {
+    &::before {
+      content: "\f054";
+    }
+  }
 }
 
 // common artist_list
@@ -62,6 +100,7 @@ img {
             overflow: hidden;
             img {
               display: block;
+              width: 100%;
               max-width: 100%;
               height: auto;
               cursor: pointer;
@@ -96,7 +135,21 @@ img {
 }
 
 // Music Chart >
-
+.chart_section {
+  &.main_chart5 {
+    .wrapper {
+      h2 {
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .chart_head {
+        margin-top: 40px;
+      }
+    }
+  }
+}
 // Magazine >
 .magazine_content {
   background-color: #ffffff;
@@ -113,14 +166,6 @@ img {
     font-size: 3rem;
     cursor: pointer;
     display: inline-block;
-  }
-
-  .wrapper {
-    width: 1100px;
-    height: 800px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    margin: 0 auto;
   }
 
   // Magazine Slider
@@ -161,7 +206,6 @@ img {
         margin: 0, 20, 30, 30px;
       }
     }
-
     .slick-prev,
     .slick-next {
       &::before {
