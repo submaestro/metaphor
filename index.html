@@ -21,9 +21,10 @@
     <link rel="stylesheet" href="./styles/contents.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="./common.js"></script>
+    <script defer src="./mainchart.js"></script>
     <script src="./main_slider.js"></script>
 
-    <title>header</title>
+    <title>Metaphor</title>
   </head>
 
   <body>
@@ -38,9 +39,9 @@
               </a>
             </h1>
             <ul id="gnb">
-              <li><a href="#">ARTIST</a></li>
+              <li><a href="./artist.html">ARTIST</a></li>
               <li><a href="./chart.html">MUSIC</a></li>
-              <li><a href="#">MAGAZINE</a></li>
+              <li><a href="./magazine.html">MAGAZINE</a></li>
             </ul>
           </div>
           <div class="header_right">
@@ -60,7 +61,7 @@
                 placeholder="아티스트 검색"
               />
             </form>
-            <a class="signup_btn" href="#">
+            <a class="signup_btn" href="./login.html">
               <span>sign up</span>
             </a>
           </div>
@@ -69,7 +70,7 @@
               <img src="./imgs/h_search_m.svg" alt="search" />
               <img src="./imgs/h_search_m_w.svg" alt="search" />
             </button>
-            <a class="signup_btn_m" href="#">
+            <a class="signup_btn_m" href="./mypage.html">
               <img src="./imgs/h_signup_m.svg" alt="search" />
               <img src="./imgs/h_signup_m_w.svg" alt="search" />
             </a>
@@ -112,15 +113,19 @@
       <div class="single-item">
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider1.png" alt="mainVisual_slider1" />
+          <img src="./imgs/main_slider1_m.png" alt="mainVisual_slider1" />
         </div>
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider2.png" alt="mainVisual_slider2" />
+          <img src="./imgs/main_slider2_m.png" alt="mainVisual_slider1" />
         </div>
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider3.png" alt="mainVisual_slider3" />
+          <img src="./imgs/main_slider3_m.png" alt="mainVisual_slider1" />
         </div>
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider4.png" alt="mainVisual_slider4" />
+          <img src="./imgs/main_slider4_m.png" alt="mainVisual_slider1" />
         </div>
       </div>
     </section>
@@ -140,7 +145,7 @@
           <!-- 관심있는 아티스트 아이콘 리스트 -->
           <ul class="artist_icons">
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/PLAVE.png" alt="icon_1" />
                 </div>
@@ -188,11 +193,30 @@
     </section>
 
     <!-- music chart > -->
-    <section class="chart">
+
+    <section class="chart_section main_chart5">
       <div class="wrapper">
-        <div class="metaphor_chart">
-          <h2>Music Chart <i class="fas fa-angle-right"></i></h2>
+        <h2>
+          <a href="./chart.html">
+            <span class="clickable-text">Music Chart</span>
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </h2>
+        <div class="chart_head">
+          <div class="head_info">
+            <h3>곡 정보</h3>
+          </div>
+          <div class="head_album">
+            <h3>앨범</h3>
+          </div>
+          <div class="head_favorite">
+            <h3>좋아요</h3>
+          </div>
+          <div class="head_play">
+            <h3>재생</h3>
+          </div>
         </div>
+        <ul class="chart_list"></ul>
       </div>
     </section>
 
@@ -200,9 +224,12 @@
     <section class="magazine_content">
       <div class="wrapper">
         <div class="magazine">
-          <h2>Magazine <i class="fas fa-angle-right"></i></h2>
-
-          <!-- magazine slide -->
+          <h2>
+            <a href="./magazine.html">
+              <span class="clickable-text">Magazine</span>
+              <i class="fas fa-angle-right"></i>
+            </a>
+          </h2>
           <div class="fade magazine_fade">
             <div class="magazine_slider">
               <img src="./imgs/mz_slide_01.png" alt="magazine_slider1" />
@@ -264,7 +291,7 @@
       <div class="wrapper">
         <div class="new_artists">
           <h2>
-            <a href="#">
+            <a href="./artist.html">
               <span class="clickable-text">새로운 아티스트를 만나보세요!</span>
               <i class="fas fa-angle-right"></i>
             </a>
@@ -572,5 +599,33 @@
         </div>
       </div>
     </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="up_btn">
+          <a href="#header">
+            <div class="up_arrow_container">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+        <div class="footer_wrap">
+          <div class="footer_left">
+            <div class="footer_leftup">
+              <a href="./artist.html">ARTIST</a>
+              <div></div>
+              <a href="./chart.html">MUSIC</a>
+              <div></div>
+              <a href="./magazine.html">MAGAZINE</a>
+            </div>
+            <p>Copyright Ⓒ 2025 Metaphor. All rights reserved.</p>
+          </div>
+          <div class="footer_logo">
+            <img src="./imgs/logo_footer.svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

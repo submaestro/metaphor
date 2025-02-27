@@ -10,15 +10,60 @@ img {
   padding-top: map-get($map: $headerHeight, $key: height_pc);
   .single-item {
     margin: 0 35px 35px 35px;
+    border-radius: 40px;
+    overflow: hidden;
+    font-size: 0;
     .mainVisual_slider {
       overflow: hidden;
-      li {
-        img {
-          max-width: 100%;
-          padding: 0 0 30px 0;
-          cursor: pointer;
+      height: 100%;
+      width: 100%;
+      img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        &:nth-child(1) {
+          display: inline-block;
+        }
+        &:nth-child(2) {
+          display: none;
         }
       }
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    z-index: 10;
+    top: initial;
+    bottom: 8%;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    &.slick-prev {
+      left: 11.5%;
+    }
+    &.slick-next {
+      left: 13.5%;
+    }
+
+    &::before {
+      font-family: "fontawesome";
+      font-size: calc(4px + 0.8vw);
+      color: #fff;
+      opacity: 1;
+    }
+  }
+  .slick-prev {
+    &::before {
+      content: "\f053";
+    }
+  }
+  .slick-next {
+    &::before {
+      content: "\f054";
     }
   }
 }
@@ -62,6 +107,7 @@ img {
             overflow: hidden;
             img {
               display: block;
+              width: 100%;
               max-width: 100%;
               height: auto;
               cursor: pointer;
@@ -96,7 +142,21 @@ img {
 }
 
 // Music Chart >
-
+.chart_section {
+  &.main_chart5 {
+    .wrapper {
+      h2 {
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .chart_head {
+        margin-top: 40px;
+      }
+    }
+  }
+}
 // Magazine >
 .magazine_content {
   background-color: #ffffff;
@@ -155,7 +215,6 @@ img {
         }
       }
     }
-
     .slick-prev,
     .slick-next {
       z-index: 1000;
