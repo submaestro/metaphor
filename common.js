@@ -91,7 +91,12 @@ document.addEventListener("scroll", function () {
   const windowHeight = window.innerHeight;
   const scrollY = window.scrollY;
   const documentHeight = document.documentElement.scrollHeight;
-  const footerThreshold = 240;
+  let footerThreshold = 240;
+  if (window.innerWidth <= 767) {
+    footerThreshold = 180;
+  } else if (window.innerWidth <= 1440) {
+    footerThreshold = 200;
+  }
 
   const maxBottom = documentHeight - footerThreshold - windowHeight;
 

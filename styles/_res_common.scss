@@ -433,6 +433,9 @@
             font-size: 1.3rem;
             text-align: center;
             width: 180px;
+            &.magazine_svp {
+              width: inherit;
+            }
           }
         }
       }
