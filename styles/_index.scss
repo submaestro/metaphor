@@ -31,7 +31,6 @@ img {
   align-items: center;
   width: 100%;
   margin: auto;
-
   padding: 60px 0;
 
   // 4개 아티스트 아이콘
@@ -55,9 +54,19 @@ img {
         padding: 15px;
         a {
           display: block;
+          position: relative;
+          border-radius: 20px;
+          overflow: hidden;
+
           .icon {
             overflow: hidden;
-            border-radius: 20px 20px 0 0;
+            img {
+              display: block;
+              max-width: 100%;
+              height: auto;
+              cursor: pointer;
+              transition: transform 0.3s ease;
+            }
           }
           &:hover {
             .icon {
@@ -66,12 +75,19 @@ img {
               }
             }
           }
-          img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.3s ease;
+
+          // 아이콘 텍스트
+          .icon_text {
+            padding: 24px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: map-get($map: $color, $key: light);
+            .artist_name {
+              font-size: 2.5rem;
+              text-align: center;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -153,7 +169,7 @@ img {
         font-family: "fontawesome";
         font-size: 20px;
         line-height: 1;
-        z-index: 1000;
+        z-index: 3;
         opacity: 1;
         color: black;
       }

@@ -18,7 +18,7 @@
 
     <!-- custom css & js -->
     <link rel="stylesheet" href="./styles/common.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/contents.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="./common.js"></script>
     <script src="./main_slider.js"></script>
@@ -145,7 +145,7 @@
                   <img src="./imgs/PLAVE.png" alt="icon_1" />
                 </div>
                 <div class="icon_text">
-                  <img src="./imgs/PLAVE_text.png" alt="icon_text_1" />
+                  <div class="artist_name">PLAVE</div>
                 </div>
               </a>
             </li>
@@ -156,7 +156,7 @@
                   <img src="./imgs/JENNIE.png" alt="icon_1" />
                 </div>
                 <div class="icon_text">
-                  <img src="./imgs/JENNIE_text.png" alt="icon_text_1" />
+                  <div class="artist_name">JENNIE</div>
                 </div>
               </a>
             </li>
@@ -167,7 +167,7 @@
                   <img src="./imgs/New_Jeans.png" alt="icon_1" />
                 </div>
                 <div class="icon_text">
-                  <img src="./imgs/new_jeans_text.png" alt="icon_text_1" />
+                  <div class="artist_name">New Jeans</div>
                 </div>
               </a>
             </li>
@@ -177,7 +177,9 @@
                 <div class="icon">
                   <img src="./imgs/aespa.png" alt="icon_1" />
                 </div>
-                <img src="./imgs/aespa_text.png" alt="icon_text_1" />
+                <div class="icon_text">
+                  <div class="artist_name">aespa</div>
+                </div>
               </a>
             </li>
           </ul>
@@ -204,7 +206,7 @@
               <img src="./imgs/mz_slide_01.png" alt="magazine_slider1" />
               <div class="slider-text">
                 <h1 class="title">플레이브 미니 3집 초동 100만장 돌파</h1>
-                <p class="name">PLAVE</p>
+                <h2 class="name">PLAVE</h2>
               </div>
             </div>
             <div class="magazine_slider">
@@ -214,7 +216,7 @@
                   <h1 class="title">
                     감정이 통제된 미래에서 온 4명의 소녀 '메이브'
                   </h1>
-                  <p class="name">MAVE</p>
+                  <h2 class="name">MAVE</h2>
                 </div>
               </div>
               <!-- <div class="slick-arrows">
@@ -231,7 +233,7 @@
               <div class="slider-text">
                 <div class="slider-text">
                   <h1 class="title">르세라핌이 또 독기를 택했다</h1>
-                  <p class="name">LE SSERAFIM</p>
+                  <h2 class="name">LE SSERAFIM</h2>
                 </div>
               </div>
               <!-- <div class="slick-arrows">
@@ -264,8 +266,10 @@
       <div class="wrapper">
         <div class="new_artists">
           <h2>
-            <span class="clickable-text">새로운 아티스트를 만나보세요!</span>
-            <i class="fas fa-angle-right"></i>
+            <a href="#">
+              <span class="clickable-text">새로운 아티스트를 만나보세요!</span>
+              <i class="fas fa-angle-right"></i>
+            </a>
           </h2>
 
           <!-- 28개 아티스트 아이콘 -->
@@ -276,227 +280,295 @@
                   <img src="./imgs/TREASURE.png" alt="icon_5" />
                 </div>
                 <div class="icon_text">
-                  <img src="./imgs/TREASURE_text.png" alt="icon_text_5" />
+                  <div class="artist_name">TREASURE</div>
                 </div>
               </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/IVE.png" alt="icon_6" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/IVE_text.png" alt="icon_text_6" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/IVE.png" alt="icon_6" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">IVE</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/NCT_127.png" alt="icon_7" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/NCT_127_text.png" alt="icon_text_7" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/NCT_127.png" alt="icon_7" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">NCT 127</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/NCT_WISH.png" alt="icon_8" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/NCT_WISH_text.png" alt="icon_text_8" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/NCT_WISH.png" alt="icon_8" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">NCT WISH</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/SEVENTEEN.png" alt="icon_9" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/SEVENTEEN_text.png" alt="icon_text_9" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/SEVENTEEN.png" alt="icon_9" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">SEVENTEEN</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/BABYMONSTER.png" alt="icon_10" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/BABYMONSTER_text.png" alt="icon_text_10" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/BABYMONSTER.png" alt="icon_10" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">BABYMONSTER</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/BTS.png" alt="icon_11" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/BTS_text.png" alt="icon_text_11" />
-              </div>
-            </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/LE_SSERAFIM.png" alt="icon_12" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/LE_SSERAFIM_text.png" alt="icon_text_12" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/BTS.png" alt="icon_11" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">BTS</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/BLACKPINK.png" alt="icon_13" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/BLACKPINK_text.png" alt="icon_text_13" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/LE_SSERAFIM.png" alt="icon_12" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">LE SSERAFIM</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/g_dragon.png" alt="icon_14" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/g_dragon_text.png" alt="icon_text_14" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/BLACKPINK.png" alt="icon_13" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">BLACKPINK</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/ILLIT.png" alt="icon_15" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/ILLIT_text.png" alt="icon_text_15" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/g_dragon.png" alt="icon_14" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">G-Dragon</div>
+                </div>
+              </a>
             </li>
 
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/GI_DLE.png" alt="icon_16" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/GI_DLE_text.png" alt="icon_text_16" />
-              </div>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/ILLIT.png" alt="icon_15" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">ILLIT</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/ZICO.png" alt="icon_17" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/ZICO_text.png" alt="icon_text_17" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/GI_DLE.png" alt="icon_16" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">(G)I-DLE</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/RIIZE.png" alt="icon_18" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/RIIZE_text.png" alt="icon_text_18" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/ZICO.png" alt="icon_17" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">ZICO</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/IU.png" alt="icon_19" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/IU_text.png" alt="icon_text_19" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/RIIZE.png" alt="icon_18" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">RIIZE</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/DAY6.png" alt="icon_20" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/DAY6_text.png" alt="icon_text_20" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/IU.png" alt="icon_19" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">IU</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/MAVE.png" alt="icon_21" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/MAVE_text.png" alt="icon_text_21" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/DAY6.png" alt="icon_20" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">DAY6</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/KWON_EUN_BI.png" alt="icon_22" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/KWON_EUN_BI_text.png" alt="icon_text_22" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/MAVE.png" alt="icon_21" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">MAVE</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/FIFTY_FIFTY.png" alt="icon_23" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/FIFTY_FIFTY_text.png" alt="icon_text_23" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/KWON_EUN_BI.png" alt="icon_22" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">KWON EUN BI</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/QWER.png" alt="icon_24" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/QWER_text.png" alt="icon_text_24" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/FIFTY_FIFTY.png" alt="icon_23" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">FIFTY FIFTY</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/Kiss_of_Life.png" alt="icon_25" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/Kiss_of_Life_text.png" alt="icon_text_25" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/QWER.png" alt="icon_24" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">QWER</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/RED_VELVET.png" alt="icon_26" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/Red_Velvet_text.png" alt="icon_text_26" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/Kiss_of_Life.png" alt="icon_25" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">KISS OF LIFE</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/EXO.png" alt="icon_27" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/EXO_text.png" alt="icon_text_27" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/RED_VELVET.png" alt="icon_26" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">Red Velvet</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/MOONBYUL.png" alt="icon_28" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/MOONBYUL_text.png" alt="icon_text_28" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/EXO.png" alt="icon_27" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">EXO</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/CHUNG_HA.png" alt="icon_29" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/CHUNG_HA_text.png" alt="icon_text_29" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/MOONBYUL.png" alt="icon_28" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">MOONBYUL</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/JEON_SOMI.png" alt="icon_30" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/JEON_SOMI_text.png" alt="icon_text_30" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/CHUNG_HA.png" alt="icon_29" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">CHUNG HA</div>
+                </div>
+              </a>
             </li>
-            <li class="icon">
-              <div class="icon">
-                <img src="./imgs/CHANG_KIHA.png" alt="icon_31" />
-              </div>
-              <div class="icon_text">
-                <img src="./imgs/CHANG_KIHA_text.png" alt="icon_text_31" />
-              </div>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/JEON_SOMI.png" alt="icon_30" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">JEON SOMI</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/CHANG_KIHA.png" alt="icon_31" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">CHANG KIHA</div>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
