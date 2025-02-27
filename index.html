@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script src="./jQuery/jquery-3.7.1.min.js"></script>
+    <!-- slickslider -->
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <script src="./slick/slick.js"></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f37fd463ce.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/contents.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script defer src="./common.js"></script>
+    <script defer src="./mainchart.js"></script>
+    <script src="./main_slider.js"></script>
+
+    <title>Metaphor</title>
+  </head>
+
+  <body>
+    <main id="header">
+      <header id="header">
+        <div class="header_wrap">
+          <div class="header_left">
+            <h1 class="header_logo">
+              <a href="./index.html">
+                <img src="./imgs/logo.svg" alt="logo" />
+                <img src="./imgs/logo_w.svg" alt="logo_white" />
+              </a>
+            </h1>
+            <ul id="gnb">
+              <li><a href="./artist.html">ARTIST</a></li>
+              <li><a href="./chart.html">MUSIC</a></li>
+              <li><a href="./magazine.html">MAGAZINE</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <form
+              id="search_form_pc"
+              name="search_bar_pc"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <a class="signup_btn" href="./login.html">
+              <span>sign up</span>
+            </a>
+          </div>
+          <div class="header_right_m">
+            <button class="search_btn_m">
+              <img src="./imgs/h_search_m.svg" alt="search" />
+              <img src="./imgs/h_search_m_w.svg" alt="search" />
+            </button>
+            <a class="signup_btn_m" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            </a>
+            <div class="trigger_bar_m">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="header_menu_m">
+            <div id="header_menuBox"></div>
+          </div>
+          <div id="search_area_m">
+            <form
+              id="search_form_mb"
+              name="search_bar_mb"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <button class="search_close_m">
+              <img src="./imgs/h_search__back_m.svg" alt="SearchCloseBtn" />
+            </button>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <!-- 메인 슬라이더 -->
+    <section class="main_visual">
+      <div class="single-item">
+        <div class="mainVisual_slider">
+          <img src="./imgs/main_slider1.png" alt="mainVisual_slider1" />
+          <img src="./imgs/main_slider1_m.png" alt="mainVisual_slider1" />
+        </div>
+        <div class="mainVisual_slider">
+          <img src="./imgs/main_slider2.png" alt="mainVisual_slider2" />
+          <img src="./imgs/main_slider2_m.png" alt="mainVisual_slider1" />
+        </div>
+        <div class="mainVisual_slider">
+          <img src="./imgs/main_slider3.png" alt="mainVisual_slider3" />
+          <img src="./imgs/main_slider3_m.png" alt="mainVisual_slider1" />
+        </div>
+        <div class="mainVisual_slider">
+          <img src="./imgs/main_slider4.png" alt="mainVisual_slider4" />
+          <img src="./imgs/main_slider4_m.png" alt="mainVisual_slider1" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 관심있는 아티스트 > -->
+    <section class="favorite_artist_content artist_contents">
+      <div class="wrapper">
+        <div class="favorite_artist">
+          <!-- 타이틀 -->
+          <h2>
+            <a href="#">
+              <span class="clickable-text">관심있는 아티스트</span>
+              <i class="fas fa-angle-right"></i>
+            </a>
+          </h2>
+
+          <!-- 관심있는 아티스트 아이콘 리스트 -->
+          <ul class="artist_icons">
+            <li>
+              <a href="./detail.html">
+                <div class="icon">
+                  <img src="./imgs/PLAVE.png" alt="icon_1" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">PLAVE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/JENNIE.png" alt="icon_1" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">JENNIE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/New_Jeans.png" alt="icon_1" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">New Jeans</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/aespa.png" alt="icon_1" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">aespa</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- music chart > -->
+
+    <section class="chart_section main_chart5">
+      <div class="wrapper">
+        <h2>
+          <a href="./chart.html">
+            <span class="clickable-text">Music Chart</span>
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </h2>
+        <div class="chart_head">
+          <div class="head_info">
+            <h3>곡 정보</h3>
+          </div>
+          <div class="head_album">
+            <h3>앨범</h3>
+          </div>
+          <div class="head_favorite">
+            <h3>좋아요</h3>
+          </div>
+          <div class="head_play">
+            <h3>재생</h3>
+          </div>
+        </div>
+        <ul class="chart_list"></ul>
+      </div>
+    </section>
+
+    <!-- magazine -->
+    <section class="magazine_content">
+      <div class="wrapper">
+        <div class="magazine">
+          <h2>
+            <a href="./magazine.html">
+              <span class="clickable-text">Magazine</span>
+              <i class="fas fa-angle-right"></i>
+            </a>
+          </h2>
+          <div class="fade magazine_fade">
+            <div class="magazine_slider">
+              <img src="./imgs/mz_slide_01.png" alt="magazine_slider1" />
+              <div class="slider-text">
+                <h1 class="title">플레이브 미니 3집 초동 100만장 돌파</h1>
+                <h3 class="name">PLAVE</h3>
+                <div class="slider-line"></div>
+              </div>
+            </div>
+            <div class="magazine_slider">
+              <img src="./imgs/mz_slide_02.png" alt="magazine_slider2" />
+              <div class="slider-text">
+                <h1 class="title">
+                  감정이 통제된 미래에서 온 4명의 소녀 '메이브'
+                </h1>
+                <h3 class="name">MAVE</h3>
+                <div class="slider-line"></div>
+              </div>
+              <!-- <div class="slick-arrows">
+                <div class="slick-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slick-next">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div> -->
+            </div>
+            <div class="magazine_slider">
+              <img src="./imgs/mz_slide_03.png" alt="magazine_slider3" />
+              <div class="slider-text">
+                <h1 class="title">르세라핌이 또 독기를 택했다</h1>
+                <h3 class="name">LE SSERAFIM</h3>
+                <div class="slider-line"></div>
+              </div>
+              <!-- <div class="slick-arrows">
+                <div class="slick-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slick-next">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div> -->
+            </div>
+            <div class="magazine_slider">
+              <img src="./imgs/mz_slide_04.png" alt="magazine_slider4" />
+              <div class="slider-text">
+                <h1 class="title"></h1>
+                <h3 class="name"></h3>
+                <div class="slider-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 새로운 아티스트를 만나보세요! -->
+    <section class="new_artist_content artist_contents">
+      <div class="wrapper">
+        <div class="new_artists">
+          <h2>
+            <a href="./artist.html">
+              <span class="clickable-text">새로운 아티스트를 만나보세요!</span>
+              <i class="fas fa-angle-right"></i>
+            </a>
+          </h2>
+
+          <!-- 28개 아티스트 아이콘 -->
+          <ul class="artist_icons">
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/TREASURE.png" alt="icon_5" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">TREASURE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/IVE.png" alt="icon_6" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">IVE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/NCT_127.png" alt="icon_7" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">NCT 127</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/NCT_WISH.png" alt="icon_8" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">NCT WISH</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/SEVENTEEN.png" alt="icon_9" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">SEVENTEEN</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/BABYMONSTER.png" alt="icon_10" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">BABYMONSTER</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/BTS.png" alt="icon_11" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">BTS</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/LE_SSERAFIM.png" alt="icon_12" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">LE SSERAFIM</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/BLACKPINK.png" alt="icon_13" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">BLACKPINK</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/g_dragon.png" alt="icon_14" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">G-Dragon</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/ILLIT.png" alt="icon_15" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">ILLIT</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/GI_DLE.png" alt="icon_16" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">(G)I-DLE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/ZICO.png" alt="icon_17" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">ZICO</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/RIIZE.png" alt="icon_18" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">RIIZE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/IU.png" alt="icon_19" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">IU</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/DAY6.png" alt="icon_20" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">DAY6</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/MAVE.png" alt="icon_21" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">MAVE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/KWON_EUN_BI.png" alt="icon_22" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">KWON EUN BI</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/FIFTY_FIFTY.png" alt="icon_23" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">FIFTY FIFTY</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/QWER.png" alt="icon_24" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">QWER</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/Kiss_of_Life.png" alt="icon_25" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">KISS OF LIFE</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/RED_VELVET.png" alt="icon_26" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">Red Velvet</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/EXO.png" alt="icon_27" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">EXO</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/MOONBYUL.png" alt="icon_28" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">MOONBYUL</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/CHUNG_HA.png" alt="icon_29" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">CHUNG HA</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/JEON_SOMI.png" alt="icon_30" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">JEON SOMI</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/CHANG_KIHA.png" alt="icon_31" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">CHANG KIHA</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="up_btn">
+          <a href="#header">
+            <div class="up_arrow_container">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+        <div class="footer_wrap">
+          <div class="footer_left">
+            <div class="footer_leftup">
+              <a href="./artist.html">ARTIST</a>
+              <div></div>
+              <a href="./chart.html">MUSIC</a>
+              <div></div>
+              <a href="./magazine.html">MAGAZINE</a>
+            </div>
+            <p>Copyright Ⓒ 2025 Metaphor. All rights reserved.</p>
+          </div>
+          <div class="footer_logo">
+            <img src="./imgs/logo_footer.svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

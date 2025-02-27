@@ -1,0 +1,536 @@
+@import "./_variables.scss";
+
+// chart
+@media screen and (max-width: 1440px) {
+  .chart_section {
+    .wrapper {
+      // chart_list style
+      .chart_list {
+        li {
+          .ranking {
+            width: 8%;
+            height: 70px;
+            gap: 30px;
+            position: static;
+            z-index: 0;
+            top: 0;
+            right: 0;
+            transform: translateY(0);
+          }
+
+          .music_info {
+            width: 49%;
+            padding-left: 0;
+          }
+
+          .chart_bg {
+            width: calc(
+              100% + (100vw - 1100px) / 2 + (((100vw - 1100px) / 2) - 35px)
+            );
+            left: calc(-1 * (((100vw - 1100px) / 2) - 35px));
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .chart_section {
+    margin-top: 90px;
+    .wrapper {
+      // chart_top
+      .chart_top {
+        .chart_cate {
+          gap: 8px;
+          li {
+            a {
+              font-size: 1.5rem;
+              padding: 8px 17px;
+            }
+          }
+        }
+        .chart_realtime {
+          font-size: 1.5rem;
+        }
+      }
+      // chart head
+      .chart_head {
+        margin-top: 20px;
+        height: 75px;
+        & > div {
+          h3 {
+            font-size: 1.7rem;
+          }
+        }
+        .head_info {
+          text-align: center;
+          padding-left: 0;
+        }
+      }
+
+      // chart_list style
+      .chart_list {
+        li {
+          height: 110px;
+          padding: 25px 0;
+
+          .ranking {
+            height: 60px;
+            gap: 8px;
+            flex-direction: column;
+            justify-content: center;
+            h4 {
+              font-size: 1.7rem;
+            }
+            .icon {
+              img {
+                width: 8px;
+              }
+            }
+          }
+
+          .music_info {
+            figure {
+              width: 60px;
+            }
+            .music_names {
+              width: calc(100% - 60px - 18px);
+              padding-right: 12px;
+              h4 {
+                font-size: 1.8rem;
+              }
+              h5 {
+                font-size: 1.4rem;
+              }
+            }
+          }
+
+          .music_album {
+            height: 60px;
+            padding: 0 12px;
+            p {
+              font-size: 1.4rem;
+            }
+          }
+
+          .music_favorite {
+            height: 60px;
+            button {
+              img {
+                width: 16px;
+              }
+            }
+            span {
+              width: 51px;
+              font-size: 1.3rem;
+            }
+          }
+
+          .music_player {
+            height: 60px;
+            button {
+              img {
+                width: 30px;
+              }
+            }
+          }
+
+          .chart_bg {
+            width: calc(100% + 35px);
+            left: 0px;
+          }
+          &:hover {
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+  .paging_area {
+    margin-top: 35px;
+    .paging_wrap {
+      gap: 4px;
+      .paging_list {
+        gap: 4px;
+        li {
+          a {
+            font-size: 1.5rem;
+            width: 30px;
+          }
+        }
+      }
+      .paging_btn {
+        width: 30px;
+        span {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .chart_section {
+    margin-top: 70px;
+    .wrapper {
+      .chart_list {
+        li {
+          &:hover {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chart_section {
+    margin-top: 60px;
+    .wrapper {
+      // chart_top
+      .chart_top {
+        .chart_cate {
+          gap: 7px;
+          li {
+            a {
+              font-size: 1.3rem;
+              padding: 6px 14px;
+            }
+          }
+        }
+        .chart_realtime {
+          font-size: 1.3rem;
+        }
+      }
+      // chart head
+      .chart_head {
+        margin-top: 16px;
+        height: 65px;
+        & > div {
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+        .head_info {
+          width: 53%;
+        }
+        .head_album {
+          width: 24%;
+        }
+        .head_favorite {
+          width: 14%;
+        }
+        .head_play {
+          width: 9%;
+        }
+      }
+
+      // chart_list style
+      .chart_list {
+        li {
+          height: 75px;
+          padding: 15px 0;
+
+          .ranking {
+            width: 9%;
+            height: 45px;
+            gap: 6px;
+            h4 {
+              font-size: 1.5rem;
+            }
+            .icon {
+              img {
+                width: 7px;
+              }
+            }
+          }
+
+          .music_info {
+            width: 44%;
+            figure {
+              width: 45px;
+            }
+            .music_names {
+              width: calc(100% - 45px - 12px);
+              padding-right: 10px;
+              h4 {
+                font-size: 1.5rem;
+              }
+              h5 {
+                font-size: 1.3rem;
+                margin-top: 3px;
+              }
+            }
+          }
+
+          .music_album {
+            width: 24%;
+            height: 45px;
+            padding: 0 5px;
+            p {
+              font-size: 1.2rem;
+            }
+          }
+
+          .music_favorite {
+            width: 14%;
+            height: 45px;
+            gap: 2px;
+            button {
+              img {
+                width: 13px;
+              }
+            }
+            span {
+              width: 44px;
+              font-size: 1.1rem;
+            }
+          }
+
+          .music_player {
+            width: 9%;
+            height: 45px;
+            button {
+              img {
+                width: 25px;
+              }
+            }
+          }
+
+          .chart_bg {
+            width: calc(100% + 20px);
+          }
+          &:hover {
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+
+  .paging_area {
+    margin-top: 25px;
+    .paging_wrap {
+      gap: 3px;
+      .paging_list {
+        gap: 3px;
+        li {
+          a {
+            font-size: 1.3rem;
+            width: 26px;
+          }
+        }
+      }
+      .paging_btn {
+        width: 26px;
+        span {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chart_section {
+    margin-top: 45px;
+    .wrapper {
+      // chart_top
+      .chart_top {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+        .chart_realtime {
+          align-self: flex-end;
+        }
+      }
+      // chart head
+      .chart_head {
+        margin-top: 12px;
+
+        .head_info {
+          width: 66%;
+        }
+        .head_album {
+          display: none;
+        }
+        .head_favorite {
+          width: 20%;
+        }
+        .head_play {
+          width: 15%;
+        }
+      }
+
+      // chart_list style
+      .chart_list {
+        li {
+          .ranking {
+            width: 13%;
+          }
+
+          .music_info {
+            width: 53%;
+            .music_names {
+              h4 {
+                font-size: 1.4rem;
+              }
+              h5 {
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          .music_album {
+            display: none;
+          }
+
+          .music_favorite {
+            width: 20%;
+          }
+
+          .music_player {
+            width: 15%;
+            button {
+              img {
+                width: 22px;
+              }
+            }
+          }
+
+          &:hover {
+            height: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// detail music list style
+@media screen and (max-width: 1440px) {
+  .chart_section {
+    &.detailinfo_chart {
+      margin-top: inherit;
+      .wrapper {
+        // chart head
+        .chart_head {
+          margin-top: 0;
+        }
+        // chart_list style
+        .chart_list {
+          li {
+            .music_info {
+              width: 57%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .chart_section {
+    &.detailinfo_chart {
+      .wrapper {
+        // chart_list style
+        .chart_list {
+          li {
+            .music_info {
+              width: 57%;
+              padding-left: calc(10px + 3vw);
+            }
+            .music_favorite {
+              span {
+                width: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chart_section {
+    &.detailinfo_chart {
+      .wrapper {
+        // chart_list style
+        .chart_list {
+          li {
+            .music_info {
+              width: 53%;
+              padding-left: 14px;
+            }
+            .music_favorite {
+              span {
+                width: 39px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chart_section {
+    &.detailinfo_chart {
+      .wrapper {
+        // chart_list style
+        .chart_list {
+          li {
+            .music_info {
+              width: 66%;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// main chart5 style
+@media screen and (max-width: 1023px) {
+  .chart_section {
+    &.main_chart5 {
+      .wrapper {
+        h2 {
+          font-size: 2.5rem;
+        }
+        .chart_head {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 670px) {
+  .chart_section {
+    &.main_chart5 {
+      .wrapper {
+        .chart_head {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chart_section {
+    &.main_chart5 {
+      .wrapper {
+        h2 {
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,297 @@
+@import "./_variables.scss";
+
+// detail
+
+@media screen and (max-width: 1440px) {
+  // .detail_subtitle {
+  //   margin-bottom: 25px;
+  //   h3 {
+  //     font-size: 2.5rem;
+  //   }
+  //   i {
+  //     font-size: 2rem;
+  //   }
+  // }
+
+  #detail_page .detail_main_section {
+    padding-top: map-get($map: $headerHeight, $key: height_tb);
+  }
+
+  #detail_page .detail_introduce_section {
+    .detail_introduce_text {
+      h1 {
+        font-size: 8.5rem;
+      }
+      .detail_introduce_main {
+        font-size: 1.4rem;
+      }
+    }
+    .detail_introduce_mem {
+      gap: 25px;
+      & > div {
+        b {
+          font-size: 2.2rem;
+          margin-top: 20px;
+        }
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  #detail_page .detail_media_section {
+    .detail_media .media-list {
+      justify-content: start;
+      gap: 20px;
+      li {
+        width: 30vw;
+        .youtube {
+          border-radius: 15px;
+        }
+        .detail_media_text {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+
+  #detail_page .detail_fantalk_section {
+    .detail_fantalk_contents {
+      gap: 35px;
+      .detail_fantalk_content {
+        .detail_fantalk_text {
+          h5 {
+            font-size: 1.4rem;
+          }
+          h6 {
+            font-size: 1.3rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+        .detail_fantalk_heart {
+          img {
+            width: 16px;
+          }
+          span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .subtitles {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  #detail_page .detail_main_section {
+    padding-top: map-get($map: $headerHeight, $key: height_mb);
+    .detail_main {
+      .detail_main_img {
+        height: 950px;
+      }
+      .detail_main_inner {
+        .detail_main_text {
+          width: 70%;
+          bottom: 80px;
+        }
+        .detail_main_btn {
+          bottom: 50px;
+          button {
+            span {
+              font: 300 1.4rem/34px map-get($map: $font, $key: pretendard);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #detail_page .detail_fantalk_section {
+    .detail_fantalk_contents {
+      gap: 35px;
+      .detail_fantalk_content {
+        .detail_fantalk_text {
+          h5 {
+            font-size: 1.3rem;
+          }
+          h6 {
+            font-size: 1.2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        .detail_fantalk_heart {
+          img {
+            width: 15px;
+          }
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  #detail_page {
+    #modal_section {
+      zoom: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subtitles {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  #detail_page .detail_main_section {
+    margin-bottom: 100px;
+    .detail_main {
+      .detail_main_img {
+        height: 780px;
+      }
+      .detail_main_inner {
+        .detail_main_text {
+          bottom: 70px;
+          p {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+          }
+          .detail_main_text_inner {
+            h3 {
+              font-size: 1.8rem;
+            }
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        .detail_main_btn {
+          bottom: 40px;
+          button {
+            width: 100px;
+            height: 32px;
+            img {
+              width: 14px;
+            }
+            span {
+              font: 300 1.2rem/34px map-get($map: $font, $key: pretendard);
+            }
+            &:last-child {
+              width: 120px;
+            }
+          }
+        }
+        & > img {
+          right: 3.5vh;
+          bottom: 10vh;
+        }
+      }
+    }
+  }
+
+  #detail_page .detail_introduce_section {
+    margin-bottom: 100px;
+    .detail_introduce_text {
+      h1 {
+        font-size: 7rem;
+      }
+      .detail_introduce_main {
+        font-size: 1.2rem;
+      }
+    }
+    .detail_introduce_mem {
+      gap: 26px;
+      & > div {
+        b {
+          font-size: 2rem;
+          margin-top: 15px;
+        }
+        span {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  #detail_page .detail_media_section {
+    margin-bottom: 100px;
+    .detail_media .media-list {
+      flex-direction: column;
+      gap: 30px;
+      li {
+        width: 100%;
+        .detail_media_text {
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+
+  #detail_page .detail_fantalk_section {
+    margin-bottom: 100px;
+    .detail_fantalk_contents {
+      gap: 30px;
+      .detail_fantalk_content {
+        .detail_fantalk_text {
+          // max-width: 400px;
+          h5 {
+            font-size: 1.2rem;
+          }
+          h6 {
+            font-size: 1.1rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+        .detail_fantalk_heart {
+          img {
+            width: 14px;
+          }
+          span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  #detail_page .detail_end_hr {
+    margin-bottom: 20px;
+  }
+
+  #detail_page .detail_sns_section {
+    margin-bottom: 40px;
+    .detail_sns {
+      width: 140px;
+      i {
+        font-size: 2rem;
+      }
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  #detail_page {
+    #modal_section {
+      zoom: 0.7;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subtitles {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+}

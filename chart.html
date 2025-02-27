@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c268412579.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/contents.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script defer src="./common.js"></script>
+    <script defer src="./chart.js"></script>
+    <title>Music Chart | metaphor</title>
+  </head>
+  <body>
+    <main id="chart_page">
+      <header id="header">
+        <div class="header_wrap">
+          <div class="header_left">
+            <h1 class="header_logo">
+              <a href="./index.html">
+                <img src="./imgs/logo.svg" alt="logo" />
+                <img src="./imgs/logo_w.svg" alt="logo_white" />
+              </a>
+            </h1>
+            <ul id="gnb">
+              <li><a href="./artist.html">ARTIST</a></li>
+              <li><a href="./chart.html">MUSIC</a></li>
+              <li><a href="./magazine.html">MAGAZINE</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <form
+              id="search_form_pc"
+              name="search_bar_pc"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <a class="signup_btn" href="./login.html">
+              <span>sign up</span>
+            </a>
+          </div>
+          <div class="header_right_m">
+            <button class="search_btn_m">
+              <img src="./imgs/h_search_m.svg" alt="search" />
+              <img src="./imgs/h_search_m_w.svg" alt="search" />
+            </button>
+            <a class="signup_btn_m" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            </a>
+            <div class="trigger_bar_m">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="header_menu_m">
+            <div id="header_menuBox"></div>
+          </div>
+          <div id="search_area_m">
+            <form
+              id="search_form_mb"
+              name="search_bar_mb"
+              method="#"
+              action="post"
+              class="search_bar"
+            >
+              <button class="search_btn">
+                <img src="./imgs/h_search.svg" alt="search" />
+              </button>
+              <input
+                class="search_txt"
+                type="text"
+                placeholder="아티스트 검색"
+              />
+            </form>
+            <button class="search_close_m">
+              <img src="./imgs/h_search__back_m.svg" alt="SearchCloseBtn" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section class="sub_visual">
+        <div class="sub_visual_wrap">
+          <div class="wrapper">
+            <div class="sub_text">
+              <h2>Music <span>Chart</span></h2>
+              <p>국내 주요 차트를 기준으로 실시간으로 연동하여 감지합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chart_section">
+        <div class="wrapper">
+          <div class="chart_top">
+            <ul class="chart_cate">
+              <li class="active">
+                <a href="#">TOP100</a>
+              </li>
+              <li>
+                <a href="#">주간</a>
+              </li>
+              <li>
+                <a href="#">월간</a>
+              </li>
+              <li>
+                <a href="#">NEW50</a>
+              </li>
+            </ul>
+            <h6 class="chart_realtime">
+              <span class="date"></span>
+              <span class="time">14:00</span>
+            </h6>
+          </div>
+          <div class="chart_head">
+            <div class="head_info">
+              <h3>곡 정보</h3>
+            </div>
+            <div class="head_album">
+              <h3>앨범</h3>
+            </div>
+            <div class="head_favorite">
+              <h3>좋아요</h3>
+            </div>
+            <div class="head_play">
+              <h3>재생</h3>
+            </div>
+          </div>
+          <ul class="chart_list"></ul>
+        </div>
+      </section>
+
+      <section class="paging_area">
+        <div class="paging_wrap">
+          <ul class="paging_list">
+            <li class="active">
+              <a href="#" class="num">
+                <span>1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="num">
+                <span>2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="num">
+                <span>3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="num">
+                <span>4</span>
+              </a>
+            </li>
+          </ul>
+          <button class="paging_btn">
+            <span class="material-symbols-rounded"> chevron_right </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="up_btn">
+            <a href="#header">
+              <div class="up_arrow_container">
+                <i class="fas fa-chevron-up"></i>
+              </div>
+            </a>
+          </div>
+          <div class="footer_wrap">
+            <div class="footer_left">
+              <div class="footer_leftup">
+                <a href="./artist.html">ARTIST</a>
+                <div></div>
+                <a href="./chart.html">MUSIC</a>
+                <div></div>
+                <a href="./magazine.html">MAGAZINE</a>
+              </div>
+              <p>Copyright Ⓒ 2025 Metaphor. All rights reserved.</p>
+            </div>
+            <div class="footer_logo">
+              <img src="./imgs/logo_footer.svg" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
