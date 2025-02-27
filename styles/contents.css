@@ -1324,13 +1324,18 @@ img {
   border-radius: 20px;
   overflow: hidden;
 }
+.magazine_area .magazine_list li .inner:hover .img img {
+  transform: scale(1.1);
+}
 .magazine_area .magazine_list li .inner .img {
   width: 100%;
   font-size: 0;
+  overflow: hidden;
 }
 .magazine_area .magazine_list li .inner .img img {
   width: 100%;
   object-fit: cover;
+  transition: all 0.4s;
 }
 .magazine_area .magazine_list li .inner .con {
   background: #f3f3f3;
