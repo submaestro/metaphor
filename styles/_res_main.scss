@@ -79,6 +79,49 @@
       }
     }
   }
+
+  // magazine_text
+  .magazine_content {
+    h2 {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+
+    // Magazine Slider
+    .fade {
+      .magazine_slider {
+        .slider-text {
+          .title {
+            font-size: 2.5rem;
+          }
+
+          .name {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+          }
+
+          .slider-line {
+            bottom: 4px;
+            width: 90px;
+          }
+        }
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 10%;
+        &.slick-prev {
+          left: 22%;
+        }
+        &.slick-next {
+          left: 24.7%;
+        }
+        &::before {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .main_visual {
@@ -112,7 +155,53 @@
       }
     }
   }
+
+  // magazine_text
+  .magazine_content {
+    h2 {
+      margin-bottom: 40px;
+      font-size: 3rem;
+    }
+
+    // Magazine Slider
+    .fade {
+      .magazine_slider {
+        .slider-text {
+          left: 7%;
+          gap: 8px;
+          .title {
+            font-size: 2rem;
+          }
+
+          .name {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+          }
+
+          .slider-line {
+            bottom: 4px;
+            width: calc(17px + 8vw);
+          }
+        }
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 9%;
+        &.slick-prev {
+          left: 22%;
+        }
+        &.slick-next {
+          left: 24.7%;
+        }
+        &::before {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
+
 @media screen and (max-width: 670px) {
   // common artist_list
   .artist_contents {
@@ -122,6 +211,7 @@
     .wrapper {
       // 타이틀
       h2 {
+        font-size: 2.5rem;
         margin-bottom: 20px;
       }
       .artist_icons {
@@ -139,6 +229,12 @@
           }
         }
       }
+    }
+  }
+
+  .magazine_content {
+    h2 {
+      margin-bottom: 20px;
     }
   }
 }
@@ -177,6 +273,47 @@
               padding: 13px 10px;
             }
           }
+        }
+      }
+    }
+  }
+
+  // magazine_text
+  .magazine_content {
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    // Magazine Slider
+    .fade {
+      .magazine_slider {
+        .slider-text {
+          .title {
+            font-size: 1.5rem;
+          }
+
+          .name {
+            font-size: 1.4rem;
+          }
+
+          .slider-line {
+            bottom: 4px;
+            width: calc(14px + 8vw);
+          }
+        }
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 8%;
+        &.slick-prev {
+          left: 22%;
+        }
+        &.slick-next {
+          left: 24.7%;
+        }
+        &::before {
+          font-size: 1.4rem;
         }
       }
     }
