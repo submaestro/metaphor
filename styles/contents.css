@@ -9,40 +9,50 @@ img {
 }
 .main_visual .single-item {
   margin: 0 35px 35px 35px;
+  border-radius: 40px;
+  overflow: hidden;
+  font-size: 0;
 }
 .main_visual .single-item .mainVisual_slider {
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
-.main_visual .single-item .mainVisual_slider li img {
+.main_visual .single-item .mainVisual_slider img {
   max-width: 100%;
-  padding: 0 0 30px 0;
-  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+}
+.main_visual .single-item .mainVisual_slider img:nth-child(1) {
+  display: inline-block;
+}
+.main_visual .single-item .mainVisual_slider img:nth-child(2) {
+  display: none;
 }
 .main_visual .slick-prev,
 .main_visual .slick-next {
   position: absolute;
   z-index: 10;
   top: initial;
-  bottom: 10%;
-  width: 30px;
-  height: 30px;
+  bottom: 8%;
+  width: 25px;
+  height: 25px;
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-  border: 1px solid #000;
 }
 .main_visual .slick-prev.slick-prev,
 .main_visual .slick-next.slick-prev {
-  left: 13.2%;
+  left: 11.5%;
 }
 .main_visual .slick-prev.slick-next,
 .main_visual .slick-next.slick-next {
-  left: 15%;
+  left: 13.5%;
 }
 .main_visual .slick-prev::before,
 .main_visual .slick-next::before {
   font-family: "fontawesome";
-  font-size: calc(5px + 0.9vw);
+  font-size: calc(4px + 0.8vw);
   color: #fff;
   opacity: 1;
 }
@@ -579,6 +589,9 @@ img {
 }
 .chart_section.detailinfo_chart .wrapper .chart_list li:hover {
   height: inherit;
+}
+.chart_section.detailinfo_chart .wrapper .chart_list li:hover .music_album p {
+  color: #999;
 }
 
 .chart_section .wrapper .chart_head {

@@ -26,10 +26,30 @@
     }
   }
 }
+@media screen and (max-width: 1440px) {
+  .main_visual {
+    .single-item {
+      .slick-prev,
+      .slick-next {
+        bottom: 6%;
+        width: 20px;
+        &.slick-prev {
+          left: 11%;
+        }
+        &.slick-next {
+          left: 13%;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .main_visual {
     padding-top: map-get($headerHeight, height_mb);
+    .single-item {
+      border-radius: 30px;
+    }
   }
 
   // common artist_list
@@ -64,6 +84,32 @@
   .main_visual {
     .single-item {
       margin: 0 20px 20px 20px;
+      .mainVisual_slider {
+        img {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: block;
+          }
+        }
+      }
+      .slick-prev,
+      .slick-next {
+        bottom: 9.5%;
+        width: 25px;
+        height: 25px;
+        &.slick-prev {
+          left: 25%;
+        }
+        &.slick-next {
+          left: 29%;
+        }
+
+        &::before {
+          font-size: calc(7px + 0.8vw);
+        }
+      }
     }
   }
 }
@@ -98,6 +144,18 @@
 }
 
 @media screen and (max-width: 500px) {
+  .main_visual {
+    .single-item {
+      border-radius: 25px;
+      .slick-prev,
+      .slick-next {
+        bottom: 8.6%;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
   // common artist_list
   .artist_contents {
     padding: 40px 0;

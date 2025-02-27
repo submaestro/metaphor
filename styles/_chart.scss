@@ -417,6 +417,11 @@
 
           &:hover {
             height: inherit;
+            .music_album {
+              p {
+                color: map-get($map: $color, $key: gray_9);
+              }
+            }
           }
         }
       }
