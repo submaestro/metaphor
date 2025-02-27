@@ -14,18 +14,14 @@
   background: map-get($map: $color, $key: gray_de);
 }
 
-.detail_subtitle {
+.subtitles {
+  font-size: 3rem;
   display: flex;
-  color: map-get($map: $color, $key: light);
   align-items: center;
-  gap: 20px;
+  margin-bottom: 40px;
+  gap: 10px;
   margin-bottom: 30px;
-  h3 {
-    font-size: 3rem;
-  }
-  i {
-    font-size: 2.5rem;
-  }
+  color: map-get($map: $color, $key: light);
 }
 
 #detail_page {
@@ -199,7 +195,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      cursor: pointer;
       & > div {
         display: flex;
         flex-direction: column;

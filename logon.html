@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fontawesome -->
-  <script
-  src="https://kit.fontawesome.com/04579c0976.js"
-  crossorigin="anonymous"
-></script>
-  <!-- css & script -->
-   <link rel="stylesheet" href="./styles/common.css">
-  <link rel="stylesheet" href="./styles/contents.css" />
-  <link rel="stylesheet" href="./styles/responsive.css">
-  <script defer src="./script1.js"></script>
-  <title>logon</title>
-</head>
-<body>
-  <section class="log_onwrapper">
-    <div class="logo2">
-      <img
-      src="./imgs/logo.svg"
-      alt="logo"
-    />
-  </div>
-    <form class="logon_contents">
-      <ul>
-        <li>
-          아이디
-          <input class="border" type="text" placeholder="아이디">
-        </li>
-        <li>
-          비밀번호
-          <div class="eyeone">
-            <input class="border" id="passwords" type="password" placeholder="비밀번호">
-            <i class="fas fa-eye eye11"></i>
-          </div>
-        </li>
-        <li>
-          비밀번호 확인
-          <div class="eyetwo">
-            <input class="border" id = "passwordok" type="password" placeholder="비밀번호">
-            <i class="fas fa-eye"></i>
-          </div>
-        </li>
-        <li>
-          이름
-          <input class="border" type="text" placeholder="이름">
-        </li>
-        <li>
-          생년월일
-          <input class="border" type="text" placeholder="생년월일 8자리 입력">
-        </li>
-        <section class="fourbox">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/04579c0976.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css & script -->
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/contents.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script defer src="./script1.js"></script>
+    <title>logon</title>
+  </head>
+  <body>
+    <section class="log_onwrapper">
+      <a href="./index.html">
+        <div class="logo2">
+          <img src="./imgs/logo.svg" alt="logo" />
+        </div>
+      </a>
+      <form class="logon_contents">
+        <ul>
+          <li>
+            아이디
+            <input class="border" type="text" placeholder="아이디" />
+          </li>
+          <li>
+            비밀번호
+            <div class="eyeone">
+              <input
+                class="border"
+                id="passwords"
+                type="password"
+                placeholder="비밀번호"
+              />
+              <i class="fas fa-eye eye11"></i>
+            </div>
+          </li>
+          <li>
+            비밀번호 확인
+            <div class="eyetwo">
+              <input
+                class="border"
+                id="passwordok"
+                type="password"
+                placeholder="비밀번호"
+              />
+              <i class="fas fa-eye"></i>
+            </div>
+          </li>
+          <li>
+            이름
+            <input class="border" type="text" placeholder="이름" />
+          </li>
+          <li>
+            생년월일
+            <input
+              class="border"
+              type="text"
+              placeholder="생년월일 8자리 입력"
+            />
+          </li>
+          <section class="fourbox">
             <button id="man">남자</button>
             <button id="woman">여자</button>
             <button id="localman">내국인</button>
             <button id="foreigner">외국인</button>
-        </section>
-        <li class="number">
-          휴대전화번호
-          <input class="border" type="text" placeholder="전화번호"><i class="fas fa-mobile-screen-button"></i>
-        </li>
-        <div class="signup">
-          <button>회원가입</button>
-        </div>
-      </ul>
-    </form>
-  </section>
-</body>
+          </section>
+          <li class="number">
+            휴대전화번호
+            <input class="border" type="text" placeholder="전화번호" /><i
+              class="fas fa-mobile-screen-button"
+            ></i>
+          </li>
+          <div class="signup">
+            <button>회원가입</button>
+          </div>
+        </ul>
+      </form>
+    </section>
+  </body>
 </html>

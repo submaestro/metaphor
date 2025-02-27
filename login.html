@@ -9,31 +9,34 @@
       crossorigin="anonymous"
     ></script>
     <!-- css & script -->
-    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/contents.css" />
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="./script.js"></script>
     <title>login</title>
   </head>
   <body>
     <div class="login_wrapper">
-      <div class="logo">
-        <img
-          src="./imgs/logo.svg"
-          alt="logo
-        "
-        />
-      </div>
+      <a href="./index.html">
+        <div class="logo">
+          <img
+            src="./imgs/logo.svg"
+            alt="logo
+          "
+          />
+        </div>
+      </a>
       <ul class="login">
         <h3 id="identity">아이디</h3>
         <li>
-          <form class="eye"><input id="id" type="text" placeholder="아이디"/></form>
+          <form class="eye">
+            <input id="id" type="text" placeholder="아이디" />
+          </form>
         </li>
         <h3 id="lock">비밀번호</h3>
         <li>
           <form class="eye" name="pw" action="#" method="get">
-            <input id="password" type="password" 
-            placeholder="비밀번호"/>
+            <input id="password" type="password" placeholder="비밀번호" />
             <i class="fas fa-eye"></i>
           </form>
         </li>
@@ -44,15 +47,17 @@
           로그인 정보 저장
         </label>
       </div>
-      <div class="button">
-        <button>로그인하기</button>
-      </div>
+      <a href="./index.html">
+        <div class="button">
+          <button>로그인하기</button>
+        </div>
+      </a>
       <ul id="search">
         <li><a href="#">아이디찾기</a></li>
         <div class="line"></div>
         <li><a href="#">비밀번호찾기</a></li>
         <div class="line"></div>
-        <li><a href="#">회원가입</a></li>
+        <li><a href="./logon.html">회원가입</a></li>
       </ul>
       <ul class="continue">
         <li id="google">
@@ -65,9 +70,9 @@
             <p>continue with Google</p>
           </a>
         </li>
-        <li  id="apple">
+        <li id="apple">
           <a href="#">
-          <img id="apple" src="./imgs/Vector.png" alt="apple" />
+            <img id="apple" src="./imgs/Vector.png" alt="apple" />
             <p>continue with Apple</p>
           </a>
         </li>
