@@ -1032,7 +1032,8 @@ body {
   border: 1px solid #999;
   cursor: pointer;
 }
-.log_onwrapper .logon_contents .fourbox button:active {
+.log_onwrapper .logon_contents .fourbox button.clicked {
+  color: #fff;
   background-color: #03d8c5;
   transform: scale(1);
 }
