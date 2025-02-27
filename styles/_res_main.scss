@@ -1,6 +1,4 @@
 // Index Page
-@media screen and (max-width: 670px) {
-}
 
 // 1440px (높이  / 1023px // 767px
 @import "variables";
@@ -62,7 +60,13 @@
     }
   }
 }
-
+@media screen and (max-width: 767px) {
+  .main_visual {
+    .single-item {
+      margin: 0 20px 20px 20px;
+    }
+  }
+}
 @media screen and (max-width: 670px) {
   // common artist_list
   .artist_contents {
@@ -72,7 +76,6 @@
     .wrapper {
       // 타이틀
       h2 {
-        font-size: 2.5rem;
         margin-bottom: 20px;
       }
       .artist_icons {

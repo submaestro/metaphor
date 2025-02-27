@@ -397,6 +397,86 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .main_visual {
+    padding-top: 80px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 20px 14px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main_visual {
+    padding-top: 60px;
+  }
+  .artist_contents {
+    padding: 50px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main_visual .single-item {
+    margin: 0 20px 20px 20px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .artist_contents {
+    padding: 40px 0;
+  }
+  .artist_contents .wrapper h2 {
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 33.33%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .artist_contents {
+    padding: 40px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 50%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 13px 10px;
+  }
+}
+@media screen and (max-width: 1440px) {
   .chart_section .wrapper .chart_list li .ranking {
     width: 8%;
     height: 70px;
@@ -736,20 +816,22 @@
     padding-left: 0;
   }
 }
-@media screen and (max-width: 1250px) {
-  .chart_section.main_chart5 {
-    margin-top: inherit;
+@media screen and (max-width: 1023px) {
+  .chart_section.main_chart5 .wrapper h2 {
+    font-size: 2.5rem;
   }
   .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: inherit;
+    margin-top: 30px;
   }
 }
-@media screen and (max-width: 767px) {
-  .chart_section.main_chart5 {
-    margin-top: inherit;
-  }
+@media screen and (max-width: 670px) {
   .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: inherit;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .chart_section.main_chart5 .wrapper h2 {
+    font-size: 2.1rem;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -971,7 +1053,9 @@
   #detail_page .detail_sns_section .detail_sns img {
     width: 20px;
   }
-<<<<<<< HEAD
+  #detail_page #modal_section {
+    zoom: 0.7;
+  }
 }
 @media screen and (max-width: 1023px) {
   .magazine_area h3 {
@@ -1041,87 +1125,6 @@
     font-size: 1.5rem;
   }
 }
-=======
-  #detail_page #modal_section {
-    zoom: 0.7;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .main_visual {
-    padding-top: 80px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 20px 14px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .main_visual {
-    padding-top: 60px;
-  }
-  .artist_contents {
-    padding: 50px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
-  }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 16px 10px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 670px) {
-  .artist_contents {
-    padding: 40px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
-  }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 33.33%;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 16px 10px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .artist_contents {
-    padding: 40px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
-  }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
-  }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 50%;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 13px 10px;
-  }
-}
 @media screen and (max-width: 670px) {
   .login_wrapper {
     background-color: #fff;
@@ -1146,7 +1149,7 @@
   .login_wrapper .eye input i {
     left: -70px;
   }
-  .login_wrapper button {
+  .login_wrapper .button {
     width: 100%;
   }
   .login_wrapper #search {
@@ -1210,7 +1213,7 @@
   .log_onwrapper .logon_contents ul .fourbox button {
     width: 70%;
   }
-  .log_onwrapper .logon_contents .signup button {
+  .log_onwrapper .logon_contents .signup > div {
     position: relative;
     width: 100%;
   }
@@ -1234,5 +1237,4 @@
   .mypage .info .personal_info {
     font-size: 2rem;
   }
-}/*# sourceMappingURL=responsive.css.map */
->>>>>>> 70b3977bc0105d2119820c0f51b0bce76af2b56f
+}
