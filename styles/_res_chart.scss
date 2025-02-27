@@ -37,7 +37,6 @@
 
 @media screen and (max-width: 1250px) {
   .chart_section {
-    margin-top: 90px;
     .wrapper {
       // chart_top
       .chart_top {
@@ -84,9 +83,7 @@
               font-size: 1.7rem;
             }
             .icon {
-              img {
-                width: 8px;
-              }
+              width: 8px;
             }
           }
 
@@ -241,9 +238,7 @@
               font-size: 1.5rem;
             }
             .icon {
-              img {
-                width: 7px;
-              }
+              width: 7px;
             }
           }
 
@@ -503,20 +498,7 @@
       .wrapper {
         h2 {
           font-size: 2.5rem;
-        }
-        .chart_head {
-          margin-top: 30px;
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 670px) {
-  .chart_section {
-    &.main_chart5 {
-      .wrapper {
-        .chart_head {
-          margin-top: 20px;
+          margin-bottom: 30px;
         }
       }
     }
@@ -529,6 +511,7 @@
       .wrapper {
         h2 {
           font-size: 2.1rem;
+          margin-bottom: 20px;
         }
       }
     }

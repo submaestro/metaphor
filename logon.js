@@ -32,17 +32,95 @@ eyecon.addEventListener("click", () => {
 });
 
 
+
+
 const buttons = document.querySelectorAll(".fourbox button")
+const onetwobuttons = [buttons[0], buttons[1]];
+const threefourbuttons = [buttons[2], buttons[3]];
+console.log(onetwobuttons);
 
-console.log(buttons);
+
 buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.classList.add("active")
+  button.addEventListener("click",(event) => {
+    event.preventDefault();
+  })
+})
 
-    buttons.forEach((nonbutton) => {
-      if(!nonbutton.classList.contains("active")){
-        nonbutton.classList.remove("active")
-      }
-    })
+
+
+onetwobuttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // 모든 버튼에서 'clicked' 클래스를 제거
+    onetwobuttons.forEach((nonbutton) => {
+      nonbutton.classList.remove("clicked");
+    });
+
+    // 클릭된 버튼에 'clicked' 클래스를 추가
+    button.classList.add("clicked");
   });
 });
+
+threefourbuttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // 모든 버튼에서 'clicked' 클래스를 제거
+    threefourbuttons.forEach((nonbutton) => {
+      nonbutton.classList.remove("clicked");
+    });
+
+    // 클릭된 버튼에 'clicked' 클래스를 추가
+    button.classList.add("clicked");
+  });
+});
+
+
+
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     // 클릭된 버튼에만 'active' 클래스를 추가
+//     // 모든 버튼에서 'active' 클래스를 제거하는 코드가 없어짐
+//     button.classList.add("active");
+//   });
+// });
+
+
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     // 모든 버튼에서 'active' 클래스를 제거
+//     buttons.forEach((nonbutton) => {
+//       nonbutton.classList.remove("active");
+//     });
+
+//     // 클릭된 버튼에 'active' 클래스를 추가
+//     button.classList.add("active");
+//   });
+// });
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     // 클릭된 버튼에 'active' 클래스가 없으면 추가
+//     if (!button.classList.contains("active")) {
+//       button.classList.add("active");
+//     }
+//   });
+// });
+
+
+
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     if(button.value === "남자") {
+//     } else
+
+//     button.classList.add("active")
+
+//     buttons.forEach((nonbutton) => {
+//       if(!nonbutton.classList.contains("active")){
+//         nonbutton.classList.remove("active")
+//       }
+//     })
+//   });
+// });
+
