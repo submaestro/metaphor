@@ -64,8 +64,19 @@ const mslides = document.querySelector(".mslides");
 const mslide = document.querySelectorAll(".mslides li");
 
 const mslideCount = mslide.length;
+
 const mslideWidth = 400;
 const mslideMargin = 100;
+// let mslideStyles = window.getComputedStyle(mslides);
+// let mslideMargin = parseInt(mslideStyles.gap, 10);
+
+// let mslideWidth;
+// mslide.forEach((slide) => {
+//   let mslideStyle = window.getComputedStyle(slide);
+//   mslideWidth = parseInt(mslideStyle.width, 10);
+// });
+
+// console.log(mslideWidth, mslideMargin);
 
 let currentIdx = 0;
 
@@ -130,6 +141,9 @@ const autoSlide = () => {
     // 중복 실행 방지
     timer = setInterval(() => {
       moveSlide(currentIdx + 1); // 3초마다 다음 슬라이드 이동
+      if (currentIdx === mslideCount) {
+        currentIdx = 0; // 슬라이드가 끝나면 처음으로 돌아가기
+      }
     }, 3000);
   }
 };
