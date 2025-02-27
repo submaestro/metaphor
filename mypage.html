@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f37fd463ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/contents.css" />
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <script defer src="./common.js"></script>
+    <script defer src="./script3.js"></script>
+    <title>mypage</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="header_wrap">
+        <div class="header_left">
+          <h1 class="header_logo">
+            <a href="./index.html">
+              <img src="./imgs/logo.svg" alt="logo" />
+              <img src="./imgs/logo_w.svg" alt="logo_white" />
+            </a>
+          </h1>
+          <ul id="gnb">
+            <li><a href="#">ARTIST</a></li>
+            <li><a href="./chart.html">MUSIC</a></li>
+            <li><a href="#">MAGAZINE</a></li>
+          </ul>
+        </div>
+        <div class="header_right">
+          <form
+            id="search_form_pc"
+            name="search_bar_pc"
+            method="#"
+            action="post"
+            class="search_bar"
+          >
+            <button class="search_btn">
+              <img src="./imgs/h_search.svg" alt="search" />
+            </button>
+            <input class="search_txt" type="text" placeholder="아티스트 검색" />
+          </form>
+          <a class="signup_btn" href="#">
+            <span>sign up</span>
+          </a>
+        </div>
+        <div class="header_right_m">
+          <button class="search_btn_m">
+            <img src="./imgs/h_search_m.svg" alt="search" />
+            <img src="./imgs/h_search_m_w.svg" alt="search" />
+          </button>
+          <a class="signup_btn_m" href="#">
+            <img src="./imgs/h_signup_m.svg" alt="search" />
+            <img src="./imgs/h_signup_m_w.svg" alt="search" />
+          </a>
+          <div class="trigger_bar_m">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="header_menu_m">
+          <div id="header_menuBox"></div>
+        </div>
+        <div id="search_area_m">
+          <form
+            id="search_form_mb"
+            name="search_bar_mb"
+            method="#"
+            action="post"
+            class="search_bar"
+          >
+            <button class="search_btn">
+              <img src="./imgs/h_search.svg" alt="search" />
+            </button>
+            <input class="search_txt" type="text" placeholder="아티스트 검색" />
+          </form>
+          <button class="search_close_m">
+            <img src="./imgs/h_search__back_m.svg" alt="SearchCloseBtn" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- mypage -->
+    <main class="mypage">
+      <section class="info">
+        <h1 class="myinfo">내정보</h1>
+        <ul class="info_list">
+          <li><b>아이디</b> <br>
+          a67******@gmail.com</li>
+          <li><b>닉네임</b> <br>
+            <span>메타포<button><b>변경</b></button></span>
+          </li>
+          <li><b>이름</b> <br>
+          <span>정휘찬<button><b>변경</b></button></span></li>
+          <li><b>비밀번호</b> <br>
+            <span>비밀번호설정<button><b>변경</b></button></span></li>
+          <li><b>국가</b> <br>
+          대한민국</li>
+          <li><b>전화번호 </b><br>
+          010-4920-4993</li>
+        </ul>
+        <h2 class="agree">약관 및 정책</h2>
+        <ul class="personal_info">
+          <li>
+            <h3>개인정보 방침</h3>
+            <span class="see">보기
+              <i  class="fas fa-angle-right"></i>
+            </span>
+          </li>
+          <li>
+            <h3>이용약관</h3>
+            <span class="see">보기
+              <i  class="fas fa-angle-right"></i>
+            </span>
+          </li>
+        </ul>
+        <div class="logout"><a href="#">메타포 계정 탈퇴하기</a></div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="up_btn">
+          <a href="#header">
+            <div class="up_arrow_container">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+        <div class="footer_wrap">
+          <div class="footer_left">
+            <div class="footer_leftup">
+              <a href="#">ARTIST</a>
+              <div></div>
+              <a href="#">MUSIC</a>
+              <div></div>
+              <a href="#">MAGAZINE</a>
+            </div>
+            <p>Copyright Ⓒ 2025 Metaphor. All rights reserved.</p>
+          </div>
+          <div class="footer_logo">
+            <img src="./imgs/logo_footer.svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

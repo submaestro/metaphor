@@ -1047,4 +1047,117 @@
   .artist_contents .wrapper .artist_icons li a .icon_text {
     padding: 13px 10px;
   }
+}
+@media screen and (max-width: 670px) {
+  .login_wrapper {
+    background-color: #fff;
+    padding: 50px 50px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .login_wrapper .logo {
+    width: 160px;
+  }
+  .login_wrapper .login {
+    width: 100%;
+  }
+  .login_wrapper .eye {
+    width: 100%;
+  }
+  .login_wrapper .eye input {
+    width: 100%;
+  }
+  .login_wrapper .eye input i {
+    left: -70px;
+  }
+  .login_wrapper button {
+    width: 100%;
+  }
+  .login_wrapper #search {
+    width: 100%;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .login_wrapper ul.continue {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .login_wrapper ul.continue a {
+    width: 100%;
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    font-size: 1rem;
+    gap: 20px;
+  }
+  .login_wrapper ul.continue p {
+    font-size: 1.6rem;
+  }
+  .login_wrapper ul.continue li #apple {
+    margin-right: 10px;
+  }
+  .login_wrapper ul.continue li #facebook {
+    margin-left: 19px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .log_onwrapper {
+    background-color: #fff;
+    padding: 50px 50px;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .log_onwrapper .logo2 {
+    width: 160px;
+  }
+  .log_onwrapper .logon_contents {
+    position: relative;
+    width: 100%;
+  }
+  .log_onwrapper .logon_contents ul {
+    position: absolute;
+    width: 100%;
+  }
+  .log_onwrapper .logon_contents ul li {
+    width: 100%;
+  }
+  .log_onwrapper .logon_contents ul .fourbox {
+    width: 100%;
+  }
+  .log_onwrapper .logon_contents ul .fourbox button {
+    width: 70%;
+  }
+  .log_onwrapper .logon_contents .signup button {
+    position: relative;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .mypage {
+    background-color: #fff;
+    padding: 50px 50px;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+  .mypage .info {
+    margin-top: 60px;
+  }
+  .mypage .info li {
+    font-size: 1.5rem;
+  }
+  .mypage .info .personal_info {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=responsive.css.map */
