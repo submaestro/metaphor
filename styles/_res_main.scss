@@ -1,0 +1,123 @@
+// Index Page
+@media screen and (max-width: 670px) {
+}
+
+// 1440px (높이  / 1023px // 767px
+@import "variables";
+
+@media screen and (max-width: 1440px) {
+  .main_visual {
+    padding-top: map-get($headerHeight, height_tb);
+  }
+  // common artist_list
+  .artist_contents {
+    // 4개 아티스트 아이콘
+    .wrapper {
+      .artist_icons {
+        li {
+          a {
+            .icon_text {
+              padding: 20px 14px;
+              .artist_name {
+                font-size: 2.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .main_visual {
+    padding-top: map-get($headerHeight, height_mb);
+  }
+
+  // common artist_list
+  .artist_contents {
+    padding: 50px 0;
+
+    // 4개 아티스트 아이콘
+    .wrapper {
+      // 타이틀
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+      .artist_icons {
+        margin: -10px;
+        li {
+          padding: 10px;
+          a {
+            .icon_text {
+              padding: 16px 10px;
+              .artist_name {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  // common artist_list
+  .artist_contents {
+    padding: 40px 0;
+
+    // 4개 아티스트 아이콘
+    .wrapper {
+      // 타이틀
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .artist_icons {
+        margin: -10px;
+        li {
+          padding: 10px;
+          width: 33.33%;
+          a {
+            .icon_text {
+              padding: 16px 10px;
+              .artist_name {
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  // common artist_list
+  .artist_contents {
+    padding: 40px 0;
+
+    // 4개 아티스트 아이콘
+    .wrapper {
+      // 타이틀
+      h2 {
+        font-size: 2.1rem;
+        margin-bottom: 20px;
+      }
+      .artist_icons {
+        margin: -10px;
+        li {
+          padding: 10px;
+          width: 50%;
+          a {
+            .icon_text {
+              padding: 13px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

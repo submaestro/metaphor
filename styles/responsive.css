@@ -972,6 +972,82 @@
     zoom: 0.7;
   }
 }
+@media screen and (max-width: 1440px) {
+  .main_visual {
+    padding-top: 80px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 20px 14px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main_visual {
+    padding-top: 60px;
+  }
+  .artist_contents {
+    padding: 50px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .artist_contents {
+    padding: 40px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 33.33%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .artist_contents {
+    padding: 40px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 50%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 13px 10px;
+  }
+}
 @media screen and (max-width: 670px) {
   .login_wrapper {
     background-color: #fff;
