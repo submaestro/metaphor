@@ -1,7 +1,3 @@
-// Index Page
-@media screen and (max-width: 670px) {
-}
-
 // 1440px (높이  / 1023px // 767px
 @import "variables";
 
@@ -61,6 +57,95 @@
       }
     }
   }
+  // magazine_text
+  .magazine_content {
+    h2 {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+
+    // Magazine Slider
+    .fade {
+      .magazine_slider {
+        .slider-text {
+          .title {
+            font-size: 2.5rem;
+          }
+
+          .name {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+          }
+
+          .slider-line {
+            bottom: 4px;
+            width: 90px;
+          }
+        }
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 10%;
+        &.slick-prev {
+          left: 22%;
+        }
+        &.slick-next {
+          left: 24.7%;
+        }
+        &::before {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  // magazine_text
+  .magazine_content {
+    h2 {
+      margin-bottom: 40px;
+      font-size: 3rem;
+    }
+
+    // Magazine Slider
+    .fade {
+      .magazine_slider {
+        .slider-text {
+          left: 7%;
+          gap: 8px;
+          .title {
+            font-size: 2rem;
+          }
+
+          .name {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+          }
+
+          .slider-line {
+            bottom: 4px;
+            width: calc(17px + 8vw);
+          }
+        }
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 9%;
+        &.slick-prev {
+          left: 22%;
+        }
+        &.slick-next {
+          left: 24.7%;
+        }
+        &::before {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -92,6 +177,12 @@
       }
     }
   }
+
+  .magazine_content {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -116,6 +207,47 @@
               padding: 13px 10px;
             }
           }
+        }
+      }
+    }
+  }
+
+  // magazine_text
+  .magazine_content {
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    // Magazine Slider
+    .fade {
+      .magazine_slider {
+        .slider-text {
+          .title {
+            font-size: 1.5rem;
+          }
+
+          .name {
+            font-size: 1.4rem;
+          }
+
+          .slider-line {
+            bottom: 4px;
+            width: calc(14px + 8vw);
+          }
+        }
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 8%;
+        &.slick-prev {
+          left: 22%;
+        }
+        &.slick-next {
+          left: 24.7%;
+        }
+        &::before {
+          font-size: 1.4rem;
         }
       }
     }

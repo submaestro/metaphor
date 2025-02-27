@@ -1006,6 +1006,74 @@
   .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
     font-size: 2rem;
   }
+  .magazine_content h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .title {
+    font-size: 2.5rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .name {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .slider-line {
+    bottom: 4px;
+    width: 90px;
+  }
+  .magazine_content .fade .slick-prev,
+  .magazine_content .fade .slick-next {
+    bottom: 10%;
+  }
+  .magazine_content .fade .slick-prev.slick-prev,
+  .magazine_content .fade .slick-next.slick-prev {
+    left: 22%;
+  }
+  .magazine_content .fade .slick-prev.slick-next,
+  .magazine_content .fade .slick-next.slick-next {
+    left: 24.7%;
+  }
+  .magazine_content .fade .slick-prev::before,
+  .magazine_content .fade .slick-next::before {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .magazine_content h2 {
+    margin-bottom: 40px;
+    font-size: 3rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text {
+    left: 7%;
+    gap: 8px;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .title {
+    font-size: 2rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .name {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .slider-line {
+    bottom: 4px;
+    width: calc(17px + 8vw);
+  }
+  .magazine_content .fade .slick-prev,
+  .magazine_content .fade .slick-next {
+    bottom: 9%;
+  }
+  .magazine_content .fade .slick-prev.slick-prev,
+  .magazine_content .fade .slick-next.slick-prev {
+    left: 22%;
+  }
+  .magazine_content .fade .slick-prev.slick-next,
+  .magazine_content .fade .slick-next.slick-next {
+    left: 24.7%;
+  }
+  .magazine_content .fade .slick-prev::before,
+  .magazine_content .fade .slick-next::before {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 670px) {
   .artist_contents {
@@ -1028,6 +1096,9 @@
   .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
     font-size: 1.8rem;
   }
+  .magazine_content h2 {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   .artist_contents {
@@ -1046,6 +1117,35 @@
   }
   .artist_contents .wrapper .artist_icons li a .icon_text {
     padding: 13px 10px;
+  }
+  .magazine_content h2 {
+    font-size: 2.1rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .title {
+    font-size: 1.5rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .name {
+    font-size: 1.4rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .slider-line {
+    bottom: 4px;
+    width: calc(14px + 8vw);
+  }
+  .magazine_content .fade .slick-prev,
+  .magazine_content .fade .slick-next {
+    bottom: 8%;
+  }
+  .magazine_content .fade .slick-prev.slick-prev,
+  .magazine_content .fade .slick-next.slick-prev {
+    left: 22%;
+  }
+  .magazine_content .fade .slick-prev.slick-next,
+  .magazine_content .fade .slick-next.slick-next {
+    left: 24.7%;
+  }
+  .magazine_content .fade .slick-prev::before,
+  .magazine_content .fade .slick-next::before {
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 670px) {
