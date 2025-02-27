@@ -400,26 +400,16 @@
   .main_visual {
     padding-top: 80px;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 20px 14px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (max-width: 1440px) {
   .main_visual .single-item .slick-prev,
   .main_visual .single-item .slick-next {
     bottom: 6%;
     width: 20px;
   }
-  .main_visual .single-item .slick-prev.slick-prev,
-  .main_visual .single-item .slick-next.slick-prev {
-    left: 11%;
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 20px 14px;
   }
-  .main_visual .single-item .slick-prev.slick-next,
-  .main_visual .single-item .slick-next.slick-next {
-    left: 13%;
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2.2rem;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -430,7 +420,7 @@
     border-radius: 30px;
   }
   .artist_contents {
-    padding: 50px 0;
+    padding: 70px 0;
   }
   .artist_contents .wrapper h2 {
     font-size: 2.5rem;
@@ -446,7 +436,10 @@
     padding: 16px 10px;
   }
   .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .magazine_content {
+    margin: 90px 0;
   }
   .magazine_content h2 {
     margin-bottom: 30px;
@@ -509,8 +502,8 @@
     font-size: calc(7px + 0.8vw);
   }
   .magazine_content h2 {
-    margin-bottom: 40px;
-    font-size: 3rem;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
   }
   .magazine_content .fade .magazine_slider .slider-text {
     left: 7%;
@@ -526,6 +519,7 @@
   .magazine_content .fade .magazine_slider .slider-text .slider-line {
     bottom: 4px;
     width: calc(17px + 8vw);
+    height: 1px;
   }
   .magazine_content .fade .slick-prev,
   .magazine_content .fade .slick-next {
@@ -533,20 +527,20 @@
   }
   .magazine_content .fade .slick-prev.slick-prev,
   .magazine_content .fade .slick-next.slick-prev {
-    left: 22%;
+    left: 20%;
   }
   .magazine_content .fade .slick-prev.slick-next,
   .magazine_content .fade .slick-next.slick-next {
-    left: 24.7%;
+    left: 23.7%;
   }
   .magazine_content .fade .slick-prev::before,
   .magazine_content .fade .slick-next::before {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 670px) {
   .artist_contents {
-    padding: 40px 0;
+    padding: 55px 0;
   }
   .artist_contents .wrapper h2 {
     font-size: 2.5rem;
@@ -563,7 +557,10 @@
     padding: 16px 10px;
   }
   .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  .magazine_content {
+    margin: 70px 0;
   }
   .magazine_content h2 {
     margin-bottom: 20px;
@@ -580,7 +577,7 @@
     height: 20px;
   }
   .artist_contents {
-    padding: 40px 0;
+    padding: 50px 0;
   }
   .artist_contents .wrapper h2 {
     font-size: 2.1rem;
@@ -598,6 +595,7 @@
   }
   .magazine_content h2 {
     font-size: 2.1rem;
+    margin-bottom: 20px;
   }
   .magazine_content .fade .magazine_slider .slider-text .title {
     font-size: 1.5rem;
@@ -607,7 +605,7 @@
   }
   .magazine_content .fade .magazine_slider .slider-text .slider-line {
     bottom: 4px;
-    width: calc(14px + 8vw);
+    width: calc(16px + 8vw);
   }
   .magazine_content .fade .slick-prev,
   .magazine_content .fade .slick-next {
@@ -619,11 +617,11 @@
   }
   .magazine_content .fade .slick-prev.slick-next,
   .magazine_content .fade .slick-next.slick-next {
-    left: 24.7%;
+    left: 25.7%;
   }
   .magazine_content .fade .slick-prev::before,
   .magazine_content .fade .slick-next::before {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -647,9 +645,6 @@
   }
 }
 @media screen and (max-width: 1250px) {
-  .chart_section {
-    margin-top: 90px;
-  }
   .chart_section .wrapper .chart_top .chart_cate {
     gap: 8px;
   }
@@ -684,7 +679,7 @@
   .chart_section .wrapper .chart_list li .ranking h4 {
     font-size: 1.7rem;
   }
-  .chart_section .wrapper .chart_list li .ranking .icon img {
+  .chart_section .wrapper .chart_list li .ranking .icon {
     width: 8px;
   }
   .chart_section .wrapper .chart_list li .music_info figure {
@@ -803,7 +798,7 @@
   .chart_section .wrapper .chart_list li .ranking h4 {
     font-size: 1.5rem;
   }
-  .chart_section .wrapper .chart_list li .ranking .icon img {
+  .chart_section .wrapper .chart_list li .ranking .icon {
     width: 7px;
   }
   .chart_section .wrapper .chart_list li .music_info {
@@ -969,19 +964,28 @@
 @media screen and (max-width: 1023px) {
   .chart_section.main_chart5 .wrapper h2 {
     font-size: 2.5rem;
-  }
-  .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 670px) {
-  .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 500px) {
   .chart_section.main_chart5 .wrapper h2 {
     font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .artist_contents.sub_artist_list {
+    padding: 70px 0 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .artist_contents.sub_artist_list {
+    padding: 60px 0 0 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .artist_contents.sub_artist_list {
+    padding: 45px 0 0 0;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -1081,6 +1085,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  #detail_page .detail_hr {
+    margin-bottom: 100px;
+  }
   .subtitles {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -1142,6 +1149,12 @@
   }
   #detail_page .detail_introduce_section .detail_introduce_mem > div span {
     font-size: 1.6rem;
+  }
+  #detail_page .detail_MV_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_music_section {
+    margin-bottom: 100px;
   }
   #detail_page .detail_media_section {
     margin-bottom: 100px;
@@ -1377,10 +1390,17 @@
   .mypage .info {
     margin-top: 60px;
   }
-  .mypage .info li {
-    font-size: 1.5rem;
+  .mypage .info .myinfo {
+    font-size: 2.7rem;
+    margin-bottom: 28px;
   }
-  .mypage .info .personal_info {
-    font-size: 2rem;
+  .mypage .info .info_list li {
+    font-size: 1.8rem;
   }
-}/*# sourceMappingURL=responsive.css.map */
+  .mypage .info .agree {
+    font-size: 2.7rem;
+  }
+  .mypage .info .personal_info li {
+    font-size: 1.8rem;
+  }
+}
