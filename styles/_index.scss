@@ -177,6 +177,14 @@ img {
     .magazine_slider {
       position: relative;
       cursor: pointer;
+      .mark {
+        position: absolute;
+        width: 70px;
+        aspect-ratio: 1;
+        border-radius: 20px;
+        bottom: 11%;
+        right: 6.5%;
+      }
       img {
         width: 100%; // 이미지를 슬라이더 너비에 맞게 조정
         display: block;

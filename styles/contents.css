@@ -150,6 +150,14 @@ img {
   position: relative;
   cursor: pointer;
 }
+.magazine_content .fade .magazine_slider .mark {
+  position: absolute;
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  bottom: 11%;
+  right: 6.5%;
+}
 .magazine_content .fade .magazine_slider img {
   width: 100%;
   display: block;
@@ -677,6 +685,7 @@ img {
   left: 60px;
   word-break: keep-all;
   position: absolute;
+  z-index: 1;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text p {
   font-size: 1.6rem;
@@ -704,6 +713,7 @@ img {
   display: flex;
   gap: 10px;
   position: absolute;
+  z-index: 1;
 }
 #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button {
   width: 138px;
@@ -745,7 +755,7 @@ img {
 #detail_page .detail_main_section .detail_main .detail_main_inner > img {
   position: absolute;
   right: 3vh;
-  bottom: 3vh;
+  bottom: 3%;
   width: 20%;
 }
 #detail_page .detail_introduce_section {
@@ -883,6 +893,10 @@ img {
   font-weight: 200;
   line-height: 1.4;
   color: #fff;
+}
+#detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart {
+  width: 45px;
+  text-align: left;
 }
 #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart img {
   cursor: pointer;
@@ -1328,13 +1342,14 @@ button {
   width: 108px;
   height: 40px;
   color: #666;
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
 .log_onwrapper .logon_contents .fourbox button.clicked {
   color: #fff;
   background-color: #03d8c5;
   transform: scale(1);
+  border: 1px solid #03d8c5;
 }
 .log_onwrapper .logon_contents .fourbox button:first-child {
   border-radius: 8px 0 0 8px;
