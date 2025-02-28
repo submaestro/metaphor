@@ -95,6 +95,7 @@
           left: 60px;
           word-break: keep-all;
           position: absolute;
+          z-index: 1;
           p {
             font-size: 1.6rem;
             line-height: 130%;
@@ -122,6 +123,7 @@
           display: flex;
           gap: 10px;
           position: absolute;
+          z-index: 1;
           button {
             width: 138px;
             height: 38px;
@@ -163,7 +165,7 @@
         & > img {
           position: absolute;
           right: 3vh;
-          bottom: 3vh;
+          bottom: 3%;
           width: 20%;
         }
       }
@@ -314,6 +316,8 @@
           }
         }
         .detail_fantalk_heart {
+          width: 45px;
+          text-align: left;
           img {
             cursor: pointer;
             width: 17px;

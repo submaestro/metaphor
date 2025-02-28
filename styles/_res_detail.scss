@@ -195,7 +195,7 @@
         }
         & > img {
           right: 3.5vh;
-          bottom: 10vh;
+          bottom: 11.5%;
         }
       }
     }
@@ -253,6 +253,7 @@
       gap: 30px;
       .detail_fantalk_content {
         .detail_fantalk_text {
+          width: 90%;
           // max-width: 400px;
           h5 {
             font-size: 1.2rem;
@@ -265,6 +266,7 @@
           }
         }
         .detail_fantalk_heart {
+          width: 35px;
           img {
             width: 14px;
           }
@@ -304,5 +306,61 @@
   .subtitles {
     font-size: 2.1rem;
     margin-bottom: 20px;
+  }
+  #detail_page .detail_main_section {
+    margin-bottom: 100px;
+    .detail_main {
+      .detail_main_img {
+        height: 740px;
+      }
+      .detail_main_inner {
+        .detail_main_text {
+          left: 40px;
+          width: 77%;
+          .detail_main_text_inner {
+            h3 {
+              font-size: 1.8rem;
+            }
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        .detail_main_btn {
+          left: 40px;
+          bottom: 40px;
+          gap: 5px;
+          button {
+            width: 87px;
+            height: 30px;
+            gap: 3px;
+            img {
+              width: 14px;
+            }
+            span {
+              font: 300 1rem/34px map-get($map: $font, $key: pretendard);
+            }
+            &:last-child {
+              width: 87px;
+              i {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #detail_page .detail_introduce_section {
+    .detail_introduce_text {
+      .detail_introduce_main {
+        b {
+          display: block;
+        }
+      }
+    }
   }
 }

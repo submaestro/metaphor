@@ -445,6 +445,12 @@
     margin-bottom: 30px;
     font-size: 2.5rem;
   }
+  .magazine_content .fade .magazine_slider .mark {
+    width: 60px;
+    aspect-ratio: 1;
+    bottom: 11%;
+    right: 6.5%;
+  }
   .magazine_content .fade .magazine_slider .slider-text .title {
     font-size: 2.5rem;
   }
@@ -504,6 +510,13 @@
   .magazine_content h2 {
     margin-bottom: 20px;
     font-size: 2.5rem;
+  }
+  .magazine_content .fade .magazine_slider .mark {
+    width: calc(20px + 4vw);
+    border-radius: 12px;
+    aspect-ratio: 1;
+    bottom: 11%;
+    right: 6.5%;
   }
   .magazine_content .fade .magazine_slider .slider-text {
     left: 7%;
@@ -1129,7 +1142,7 @@
   }
   #detail_page .detail_main_section .detail_main .detail_main_inner > img {
     right: 3.5vh;
-    bottom: 10vh;
+    bottom: 11.5%;
   }
   #detail_page .detail_introduce_section {
     margin-bottom: 100px;
@@ -1176,6 +1189,9 @@
   #detail_page .detail_fantalk_section .detail_fantalk_contents {
     gap: 30px;
   }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text {
+    width: 90%;
+  }
   #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h5 {
     font-size: 1.2rem;
   }
@@ -1184,6 +1200,9 @@
   }
   #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text p {
     font-size: 1.2rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart {
+    width: 35px;
   }
   #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart img {
     width: 14px;
@@ -1214,6 +1233,49 @@
   .subtitles {
     font-size: 2.1rem;
     margin-bottom: 20px;
+  }
+  #detail_page .detail_main_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_img {
+    height: 740px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text {
+    left: 40px;
+    width: 77%;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text .detail_main_text_inner h3 {
+    font-size: 1.8rem;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text .detail_main_text_inner p {
+    font-size: 1.4rem;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn {
+    left: 40px;
+    bottom: 40px;
+    gap: 5px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button {
+    width: 87px;
+    height: 30px;
+    gap: 3px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button img {
+    width: 14px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button span {
+    font: 300 1rem/34px pretendard;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button:last-child {
+    width: 87px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button:last-child i {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  #detail_page .detail_introduce_section .detail_introduce_text .detail_introduce_main b {
+    display: block;
   }
 }
 @media screen and (max-width: 1023px) {

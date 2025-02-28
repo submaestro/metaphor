@@ -228,12 +228,13 @@ button {
         width: 108px;
         height: 40px;
         color: map-get($map: $color, $key: gray_6);
-        border: 1px solid map-get($map: $color, $key: gray_9);
+        border: 1px solid map-get($map: $color, $key: gray_c);
         cursor: pointer;
         &.clicked {
           color: map-get($map: $color, $key: light);
           background-color: map-get($map: $color, $key: main);
           transform: scale(1);
+          border: 1px solid map-get($map: $color, $key: main);
         }
 
         &:first-child {
