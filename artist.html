@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/contents.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="./common.js"></script>
+    <script defer src="./pagination_art.js"></script>
     <title>Artist | metaphor</title>
   </head>
   <body>
@@ -432,29 +433,11 @@
 
       <section class="paging_area">
         <div class="paging_wrap">
-          <ul class="paging_list">
-            <li class="active">
-              <a href="#" class="num">
-                <span>1</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>2</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>3</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>4</span>
-              </a>
-            </li>
-          </ul>
-          <button class="paging_btn">
+          <button class="paging_btn paging_prev">
+            <span class="material-symbols-rounded"> chevron_left </span>
+          </button>
+          <ul class="paging_list"></ul>
+          <button class="paging_btn paging_next">
             <span class="material-symbols-rounded"> chevron_right </span>
           </button>
         </div>

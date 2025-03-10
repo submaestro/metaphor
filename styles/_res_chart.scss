@@ -37,6 +37,9 @@
 
 @media screen and (max-width: 1250px) {
   .chart_section {
+    &.subchart {
+      margin-bottom: 100px;
+    }
     .wrapper {
       // chart_top
       .chart_top {
@@ -145,7 +148,9 @@
     }
   }
   .paging_area {
+    height: 30px;
     margin-top: 35px;
+    margin-bottom: 100px;
     .paging_wrap {
       gap: 4px;
       .paging_list {
@@ -185,6 +190,9 @@
 @media screen and (max-width: 767px) {
   .chart_section {
     margin-top: 60px;
+    &.subchart {
+      margin-bottom: 80px;
+    }
     .wrapper {
       // chart_top
       .chart_top {
@@ -306,7 +314,9 @@
   }
 
   .paging_area {
+    height: 26px;
     margin-top: 25px;
+    margin-bottom: 80px;
     .paging_wrap {
       gap: 3px;
       .paging_list {

@@ -658,6 +658,9 @@
   }
 }
 @media screen and (max-width: 1250px) {
+  .chart_section.subchart {
+    margin-bottom: 100px;
+  }
   .chart_section .wrapper .chart_top .chart_cate {
     gap: 8px;
   }
@@ -739,7 +742,9 @@
     height: 250px;
   }
   .paging_area {
+    height: 30px;
     margin-top: 35px;
+    margin-bottom: 100px;
   }
   .paging_area .paging_wrap {
     gap: 4px;
@@ -769,6 +774,9 @@
 @media screen and (max-width: 767px) {
   .chart_section {
     margin-top: 60px;
+  }
+  .chart_section.subchart {
+    margin-bottom: 80px;
   }
   .chart_section .wrapper .chart_top .chart_cate {
     gap: 7px;
@@ -865,7 +873,9 @@
     height: 160px;
   }
   .paging_area {
+    height: 26px;
     margin-top: 25px;
+    margin-bottom: 80px;
   }
   .paging_area .paging_wrap {
     gap: 3px;
