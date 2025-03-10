@@ -7,7 +7,8 @@ const numbers = document.querySelector(".paging_list");
 const prevPageBtn = document.querySelector(".paging_area .paging_prev");
 const nextPageBtn = document.querySelector(".paging_area .paging_next");
 let currentPageNum = 0; //현재 페이지 번호
-let maxPageNum = 5;
+let currentPageGroup = 0; //현재 페이지그룹 번호
+let maxPageNum = 10;
 
 //페이지네이션 생성
 for (i = 1; i <= pageCount; i++) {
@@ -34,16 +35,15 @@ numberBtn.forEach((num, index) => {
     //출력 함수
     displayItem(index);
 
-    // 현재 번호 및 화살표 클릭 동기화화
+    // 현재 번호 및 화살표 클릭 동기화
     currentPageNum = index;
-    let totalPageCount = Math.ceil(pageCount / maxPageNum);
     if (currentPageNum == 0) {
       prevPageBtn.style.display = "none";
     } else {
       prevPageBtn.style.display = "block";
     }
 
-    if (currentPageNum == totalPageCount) {
+    if (currentPageNum == pageCount - 1) {
       nextPageBtn.style.display = "none";
     } else {
       nextPageBtn.style.display = "block";
@@ -75,7 +75,7 @@ displayItem(0);
 
 //페이지네이션 그룹 표시 함수
 const displayPage = (num) => {
-  let totalPageCount = Math.ceil(pageCount / maxPageNum);
+  // let totalPageCount = Math.ceil(pageCount / maxPageNum);
 
   let pageArr = [...numberBtn];
   let start = num * maxPageNum;
@@ -92,7 +92,7 @@ const displayPage = (num) => {
     prevPageBtn.style.display = "block";
   }
 
-  if (currentPageNum == totalPageCount) {
+  if (currentPageNum == pageCount - 1) {
     nextPageBtn.style.display = "none";
   } else {
     nextPageBtn.style.display = "block";
