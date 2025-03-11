@@ -44,7 +44,6 @@
           }
           &.active {
             a {
-              font-weight: 600;
               color: map-get($map: $color, $key: light);
               background: map-get($map: $color, $key: dark);
             }
