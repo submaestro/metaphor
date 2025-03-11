@@ -1,6 +1,6 @@
 // magazine
-const itemsPerPage = 9;
-const items = document.querySelectorAll(".magazine_list li");
+const itemsPerPage = 12;
+const items = document.querySelectorAll(".artist_icons li");
 const itemsCount = items.length;
 const pageCount = Math.ceil(itemsCount / itemsPerPage);
 const numbers = document.querySelector(".paging_list");

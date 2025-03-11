@@ -20,6 +20,9 @@
 
 .chart_section {
   margin-top: 80px;
+  &.subchart {
+    margin-bottom: 130px;
+  }
   .wrapper {
     // chart_top
     .chart_top {
