@@ -68,6 +68,17 @@ img {
   }
 }
 
+.cursor{
+position: absolute;
+width: 20px; /* 원 크기 */
+height: 20px; /* 원 크기 */
+  background-color: #ff0000; /* 원 색상 (빨간색) */
+  border-radius: 50%; /* 원형으로 만들기 */
+  // pointer-events: none; /* 원이 클릭 이벤트를 방해하지 않도록 설정 */
+  transform: translate(-50%, -50%); /* 마우스 위치를 기준으로 정확히 중앙에 오게 설정 */
+  transition: transform 0.1s ease; /* 부드러운 이동 효과 */
+  z-index: 10;
+}
 // common artist_list
 .artist_contents {
   background-color: #f0f0f0;
@@ -77,7 +88,7 @@ img {
   width: 100%;
   margin: auto;
   padding: 60px 0;
-
+  
   // 4개 아티스트 아이콘
   .wrapper {
     // 타이틀
@@ -88,21 +99,33 @@ img {
       margin-bottom: 40px;
       gap: 10px;
     }
-
+    
     .artist_icons {
       display: flex;
       flex-wrap: wrap;
       margin: 0;
       margin: -15px;
+      cursor: none;
       li {
+        position: relative;
+        // cursor: pointer;
         width: 25%;
         padding: 15px;
+        
+        .cursor-area{
+          position: relative;
+          cursor: none;
+        }
+        
         a {
           display: block;
           position: relative;
           border-radius: 20px;
           overflow: hidden;
+          // cursor: none;
 
+          
+          
           .icon {
             overflow: hidden;
             img {
@@ -110,7 +133,7 @@ img {
               width: 100%;
               max-width: 100%;
               height: auto;
-              cursor: pointer;
+              // cursor: pointer;
               transition: transform 0.3s ease;
             }
           }
@@ -400,3 +423,6 @@ img {
 // .slick-next:hover {
 //   background-color: #656667; /* 호버 시 배경 색상 변경 */
 // }
+
+
+

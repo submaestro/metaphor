@@ -23,6 +23,7 @@
     <script defer src="./common.js"></script>
     <script defer src="./mainchart.js"></script>
     <script src="./main_slider.js"></script>
+    <script defer src="./cursor.js"></script>
 
     <title>Metaphor</title>
   </head>
@@ -287,27 +288,31 @@
     </section>
 
     <!-- 새로운 아티스트를 만나보세요! -->
+    <div class="cursor"></div>
     <section class="new_artist_content artist_contents">
       <div class="wrapper">
         <div class="new_artists">
           <h2>
-            <a href="./artist.html">
+            <a  href="./artist.html">
               <span class="clickable-text">새로운 아티스트를 만나보세요!</span>
               <i class="fas fa-angle-right"></i>
             </a>
           </h2>
+          
 
           <!-- 28개 아티스트 아이콘 -->
           <ul class="artist_icons">
             <li>
-              <a href="#">
-                <div class="icon">
-                  <img src="./imgs/TREASURE.png" alt="icon_5" />
-                </div>
-                <div class="icon_text">
-                  <div class="artist_name">TREASURE</div>
-                </div>
-              </a>
+              <div class="cursor-area">
+              <a href="#" >
+                  <div class="icon">
+                    <img src="./imgs/TREASURE.png" alt="icon_5" />
+                  </div>
+                  <div class="icon_text">
+                    <div class="artist_name">TREASURE</div>
+                  </div>
+                </a>
+              </div>
             </li>
 
             <li>
