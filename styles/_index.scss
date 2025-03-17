@@ -5,6 +5,14 @@ img {
   height: auto;
 }
 
+@mixin mtitle {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
 // 메인 슬라이더
 .main_visual {
   padding-top: map-get($map: $headerHeight, $key: height_pc);
@@ -43,10 +51,10 @@ img {
     -ms-transform: translate(0);
     transform: translate(0);
     &.slick-prev {
-      left: 11.5%;
+      left: 12.5%;
     }
     &.slick-next {
-      left: 13.5%;
+      left: 14.2%;
     }
 
     &::before {
@@ -81,23 +89,19 @@ height: 20px; /* 원 크기 */
 }
 // common artist_list
 .artist_contents {
-  background-color: #f0f0f0;
+  background-color: map-get($map: $color, $key: gray_f3);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin: auto;
-  padding: 60px 0;
-  
+  padding: 80px 0;
+
   // 4개 아티스트 아이콘
   .wrapper {
     // 타이틀
     h2 {
-      font-size: 3rem;
-      display: flex;
-      align-items: center;
-      margin-bottom: 40px;
-      gap: 10px;
+      @include mtitle();
     }
     
     .artist_icons {
@@ -169,22 +173,18 @@ height: 20px; /* 원 크기 */
   &.main_chart5 {
     .wrapper {
       h2 {
-        font-size: 3rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        @include mtitle();
       }
       .chart_head {
-        margin-top: 40px;
+        margin-top: 0;
       }
     }
   }
 }
 // Magazine >
 .magazine_content {
-  background-color: #ffffff;
+  margin: 110px 0;
   width: 100%;
-  padding: 60px 0;
   h2 {
     margin-bottom: 40px;
     font-size: 3rem;
@@ -200,6 +200,14 @@ height: 20px; /* 원 크기 */
     .magazine_slider {
       position: relative;
       cursor: pointer;
+      .mark {
+        position: absolute;
+        width: 70px;
+        aspect-ratio: 1;
+        border-radius: 20px;
+        bottom: 11%;
+        right: 6.5%;
+      }
       img {
         width: 100%; // 이미지를 슬라이더 너비에 맞게 조정
         display: block;
@@ -423,6 +431,3 @@ height: 20px; /* 원 크기 */
 // .slick-next:hover {
 //   background-color: #656667; /* 호버 시 배경 색상 변경 */
 // }
-
-
-

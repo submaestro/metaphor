@@ -19,7 +19,7 @@
 }
 
 .chart_section {
-  margin-top: 115px;
+  margin-top: 80px;
   .wrapper {
     // chart_top
     .chart_top {
@@ -111,6 +111,7 @@
           }
           .icon {
             font-size: 0;
+            width: 12px;
             img {
               &:nth-child(1) {
                 display: inline-block;
