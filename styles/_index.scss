@@ -76,17 +76,7 @@ img {
   }
 }
 
-.cursor{
-position: absolute;
-width: 20px; /* 원 크기 */
-height: 20px; /* 원 크기 */
-  background-color: #ff0000; /* 원 색상 (빨간색) */
-  border-radius: 50%; /* 원형으로 만들기 */
-  // pointer-events: none; /* 원이 클릭 이벤트를 방해하지 않도록 설정 */
-  transform: translate(-50%, -50%); /* 마우스 위치를 기준으로 정확히 중앙에 오게 설정 */
-  transition: transform 0.1s ease; /* 부드러운 이동 효과 */
-  z-index: 10;
-}
+
 // common artist_list
 .artist_contents {
   background-color: map-get($map: $color, $key: gray_f3);
@@ -109,25 +99,21 @@ height: 20px; /* 원 크기 */
       flex-wrap: wrap;
       margin: 0;
       margin: -15px;
-      cursor: none;
+      
       li {
         position: relative;
-        // cursor: pointer;
+        cursor: default;
         width: 25%;
         padding: 15px;
         
-        .cursor-area{
-          position: relative;
-          cursor: none;
-        }
+        
         
         a {
+          cursor: none;
           display: block;
           position: relative;
           border-radius: 20px;
           overflow: hidden;
-          // cursor: none;
-
           
           
           .icon {
