@@ -1,0 +1,49 @@
+#newmagazine{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.magazine_detail_top{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  img{
+    position: relative;
+    width: 100%;
+  }
+  .newsletter{
+    position: absolute;
+    display: flex;
+    color: map-get($map: $color, $key: light);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 467px;
+    margin-right: 100px;
+    &> p{
+      line-height: 30px;
+    }
+  }
+  .news{
+    position: absolute;
+    width: 60px;
+    // position: re;
+    // z-index: 1;
+    color: map-get($map: $color, $key: light);
+    background: map-get($map: $color, $key: main);
+    // margin-bottom: 165px;
+    font-size: 1.1rem;
+    padding:7px 18px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.article {
+  margin-top: 700px;
+}
