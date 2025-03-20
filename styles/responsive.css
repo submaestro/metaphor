@@ -81,7 +81,7 @@
     font-size: 0;
   }
   #header .header_wrap .header_right_m .search_btn_m img {
-    width: 18px;
+    width: 19px;
   }
   #header .header_wrap .header_right_m .search_btn_m img:nth-child(1) {
     display: block;
@@ -90,16 +90,36 @@
     display: none;
   }
   #header .header_wrap .header_right_m .signup_btn_m {
-    display: block;
+    padding: 7px 15px 10px;
+    border: 1px solid #03d8c5;
+    border-radius: 5px;
+    font-size: 0;
+    text-align: center;
+    color: #03d8c5;
+    transition: all 0.4s;
+  }
+  #header .header_wrap .header_right_m .signup_btn_m span {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+  }
+  #header .header_wrap .header_right_m .signup_btn_m i {
+    display: none;
+  }
+  #header .header_wrap .header_right_m .signup_btn_m:hover {
+    background-color: #03d8c5;
+    color: #fff;
+  }
+  #header .header_wrap .header_right_m .mypage_btn_m {
     margin-right: 35px;
   }
-  #header .header_wrap .header_right_m .signup_btn_m img {
-    width: 18px;
+  #header .header_wrap .header_right_m .mypage_btn_m img {
+    width: 19px;
   }
-  #header .header_wrap .header_right_m .signup_btn_m img:nth-child(1) {
+  #header .header_wrap .header_right_m .mypage_btn_m img:nth-child(1) {
     display: block;
   }
-  #header .header_wrap .header_right_m .signup_btn_m img:nth-child(2) {
+  #header .header_wrap .header_right_m .mypage_btn_m img:nth-child(2) {
     display: none;
   }
   #header .header_wrap .header_right_m .trigger_bar_m {
@@ -114,7 +134,7 @@
   #header .header_wrap .header_right_m .trigger_bar_m span {
     width: 20px;
     height: 2px;
-    background: #222;
+    background: #999;
     transition: all 0.4s;
   }
   #header .header_wrap .header_right_m .trigger_bar_m.active span:nth-child(1) {
@@ -206,10 +226,10 @@
   #header.bg_black .header_wrap .header_right_m .search_btn_m img:nth-child(2) {
     display: block;
   }
-  #header.bg_black .header_wrap .header_right_m .signup_btn_m img:nth-child(1) {
+  #header.bg_black .header_wrap .header_right_m .mypage_btn_m img:nth-child(1) {
     display: none;
   }
-  #header.bg_black .header_wrap .header_right_m .signup_btn_m img:nth-child(2) {
+  #header.bg_black .header_wrap .header_right_m .mypage_btn_m img:nth-child(2) {
     display: block;
   }
   #header.bg_black .header_wrap .header_right_m .trigger_bar_m span {
@@ -371,6 +391,19 @@
   .footer {
     height: 140px;
   }
+  .footer .go_artist {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    gap: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  }
+  .footer .go_artist span {
+    font-size: 1.7rem;
+  }
+  .footer .go_artist i {
+    font-size: 1.2rem;
+  }
   .footer .up_btn {
     width: 40px;
     height: 40px;
@@ -394,6 +427,43 @@
   }
   .footer .footer_wrap .footer_logo {
     width: 120px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .paging_area {
+    height: 30px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+  }
+  .paging_area .paging_wrap .paging_list li {
+    margin: 0 2px;
+  }
+  .paging_area .paging_wrap .paging_list li a {
+    font-size: 1.5rem;
+    width: 30px;
+  }
+  .paging_area .paging_wrap .paging_btn {
+    width: 30px;
+  }
+  .paging_area .paging_wrap .paging_btn span {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .paging_area {
+    height: 26px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+  }
+  .paging_area .paging_wrap .paging_list li a {
+    font-size: 1.3rem;
+    width: 26px;
+  }
+  .paging_area .paging_wrap .paging_btn {
+    width: 26px;
+  }
+  .paging_area .paging_wrap .paging_btn span {
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -741,27 +811,6 @@
   .chart_section .wrapper .chart_list li:hover {
     height: 250px;
   }
-  .paging_area {
-    height: 30px;
-    margin-top: 35px;
-    margin-bottom: 100px;
-  }
-  .paging_area .paging_wrap {
-    gap: 4px;
-  }
-  .paging_area .paging_wrap .paging_list {
-    gap: 4px;
-  }
-  .paging_area .paging_wrap .paging_list li a {
-    font-size: 1.5rem;
-    width: 30px;
-  }
-  .paging_area .paging_wrap .paging_btn {
-    width: 30px;
-  }
-  .paging_area .paging_wrap .paging_btn span {
-    font-size: 1.9rem;
-  }
 }
 @media screen and (max-width: 1023px) {
   .chart_section {
@@ -871,27 +920,6 @@
   }
   .chart_section .wrapper .chart_list li:hover {
     height: 160px;
-  }
-  .paging_area {
-    height: 26px;
-    margin-top: 25px;
-    margin-bottom: 80px;
-  }
-  .paging_area .paging_wrap {
-    gap: 3px;
-  }
-  .paging_area .paging_wrap .paging_list {
-    gap: 3px;
-  }
-  .paging_area .paging_wrap .paging_list li a {
-    font-size: 1.3rem;
-    width: 26px;
-  }
-  .paging_area .paging_wrap .paging_btn {
-    width: 26px;
-  }
-  .paging_area .paging_wrap .paging_btn span {
-    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1224,7 +1252,7 @@
     margin-bottom: 20px;
   }
   #detail_page .detail_sns_section {
-    margin-bottom: 40px;
+    margin-bottom: 120px;
   }
   #detail_page .detail_sns_section .detail_sns {
     width: 140px;
@@ -1380,7 +1408,10 @@
   .login_wrapper .eye input i {
     left: -70px;
   }
-  .login_wrapper .button {
+  .login_wrapper #loginBtn {
+    width: 100%;
+  }
+  .login_wrapper #loginBtn div {
     width: 100%;
   }
   .login_wrapper #search {
@@ -1444,6 +1475,9 @@
   }
   .log_onwrapper .logon_contents ul .fourbox button {
     width: 70%;
+  }
+  .log_onwrapper .logon_contents .signup {
+    width: 100%;
   }
   .log_onwrapper .logon_contents .signup > div {
     position: relative;

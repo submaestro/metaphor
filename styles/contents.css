@@ -84,10 +84,13 @@ img {
   margin: -15px;
 }
 .artist_contents .wrapper .artist_icons li {
+  position: relative;
+  cursor: default;
   width: 25%;
   padding: 15px;
 }
 .artist_contents .wrapper .artist_icons li a {
+  cursor: none;
   display: block;
   position: relative;
   border-radius: 20px;
@@ -101,7 +104,6 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 .artist_contents .wrapper .artist_icons li a:hover .icon img {
@@ -224,6 +226,35 @@ img {
   content: "\f054";
 }
 
+/*
+      .column {
+        width: calc((1100px - (3 * 31px)) / 4);
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .icon {
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border-radius: 20px;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .icon_text img {
+          width: 100%;
+          height: auto;
+        }
+      }
+		*/
 .chart_section {
   margin-top: 80px;
 }
@@ -504,64 +535,6 @@ img {
   opacity: 1;
 }
 
-.paging_area {
-  margin-top: 50px;
-  margin-bottom: 120px;
-  position: relative;
-  height: 36px;
-}
-.paging_area .paging_wrap {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  gap: 7px;
-}
-.paging_area .paging_wrap .paging_list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-}
-.paging_area .paging_wrap .paging_list li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  font-size: 1.9rem;
-}
-.paging_area .paging_wrap .paging_list li.active a {
-  background: #222;
-}
-.paging_area .paging_wrap .paging_list li.active a span {
-  color: #fff;
-  font-weight: 300;
-}
-.paging_area .paging_wrap .paging_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-}
-.paging_area .paging_wrap .paging_btn span {
-  font-size: 2.2rem;
-  color: #666;
-  transform: translateX(3%);
-}
-.paging_area .paging_wrap .paging_btn.paging_prev {
-  left: 0;
-  transform: translate(-100%, -48%);
-}
-.paging_area .paging_wrap .paging_btn.paging_next {
-  right: 0%;
-  transform: translate(100%, -48%);
-}
-
 .chart_section.detailinfo_chart {
   margin-top: 0;
 }
@@ -600,6 +573,9 @@ img {
 .artist_contents.sub_artist_list {
   background-color: #fff;
   padding: 80px 0 0 0;
+}
+.artist_contents.sub_artist_list .wrapper .new_artists .artist_icons li a {
+  cursor: none;
 }
 .artist_contents.sub_artist_list .wrapper .new_artists .artist_icons li a .icon_text {
   background: #f3f3f3;
@@ -1155,6 +1131,13 @@ button {
   font-family: pretendard;
 }
 
+.error {
+  color: rgb(255, 44, 72);
+  height: 10px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
 .login_wrapper {
   padding: 60px 75px;
   width: 600px;
@@ -1197,6 +1180,7 @@ button {
 }
 .login_wrapper .eye input:focus {
   outline: none;
+  border-bottom: 1px solid #03d8c5;
 }
 .login_wrapper .eye input:focus::-moz-placeholder {
   opacity: 0;
@@ -1207,7 +1191,7 @@ button {
 .login_wrapper .eye i {
   color: #999;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 8px;
   cursor: pointer;
 }
@@ -1230,18 +1214,22 @@ button {
 .login_wrapper .save label input {
   color: #999;
 }
-.login_wrapper .button {
+.login_wrapper #loginBtn {
   display: block;
   width: 450px;
-  height: 59px;
+  height: 60px;
+  background: #03d8c5;
   margin-bottom: 12px;
   border-radius: 10px;
-  background: #03d8c5;
-  color: #fff;
   border: none;
-  font-weight: bold;
-  font-size: 2rem;
   cursor: pointer;
+}
+.login_wrapper #loginBtn > div {
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
 }
 .login_wrapper #search {
   display: flex;
@@ -1316,8 +1304,15 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   position: relative;
+}
+.log_onwrapper .logon_contents li:nth-child(6) {
+  margin-bottom: 10px;
+  gap: 0;
+}
+.log_onwrapper .logon_contents li:nth-child(7) {
+  margin-bottom: 30px;
 }
 .log_onwrapper .logon_contents li input::-moz-placeholder {
   color: #ccc;
@@ -1330,6 +1325,7 @@ button {
 }
 .log_onwrapper .logon_contents li input:focus {
   outline: none;
+  border-bottom: 1px solid #03d8c5;
 }
 .log_onwrapper .logon_contents li input:focus::-moz-placeholder {
   opacity: 0;
@@ -1337,78 +1333,75 @@ button {
 .log_onwrapper .logon_contents li input:focus::placeholder {
   opacity: 0;
 }
-.log_onwrapper .logon_contents li .border {
+.log_onwrapper .logon_contents .border {
   width: 100%;
   height: 27px;
   border: none;
   border-bottom: 1px solid #999;
 }
-.log_onwrapper .logon_contents li i {
+.log_onwrapper i {
   color: #999;
   position: absolute;
   top: 50%;
   right: 8px;
   cursor: pointer;
 }
-.log_onwrapper .logon_contents li .number {
-  padding-top: 12px;
-}
-.log_onwrapper .logon_contents li .number input {
+.log_onwrapper .number input {
   position: relative;
 }
-.log_onwrapper .logon_contents li .number input i {
+.log_onwrapper .number input i {
   color: #999;
   position: absolute;
   top: 50%;
   right: 8px;
 }
-.log_onwrapper .logon_contents .fourbox {
-  margin-top: 15px;
-  margin-bottom: 15px;
+
+.fourbox {
   display: flex;
 }
-.log_onwrapper .logon_contents .fourbox button {
+.fourbox button {
   width: 108px;
   height: 40px;
   color: #666;
   border: 1px solid #ccc;
   cursor: pointer;
 }
-.log_onwrapper .logon_contents .fourbox button.clicked {
+.fourbox button.clicked {
   color: #fff;
   background-color: #03d8c5;
   transform: scale(1);
   border: 1px solid #03d8c5;
 }
-.log_onwrapper .logon_contents .fourbox button:first-child {
+.fourbox button:first-child {
   border-radius: 8px 0 0 8px;
   border-right: none;
 }
-.log_onwrapper .logon_contents .fourbox button:nth-child(2) {
+.fourbox button:nth-child(2) {
   margin-right: 21px;
   border-radius: 0px 8px 8px 0px;
 }
-.log_onwrapper .logon_contents .fourbox button:nth-child(3) {
+.fourbox button:nth-child(3) {
   border-radius: 8px 0px 0px 8px;
   border-right: none;
 }
-.log_onwrapper .logon_contents .fourbox button:nth-child(4) {
+.fourbox button:nth-child(4) {
   border-radius: 0px 8px 8px 0px;
 }
-.log_onwrapper .signup {
+
+.signup {
   display: block;
-}
-.log_onwrapper .signup > div {
   width: 450px;
   height: 60px;
+  background: #03d8c5;
+  border-radius: 10px;
+  border: none;
+}
+.signup > div {
   text-align: center;
   line-height: 60px;
-  border-radius: 10px;
-  background: #03d8c5;
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
-  border: none;
 }
 
 .mypage {
@@ -1453,8 +1446,13 @@ button {
   width: 65px;
   height: 45px;
   border-radius: 10px;
-  border: 2px solid #03d8c5;
+  border: 1px solid #03d8c5;
   cursor: pointer;
+  transition: all 0.4s;
+}
+.mypage .info .info_list li span button:hover {
+  color: #fff;
+  background: #03d8c5;
 }
 .mypage .info .agree {
   font-size: 3.2rem;
@@ -1482,10 +1480,58 @@ button {
   display: flex;
   justify-content: center;
   margin-top: 150px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #999;
   cursor: pointer;
 }
 .mypage .info .logout :hover {
   border-bottom: 1px solid #999;
+}
+
+#newmagazine {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.magazine_detail_top {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.magazine_detail_top img {
+  position: relative;
+  width: 100%;
+}
+.magazine_detail_top .newsletter {
+  position: absolute;
+  display: flex;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 467px;
+  margin-right: 100px;
+}
+.magazine_detail_top .newsletter > p {
+  line-height: 30px;
+}
+.magazine_detail_top .news {
+  position: absolute;
+  width: 60px;
+  color: #fff;
+  background: #03d8c5;
+  font-size: 1.1rem;
+  padding: 7px 18px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.article {
+  margin-top: 700px;
 }

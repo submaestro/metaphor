@@ -14,11 +14,9 @@ let maxPageNum = 2;
 for (i = 1; i <= pageCount; i++) {
   const li = document.createElement("li");
   li.innerHTML = `
-    <li>
       <a href="" class="num">
         <span>${i}</span>
-      </a>
-    </li>`;
+      </a>`;
 
   numbers.appendChild(li);
 }

@@ -9,15 +9,6 @@
   -webkit-box-orient: vertical;
 }
 
-@mixin paging_btn_style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-}
-
 .chart_section {
   margin-top: 80px;
   &.subchart {
@@ -329,58 +320,6 @@
             opacity: 1;
           }
         }
-      }
-    }
-  }
-}
-
-.paging_area {
-  margin-top: 50px;
-  margin-bottom: 120px;
-  position: relative;
-  height: 36px;
-  .paging_wrap {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    gap: 7px;
-    .paging_list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 7px;
-      li {
-        a {
-          @include paging_btn_style;
-          font-size: 1.9rem;
-        }
-        &.active {
-          a {
-            background: map-get($map: $color, $key: dark);
-            span {
-              color: map-get($map: $color, $key: light);
-              font-weight: 300;
-            }
-          }
-        }
-      }
-    }
-    .paging_btn {
-      @include paging_btn_style;
-      position: absolute;
-      top: 50%;
-      span {
-        font-size: 2.2rem;
-        color: map-get($map: $color, $key: gray_6);
-        transform: translateX(3%);
-      }
-      &.paging_prev {
-        left: 0;
-        transform: translate(-100%, -48%);
-      }
-      &.paging_next {
-        right: 0%;
-        transform: translate(100%, -48%);
       }
     }
   }

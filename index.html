@@ -23,6 +23,7 @@
     <script defer src="./common.js"></script>
     <script defer src="./mainchart.js"></script>
     <script src="./main_slider.js"></script>
+    <script defer src="./cursor.js"></script>
 
     <title>Metaphor</title>
   </head>
@@ -44,7 +45,9 @@
               <li><a href="./magazine.html">MAGAZINE</a></li>
             </ul>
           </div>
+          <!-- full -->
           <div class="header_right">
+            <!--search-->
             <form
               id="search_form_pc"
               name="search_bar_pc"
@@ -61,19 +64,31 @@
                 placeholder="아티스트 검색"
               />
             </form>
+            <!--signup-->
             <a class="signup_btn" href="./login.html">
               <span>sign up</span>
             </a>
+            <!--mypage-->
+            <a class="mypage_btn" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <span id="hiUser"><b id="hiUsername"></b>님 안녕하세요</span>
+            </a>
           </div>
+
+          <!-- mobile -->
           <div class="header_right_m">
+            <a class="signup_btn_m" href="./login.html">
+              <span>sign up</span>
+            </a>
+            <!--search-->
             <button class="search_btn_m">
               <img src="./imgs/h_search_m.svg" alt="search" />
-              <img src="./imgs/h_search_m_w.svg" alt="search" />
             </button>
-            <a class="signup_btn_m" href="./mypage.html">
+            <!--mypage-->
+            <a class="mypage_btn_m" href="./mypage.html">
               <img src="./imgs/h_signup_m.svg" alt="search" />
-              <img src="./imgs/h_signup_m_w.svg" alt="search" />
             </a>
+            <!--trigger-->
             <div class="trigger_bar_m">
               <span></span>
               <span></span>
@@ -130,13 +145,14 @@
       </div>
     </section>
 
+    <div class="cursor"></div>
     <!-- 관심있는 아티스트 > -->
     <section class="favorite_artist_content artist_contents">
       <div class="wrapper">
         <div class="favorite_artist">
           <!-- 타이틀 -->
           <h2 class="mtitle">
-            <a href="#">
+            <a href="./artist.html">
               <span class="clickable-text">관심있는 아티스트</span>
               <i class="fas fa-angle-right"></i>
             </a>
@@ -156,7 +172,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/JENNIE.jpg" alt="JENNIE" />
                 </div>
@@ -167,7 +183,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img
                     src="./imgs/artist_thumb/New_Jeans.jpg"
@@ -181,7 +197,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/aespa.jpg" alt="aespa" />
                 </div>
@@ -293,7 +309,7 @@
             <li>
               <a href="./detail.html">
                 <div class="icon">
-                  <img src="./imgs/artist_thumb/PLAVE.jpg" alt="icon_1" />
+                  <img src="./imgs/artist_thumb/TREASURE.jpg" alt="icon_1" />
                 </div>
                 <div class="icon_text">
                   <div class="artist_name">PLAVE</div>
@@ -302,7 +318,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/IVE.jpg" alt="icon_6" />
                 </div>
@@ -313,7 +329,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/NCT_127.jpg" alt="icon_7" />
                 </div>
@@ -324,7 +340,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/NCT_WISH.jpg" alt="icon_8" />
                 </div>
@@ -335,7 +351,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/SEVENTEEN.jpg" alt="icon_9" />
                 </div>
@@ -346,7 +362,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img
                     src="./imgs/artist_thumb/BABYMONSTER.jpg"
@@ -360,7 +376,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/BTS.jpg" alt="icon_11" />
                 </div>
@@ -371,7 +387,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img
                     src="./imgs/artist_thumb/LE_SSERAFIM.jpg"
@@ -385,7 +401,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/BLACKPINK.jpg" alt="icon_13" />
                 </div>
@@ -396,7 +412,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/g_dragon.jpg" alt="icon_14" />
                 </div>
@@ -407,7 +423,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/ILLIT.jpg" alt="icon_15" />
                 </div>
@@ -418,7 +434,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/GI_DLE.jpg" alt="icon_16" />
                 </div>
@@ -429,7 +445,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/ZICO.jpg" alt="icon_17" />
                 </div>
@@ -440,7 +456,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/RIIZE.jpg" alt="icon_18" />
                 </div>
@@ -451,7 +467,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/IU.jpg" alt="icon_19" />
                 </div>
@@ -462,7 +478,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/DAY6.jpg" alt="icon_20" />
                 </div>
@@ -473,7 +489,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/MAVE.jpg" alt="icon_21" />
                 </div>
@@ -484,7 +500,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img
                     src="./imgs/artist_thumb/KWON_EUN_BI.jpg"
@@ -498,7 +514,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img
                     src="./imgs/artist_thumb/FIFTY_FIFTY.jpg"
@@ -512,7 +528,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/QWER.jpg" alt="icon_24" />
                 </div>
@@ -523,7 +539,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img
                     src="./imgs/artist_thumb/Kiss_of_Life.jpg"
@@ -537,7 +553,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/RED_VELVET.jpg" alt="icon_26" />
                 </div>
@@ -548,7 +564,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/EXO.jpg" alt="icon_27" />
                 </div>
@@ -559,7 +575,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/MOONBYUL.jpg" alt="icon_28" />
                 </div>
@@ -570,7 +586,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/CHUNG_HA.jpg" alt="icon_29" />
                 </div>
@@ -581,7 +597,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/JEON_SOMI.jpg" alt="icon_30" />
                 </div>
@@ -592,7 +608,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/CHANG_KIHA.jpg" alt="icon_31" />
                 </div>
@@ -603,7 +619,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./detail.html">
                 <div class="icon">
                   <img src="./imgs/artist_thumb/rose.jpg" alt="icon_32" />
                 </div>
