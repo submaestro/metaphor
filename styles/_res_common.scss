@@ -101,13 +101,14 @@
         align-items: center;
         gap: 15px;
         font-size: 0;
+
         .search_btn_m {
           background: none;
           border: none;
           cursor: pointer;
           font-size: 0;
           img {
-            width: 18px;
+            width: 19px;
             &:nth-child(1) {
               display: block;
             }
@@ -117,10 +118,30 @@
           }
         }
         .signup_btn_m {
-          display: block;
+          padding: 7px 15px 10px;
+          border: 1px solid map-get($map: $color, $key: main);
+          border-radius: 5px;
+          font-size: 0;
+          text-align: center;
+          color: map-get($map: $color, $key: main);
+          transition: all 0.4s;
+          span {
+            display: inline-block;
+            font-size: 15px;
+            line-height: 1;
+          }
+          i {
+            display: none;
+          }
+          &:hover {
+            background-color: map-get($map: $color, $key: main);
+            color: map-get($map: $color, $key: light);
+          }
+        }
+        .mypage_btn_m {
           margin-right: 35px;
           img {
-            width: 18px;
+            width: 19px;
             &:nth-child(1) {
               display: block;
             }
@@ -140,7 +161,7 @@
           span {
             width: 20px;
             height: 2px;
-            background: map-get($map: $color, $key: dark);
+            background: map-get($map: $color, $key: gray_9);
             transition: all 0.4s;
           }
           &.active {
@@ -254,7 +275,7 @@
               }
             }
           }
-          .signup_btn_m {
+          .mypage_btn_m {
             img {
               &:nth-child(1) {
                 display: none;
@@ -482,6 +503,19 @@
 @media screen and (max-width: 767px) {
   .footer {
     height: 140px;
+    .go_artist {
+      width: 200px;
+      height: 50px;
+      border-radius: 25px;
+      gap: 10px;
+      box-shadow: 0 0 7px rgba($color: #000000, $alpha: 0.1);
+      span {
+        font-size: 1.7rem;
+      }
+      i {
+        font-size: 1.2rem;
+      }
+    }
     .up_btn {
       width: 40px;
       height: 40px;

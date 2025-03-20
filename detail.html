@@ -35,7 +35,9 @@
               <li><a href="./magazine.html">MAGAZINE</a></li>
             </ul>
           </div>
+          <!-- full -->
           <div class="header_right">
+            <!--search-->
             <form
               id="search_form_pc"
               name="search_bar_pc"
@@ -45,6 +47,7 @@
             >
               <button class="search_btn">
                 <img src="./imgs/h_search.svg" alt="search" />
+                <img src="./imgs/h_search_w.svg" alt="search" />
               </button>
               <input
                 class="search_txt"
@@ -52,19 +55,34 @@
                 placeholder="아티스트 검색"
               />
             </form>
+            <!--signup-->
             <a class="signup_btn" href="./login.html">
               <span>sign up</span>
             </a>
+            <!--mypage-->
+            <a class="mypage_btn" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+              <span id="hiUser"><b id="hiUsername"></b>님 안녕하세요</span>
+            </a>
           </div>
+
+          <!-- mobile -->
           <div class="header_right_m">
+            <a class="signup_btn_m" href="./login.html">
+              <span>sign up</span>
+            </a>
+            <!--search-->
             <button class="search_btn_m">
               <img src="./imgs/h_search_m.svg" alt="search" />
               <img src="./imgs/h_search_m_w.svg" alt="search" />
             </button>
-            <a class="signup_btn_m" href="./mypage.html">
+            <!--mypage-->
+            <a class="mypage_btn_m" href="./mypage.html">
               <img src="./imgs/h_signup_m.svg" alt="search" />
               <img src="./imgs/h_signup_m_w.svg" alt="search" />
             </a>
+            <!--trigger-->
             <div class="trigger_bar_m">
               <span></span>
               <span></span>
@@ -512,6 +530,10 @@
       <!-- footer -->
       <footer class="footer">
         <div class="wrapper">
+          <a class="go_artist" href="./artist.html">
+            <span>아티스트 바로가기</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
           <div class="up_btn">
             <a href="#header">
               <div class="up_arrow_container">

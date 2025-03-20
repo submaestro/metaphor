@@ -28,7 +28,6 @@
     padding-bottom: 3px;
     font-size: 1.4rem;
     border: none;
-    border-bottom: 1px solid map-get($map: $color, $key: gray_9);
     font-family: map-get($map: $font, $key: pretendard);
     background: none;
     &:focus {
@@ -146,6 +145,20 @@ body {
       gap: 16px;
       .search_bar {
         @include header_search_style();
+        .search_txt {
+          border-bottom: 1px solid map-get($map: $color, $key: gray_9);
+        }
+        .search_btn {
+          img {
+            width: 16px;
+            &:nth-child(1) {
+              display: block;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+          }
+        }
       }
       .signup_btn {
         padding: 7px 15px 10px;
@@ -154,6 +167,7 @@ body {
         font-size: 0;
         text-align: center;
         color: map-get($map: $color, $key: main);
+        transition: all 0.4s;
         span {
           display: inline-block;
           font-size: 15px;
@@ -161,6 +175,31 @@ body {
         }
         i {
           display: none;
+        }
+        &:hover {
+          background-color: map-get($map: $color, $key: main);
+          color: map-get($map: $color, $key: light);
+        }
+      }
+      .mypage_btn {
+        display: none;
+        img {
+          width: 20px;
+          &:nth-child(1) {
+            display: block;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+        #hiUser {
+          font-size: 1.5rem;
+          color: map-get($map: $color, $key: gray_9);
+          margin-left: 10px;
+          b {
+            color: map-get($map: $color, $key: gray_6);
+            margin-right: 3px;
+          }
         }
       }
     }
@@ -208,6 +247,33 @@ body {
         .search_bar {
           .search_txt {
             color: map-get($map: $color, $key: light);
+            border-bottom: 1px solid map-get($map: $color, $key: light);
+          }
+          .search_btn {
+            img {
+              &:nth-child(1) {
+                display: none;
+              }
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+        }
+        .mypage_btn {
+          img {
+            &:nth-child(1) {
+              display: none;
+            }
+            &:nth-child(2) {
+              display: block;
+            }
+          }
+          #hiUser {
+            color: map-get($map: $color, $key: light);
+            #hiUsername {
+              color: map-get($map: $color, $key: light);
+            }
           }
         }
       }
@@ -276,6 +342,35 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  .go_artist {
+    width: 250px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10vh;
+    position: fixed;
+    background: map-get($map: $color, $key: light);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.4s;
+    span {
+      color: map-get($map: $color, $key: dark);
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    i {
+      font-size: 1.5rem;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
   .up_btn {
     width: 54px;
     height: 54px;

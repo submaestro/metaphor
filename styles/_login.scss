@@ -15,6 +15,13 @@ button {
   font-family: map-get($map: $font, $key: pretendard);
 }
 
+.error {
+  color: rgb(255, 44, 72);
+  height: 10px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
 // login scss
 .login_wrapper {
   padding: 60px 75px;
@@ -56,6 +63,7 @@ button {
       }
       &:focus {
         outline: none;
+        border-bottom: 1px solid map-get($map: $color, $key: main);
         &::placeholder {
           opacity: 0;
         }
@@ -64,7 +72,7 @@ button {
     i {
       color: map-get($map: $color, $key: gray_9);
       position: absolute;
-      top: 50%;
+      top: 40%;
       right: 8px;
       cursor: pointer;
     }
@@ -90,18 +98,23 @@ button {
       }
     }
   }
-  .button {
+  #loginBtn {
     display: block;
     width: 450px;
-    height: 59px;
+    height: 60px;
+    background: map-get($map: $color, $key: main);
     margin-bottom: 12px;
     border-radius: 10px;
-    background: map-get($map: $color, $key: main);
-    color: map-get($map: $color, $key: light);
     border: none;
-    font-weight: bold;
-    font-size: 2rem;
     cursor: pointer;
+
+    & > div {
+      text-align: center;
+      line-height: 60px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: map-get($map: $color, $key: light);
+    }
   }
   #search {
     display: flex;
@@ -179,8 +192,16 @@ button {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin-bottom: 27px;
+      margin-bottom: 23px;
       position: relative;
+      &:nth-child(6) {
+        margin-bottom: 10px;
+        gap: 0;
+      }
+      &:nth-child(7) {
+        margin-bottom: 30px;
+      }
+
       input {
         &::placeholder {
           color: map-get($map: $color, $key: gray_c);
@@ -191,84 +212,84 @@ button {
             opacity: 0;
           }
           outline: none;
+          border-bottom: 1px solid map-get($map: $color, $key: main);
         }
       }
+    }
 
-      .border {
-        width: 100%;
-        height: 27px;
-        border: none;
-        border-bottom: 1px solid map-get($map: $color, $key: gray_9);
-      }
+    .border {
+      width: 100%;
+      height: 27px;
+      border: none;
+      border-bottom: 1px solid map-get($map: $color, $key: gray_9);
+    }
+  }
+  i {
+    color: map-get($map: $color, $key: gray_9);
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    cursor: pointer;
+  }
+  .number {
+    // padding-top: 12px;
+    input {
+      position: relative;
       i {
         color: map-get($map: $color, $key: gray_9);
         position: absolute;
         top: 50%;
         right: 8px;
-        cursor: pointer;
-      }
-      .number {
-        padding-top: 12px;
-        input {
-          position: relative;
-          i {
-            color: map-get($map: $color, $key: gray_9);
-            position: absolute;
-            top: 50%;
-            right: 8px;
-          }
-        }
-      }
-    }
-    .fourbox {
-      margin-top: 15px;
-      margin-bottom: 15px;
-      display: flex;
-      button {
-        width: 108px;
-        height: 40px;
-        color: map-get($map: $color, $key: gray_6);
-        border: 1px solid map-get($map: $color, $key: gray_c);
-        cursor: pointer;
-        &.clicked {
-          color: map-get($map: $color, $key: light);
-          background-color: map-get($map: $color, $key: main);
-          transform: scale(1);
-          border: 1px solid map-get($map: $color, $key: main);
-        }
-
-        &:first-child {
-          border-radius: 8px 0 0 8px;
-          border-right: none;
-        }
-        &:nth-child(2) {
-          margin-right: 21px;
-          border-radius: 0px 8px 8px 0px;
-        }
-        &:nth-child(3) {
-          border-radius: 8px 0px 0px 8px;
-          border-right: none;
-        }
-        &:nth-child(4) {
-          border-radius: 0px 8px 8px 0px;
-        }
       }
     }
   }
-  .signup {
-    display: block;
-    & > div {
-      width: 450px;
-      height: 60px;
-      text-align: center;
-      line-height: 60px;
-      border-radius: 10px;
-      background: map-get($map: $color, $key: main);
-      font-size: 2rem;
-      font-weight: bold;
+}
+.fourbox {
+  display: flex;
+  button {
+    width: 108px;
+    height: 40px;
+    color: map-get($map: $color, $key: gray_6);
+    border: 1px solid map-get($map: $color, $key: gray_c);
+    cursor: pointer;
+    &.clicked {
       color: map-get($map: $color, $key: light);
-      border: none;
+      background-color: map-get($map: $color, $key: main);
+      transform: scale(1);
+      border: 1px solid map-get($map: $color, $key: main);
     }
+
+    &:first-child {
+      border-radius: 8px 0 0 8px;
+      border-right: none;
+    }
+    &:nth-child(2) {
+      margin-right: 21px;
+      border-radius: 0px 8px 8px 0px;
+    }
+    &:nth-child(3) {
+      border-radius: 8px 0px 0px 8px;
+      border-right: none;
+    }
+    &:nth-child(4) {
+      border-radius: 0px 8px 8px 0px;
+    }
+  }
+}
+
+.signup {
+  display: block;
+  width: 450px;
+  height: 60px;
+  background: map-get($map: $color, $key: main);
+  border-radius: 10px;
+  border: none;
+  & > div {
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: map-get($map: $color, $key: light);
   }
 }
 
@@ -314,8 +335,13 @@ button {
             width: 65px;
             height: 45px;
             border-radius: 10px;
-            border: 2px solid map-get($map: $color, $key: main);
+            border: 1px solid map-get($map: $color, $key: main);
             cursor: pointer;
+            transition: all 0.4s;
+            &:hover {
+              color: map-get($map: $color, $key: light);
+              background: map-get($map: $color, $key: main);
+            }
           }
         }
       }
@@ -346,7 +372,7 @@ button {
       display: flex;
       justify-content: center;
       margin-top: 150px;
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: map-get($map: $color, $key: gray_9);
       cursor: pointer;
       :hover {
