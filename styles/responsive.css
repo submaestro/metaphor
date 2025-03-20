@@ -81,7 +81,7 @@
     font-size: 0;
   }
   #header .header_wrap .header_right_m .search_btn_m img {
-    width: 18px;
+    width: 19px;
   }
   #header .header_wrap .header_right_m .search_btn_m img:nth-child(1) {
     display: block;
@@ -90,16 +90,36 @@
     display: none;
   }
   #header .header_wrap .header_right_m .signup_btn_m {
-    display: block;
+    padding: 7px 15px 10px;
+    border: 1px solid #03d8c5;
+    border-radius: 5px;
+    font-size: 0;
+    text-align: center;
+    color: #03d8c5;
+    transition: all 0.4s;
+  }
+  #header .header_wrap .header_right_m .signup_btn_m span {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+  }
+  #header .header_wrap .header_right_m .signup_btn_m i {
+    display: none;
+  }
+  #header .header_wrap .header_right_m .signup_btn_m:hover {
+    background-color: #03d8c5;
+    color: #fff;
+  }
+  #header .header_wrap .header_right_m .mypage_btn_m {
     margin-right: 35px;
   }
-  #header .header_wrap .header_right_m .signup_btn_m img {
-    width: 18px;
+  #header .header_wrap .header_right_m .mypage_btn_m img {
+    width: 19px;
   }
-  #header .header_wrap .header_right_m .signup_btn_m img:nth-child(1) {
+  #header .header_wrap .header_right_m .mypage_btn_m img:nth-child(1) {
     display: block;
   }
-  #header .header_wrap .header_right_m .signup_btn_m img:nth-child(2) {
+  #header .header_wrap .header_right_m .mypage_btn_m img:nth-child(2) {
     display: none;
   }
   #header .header_wrap .header_right_m .trigger_bar_m {
@@ -114,7 +134,7 @@
   #header .header_wrap .header_right_m .trigger_bar_m span {
     width: 20px;
     height: 2px;
-    background: #222;
+    background: #999;
     transition: all 0.4s;
   }
   #header .header_wrap .header_right_m .trigger_bar_m.active span:nth-child(1) {
@@ -206,10 +226,10 @@
   #header.bg_black .header_wrap .header_right_m .search_btn_m img:nth-child(2) {
     display: block;
   }
-  #header.bg_black .header_wrap .header_right_m .signup_btn_m img:nth-child(1) {
+  #header.bg_black .header_wrap .header_right_m .mypage_btn_m img:nth-child(1) {
     display: none;
   }
-  #header.bg_black .header_wrap .header_right_m .signup_btn_m img:nth-child(2) {
+  #header.bg_black .header_wrap .header_right_m .mypage_btn_m img:nth-child(2) {
     display: block;
   }
   #header.bg_black .header_wrap .header_right_m .trigger_bar_m span {
@@ -335,6 +355,9 @@
     text-align: center;
     width: 180px;
   }
+  .sub_visual .sub_visual_wrap .wrapper .sub_text p.magazine_svp {
+    width: inherit;
+  }
 }
 @media screen and (max-width: 1440px) {
   .footer {
@@ -368,6 +391,19 @@
   .footer {
     height: 140px;
   }
+  .footer .go_artist {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    gap: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  }
+  .footer .go_artist span {
+    font-size: 1.7rem;
+  }
+  .footer .go_artist i {
+    font-size: 1.2rem;
+  }
   .footer .up_btn {
     width: 40px;
     height: 40px;
@@ -394,6 +430,247 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .main_visual {
+    padding-top: 80px;
+  }
+  .main_visual .single-item .slick-prev,
+  .main_visual .single-item .slick-next {
+    bottom: 6%;
+    width: 20px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 20px 14px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main_visual {
+    padding-top: 60px;
+  }
+  .main_visual .single-item {
+    border-radius: 30px;
+  }
+  .artist_contents {
+    padding: 70px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 1.8rem;
+  }
+  .magazine_content {
+    margin: 90px 0;
+  }
+  .magazine_content h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  .magazine_content .fade .magazine_slider .mark {
+    width: 60px;
+    aspect-ratio: 1;
+    bottom: 11%;
+    right: 6.5%;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .title {
+    font-size: 2.5rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .name {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .slider-line {
+    bottom: 4px;
+    width: 90px;
+  }
+  .magazine_content .fade .slick-prev,
+  .magazine_content .fade .slick-next {
+    bottom: 10%;
+  }
+  .magazine_content .fade .slick-prev.slick-prev,
+  .magazine_content .fade .slick-next.slick-prev {
+    left: 22%;
+  }
+  .magazine_content .fade .slick-prev.slick-next,
+  .magazine_content .fade .slick-next.slick-next {
+    left: 24.7%;
+  }
+  .magazine_content .fade .slick-prev::before,
+  .magazine_content .fade .slick-next::before {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main_visual .single-item {
+    margin: 0 20px 20px 20px;
+  }
+  .main_visual .single-item .mainVisual_slider img:nth-child(1) {
+    display: none;
+  }
+  .main_visual .single-item .mainVisual_slider img:nth-child(2) {
+    display: block;
+  }
+  .main_visual .single-item .slick-prev,
+  .main_visual .single-item .slick-next {
+    bottom: 9.5%;
+    width: 25px;
+    height: 25px;
+  }
+  .main_visual .single-item .slick-prev.slick-prev,
+  .main_visual .single-item .slick-next.slick-prev {
+    left: 25%;
+  }
+  .main_visual .single-item .slick-prev.slick-next,
+  .main_visual .single-item .slick-next.slick-next {
+    left: 29%;
+  }
+  .main_visual .single-item .slick-prev::before,
+  .main_visual .single-item .slick-next::before {
+    font-size: calc(7px + 0.8vw);
+  }
+  .magazine_content h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  .magazine_content .fade .magazine_slider .mark {
+    width: calc(20px + 4vw);
+    border-radius: 12px;
+    aspect-ratio: 1;
+    bottom: 11%;
+    right: 6.5%;
+  }
+  .magazine_content .fade .magazine_slider .slider-text {
+    left: 7%;
+    gap: 8px;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .title {
+    font-size: 2rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .name {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .slider-line {
+    bottom: 4px;
+    width: calc(17px + 8vw);
+    height: 1px;
+  }
+  .magazine_content .fade .slick-prev,
+  .magazine_content .fade .slick-next {
+    bottom: 9%;
+  }
+  .magazine_content .fade .slick-prev.slick-prev,
+  .magazine_content .fade .slick-next.slick-prev {
+    left: 20%;
+  }
+  .magazine_content .fade .slick-prev.slick-next,
+  .magazine_content .fade .slick-next.slick-next {
+    left: 23.7%;
+  }
+  .magazine_content .fade .slick-prev::before,
+  .magazine_content .fade .slick-next::before {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .artist_contents {
+    padding: 55px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 33.33%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 16px 10px;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
+    font-size: 1.6rem;
+  }
+  .magazine_content {
+    margin: 70px 0;
+  }
+  .magazine_content h2 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main_visual .single-item {
+    border-radius: 25px;
+  }
+  .main_visual .single-item .slick-prev,
+  .main_visual .single-item .slick-next {
+    bottom: 8.6%;
+    width: 20px;
+    height: 20px;
+  }
+  .artist_contents {
+    padding: 50px 0;
+  }
+  .artist_contents .wrapper h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+  .artist_contents .wrapper .artist_icons {
+    margin: -10px;
+  }
+  .artist_contents .wrapper .artist_icons li {
+    padding: 10px;
+    width: 50%;
+  }
+  .artist_contents .wrapper .artist_icons li a .icon_text {
+    padding: 13px 10px;
+  }
+  .magazine_content h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .title {
+    font-size: 1.5rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .name {
+    font-size: 1.4rem;
+  }
+  .magazine_content .fade .magazine_slider .slider-text .slider-line {
+    bottom: 4px;
+    width: calc(16px + 8vw);
+  }
+  .magazine_content .fade .slick-prev,
+  .magazine_content .fade .slick-next {
+    bottom: 8%;
+  }
+  .magazine_content .fade .slick-prev.slick-prev,
+  .magazine_content .fade .slick-next.slick-prev {
+    left: 22%;
+  }
+  .magazine_content .fade .slick-prev.slick-next,
+  .magazine_content .fade .slick-next.slick-next {
+    left: 25.7%;
+  }
+  .magazine_content .fade .slick-prev::before,
+  .magazine_content .fade .slick-next::before {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1440px) {
   .chart_section .wrapper .chart_list li .ranking {
     width: 8%;
     height: 70px;
@@ -414,9 +691,6 @@
   }
 }
 @media screen and (max-width: 1250px) {
-  .chart_section {
-    margin-top: 90px;
-  }
   .chart_section .wrapper .chart_top .chart_cate {
     gap: 8px;
   }
@@ -451,7 +725,7 @@
   .chart_section .wrapper .chart_list li .ranking h4 {
     font-size: 1.7rem;
   }
-  .chart_section .wrapper .chart_list li .ranking .icon img {
+  .chart_section .wrapper .chart_list li .ranking .icon {
     width: 8px;
   }
   .chart_section .wrapper .chart_list li .music_info figure {
@@ -570,7 +844,7 @@
   .chart_section .wrapper .chart_list li .ranking h4 {
     font-size: 1.5rem;
   }
-  .chart_section .wrapper .chart_list li .ranking .icon img {
+  .chart_section .wrapper .chart_list li .ranking .icon {
     width: 7px;
   }
   .chart_section .wrapper .chart_list li .music_info {
@@ -733,20 +1007,31 @@
     padding-left: 0;
   }
 }
-@media screen and (max-width: 1250px) {
-  .chart_section.main_chart5 {
-    margin-top: inherit;
+@media screen and (max-width: 1023px) {
+  .chart_section.main_chart5 .wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
   }
-  .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: inherit;
+}
+@media screen and (max-width: 500px) {
+  .chart_section.main_chart5 .wrapper h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .artist_contents.sub_artist_list {
+    padding: 70px 0 0 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .chart_section.main_chart5 {
-    margin-top: inherit;
+  .artist_contents.sub_artist_list {
+    padding: 60px 0 0 0;
   }
-  .chart_section.main_chart5 .wrapper .chart_head {
-    margin-top: inherit;
+}
+@media screen and (max-width: 500px) {
+  .artist_contents.sub_artist_list {
+    padding: 45px 0 0 0;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -846,6 +1131,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  #detail_page .detail_hr {
+    margin-bottom: 100px;
+  }
   .subtitles {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -887,7 +1175,7 @@
   }
   #detail_page .detail_main_section .detail_main .detail_main_inner > img {
     right: 3.5vh;
-    bottom: 10vh;
+    bottom: 11.5%;
   }
   #detail_page .detail_introduce_section {
     margin-bottom: 100px;
@@ -907,6 +1195,12 @@
   }
   #detail_page .detail_introduce_section .detail_introduce_mem > div span {
     font-size: 1.6rem;
+  }
+  #detail_page .detail_MV_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_music_section {
+    margin-bottom: 100px;
   }
   #detail_page .detail_media_section {
     margin-bottom: 100px;
@@ -928,6 +1222,9 @@
   #detail_page .detail_fantalk_section .detail_fantalk_contents {
     gap: 30px;
   }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text {
+    width: 90%;
+  }
   #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text h5 {
     font-size: 1.2rem;
   }
@@ -936,6 +1233,9 @@
   }
   #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_text p {
     font-size: 1.2rem;
+  }
+  #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart {
+    width: 35px;
   }
   #detail_page .detail_fantalk_section .detail_fantalk_contents .detail_fantalk_content .detail_fantalk_heart img {
     width: 14px;
@@ -947,7 +1247,7 @@
     margin-bottom: 20px;
   }
   #detail_page .detail_sns_section {
-    margin-bottom: 40px;
+    margin-bottom: 120px;
   }
   #detail_page .detail_sns_section .detail_sns {
     width: 140px;
@@ -967,81 +1267,116 @@
     font-size: 2.1rem;
     margin-bottom: 20px;
   }
+  #detail_page .detail_main_section {
+    margin-bottom: 100px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_img {
+    height: 740px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text {
+    left: 40px;
+    width: 77%;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text .detail_main_text_inner h3 {
+    font-size: 1.8rem;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_text .detail_main_text_inner p {
+    font-size: 1.4rem;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn {
+    left: 40px;
+    bottom: 40px;
+    gap: 5px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button {
+    width: 87px;
+    height: 30px;
+    gap: 3px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button img {
+    width: 14px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button span {
+    font: 300 1rem/34px pretendard;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button:last-child {
+    width: 87px;
+  }
+  #detail_page .detail_main_section .detail_main .detail_main_inner .detail_main_btn button:last-child i {
+    font-size: 0.9rem;
+  }
 }
-@media screen and (max-width: 1440px) {
-  .main_visual {
-    padding-top: 80px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 20px 14px;
-  }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 2.2rem;
+@media screen and (max-width: 470px) {
+  #detail_page .detail_introduce_section .detail_introduce_text .detail_introduce_main b {
+    display: block;
   }
 }
 @media screen and (max-width: 1023px) {
-  .main_visual {
-    padding-top: 60px;
+  .magazine_area h3 {
+    margin: 70px 0 28px;
+    font-size: 2.6rem;
   }
-  .artist_contents {
-    padding: 50px 0;
-  }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  .artist_contents .wrapper .artist_icons {
+  .magazine_area .magazine_list {
     margin: -10px;
   }
-  .artist_contents .wrapper .artist_icons li {
+  .magazine_area .magazine_list li {
     padding: 10px;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 16px 10px;
+  .magazine_area .magazine_list li .inner .con {
+    padding: 18px 20px;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 2rem;
+  .magazine_area .magazine_list li .inner .con .txt h4,
+  .magazine_area .magazine_list li .inner .con .txt p {
+    width: 86%;
+  }
+  .magazine_area .magazine_list li .inner .con .txt h4 {
+    font-size: 1.7rem;
+  }
+  .magazine_area .magazine_list li .inner .con .txt p {
+    font-size: 1.4rem;
+  }
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.7rem;
   }
 }
-@media screen and (max-width: 670px) {
-  .artist_contents {
-    padding: 40px 0;
+@media screen and (max-width: 767px) {
+  .magazine_area h3 {
+    margin: 60px 0 22px;
+    font-size: 2.2rem;
   }
-  .artist_contents .wrapper h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  .magazine_area .magazine_list li {
+    width: 50%;
   }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
+  .magazine_area .magazine_list li .inner .con {
+    padding: 16px 18px;
   }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 33.33%;
+  .magazine_area .magazine_list li .inner .con .txt h4 {
+    font-size: 1.6rem;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 16px 10px;
+  .magazine_area .magazine_list li .inner .con .txt p {
+    font-size: 1.3rem;
+    margin-top: 2px;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text .artist_name {
-    font-size: 1.8rem;
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .artist_contents {
-    padding: 40px 0;
+  .magazine_area h3 {
+    margin: 45px 0 18px;
+    font-size: 2.2rem;
   }
-  .artist_contents .wrapper h2 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
+  .magazine_area .magazine_list li {
+    width: 100%;
   }
-  .artist_contents .wrapper .artist_icons {
-    margin: -10px;
+  .magazine_area .magazine_list li .inner .con {
+    padding: 20px 22px;
   }
-  .artist_contents .wrapper .artist_icons li {
-    padding: 10px;
-    width: 50%;
+  .magazine_area .magazine_list li .inner .con .txt p {
+    margin-top: 2px;
   }
-  .artist_contents .wrapper .artist_icons li a .icon_text {
-    padding: 13px 10px;
+  .magazine_area .magazine_list li .inner .con .txt i {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 670px) {
@@ -1068,7 +1403,10 @@
   .login_wrapper .eye input i {
     left: -70px;
   }
-  .login_wrapper button {
+  .login_wrapper #loginBtn {
+    width: 100%;
+  }
+  .login_wrapper #loginBtn div {
     width: 100%;
   }
   .login_wrapper #search {
@@ -1109,7 +1447,7 @@
     margin: 0;
     border-radius: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
   }
   .log_onwrapper .logo2 {
@@ -1118,6 +1456,7 @@
   .log_onwrapper .logon_contents {
     position: relative;
     width: 100%;
+    height: 650px;
   }
   .log_onwrapper .logon_contents ul {
     position: absolute;
@@ -1132,7 +1471,10 @@
   .log_onwrapper .logon_contents ul .fourbox button {
     width: 70%;
   }
-  .log_onwrapper .logon_contents .signup button {
+  .log_onwrapper .logon_contents .signup {
+    width: 100%;
+  }
+  .log_onwrapper .logon_contents .signup > div {
     position: relative;
     width: 100%;
   }
@@ -1140,7 +1482,7 @@
 @media screen and (max-width: 670px) {
   .mypage {
     background-color: #fff;
-    padding: 50px 50px;
+    padding: 50px 35px;
     margin: 0;
     border-radius: 0;
     width: 100%;
@@ -1150,10 +1492,21 @@
   .mypage .info {
     margin-top: 60px;
   }
-  .mypage .info li {
-    font-size: 1.5rem;
+  .mypage .info .myinfo {
+    font-size: 2.5rem;
+    margin-bottom: 28px;
   }
-  .mypage .info .personal_info {
-    font-size: 2rem;
+  .mypage .info .info_list li {
+    font-size: 1.6rem;
+  }
+  .mypage .info .info_list li span button {
+    left: initial;
+    right: 0;
+  }
+  .mypage .info .agree {
+    font-size: 2.5rem;
+  }
+  .mypage .info .personal_info li {
+    font-size: 1.6rem;
   }
 }

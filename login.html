@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/contents.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
-    <script defer src="./script.js"></script>
-    <title>login</title>
+    <script defer src="./login.js"></script>
+    <title>Login | Metaphor</title>
   </head>
   <body>
     <div class="login_wrapper">
@@ -31,6 +31,7 @@
         <li>
           <form class="eye">
             <input id="id" type="text" placeholder="아이디" />
+            <div id="error_inid" class="error"></div>
           </form>
         </li>
         <h3 id="lock">비밀번호</h3>
@@ -38,6 +39,7 @@
           <form class="eye" name="pw" action="#" method="get">
             <input id="password" type="password" placeholder="비밀번호" />
             <i class="fas fa-eye"></i>
+            <div id="error_inpassword" class="error"></div>
           </form>
         </li>
       </ul>
@@ -47,10 +49,8 @@
           로그인 정보 저장
         </label>
       </div>
-      <a href="./index.html">
-        <div class="button">
-          <button>로그인하기</button>
-        </div>
+      <a id="loginBtn" href="./index.html">
+        <div>로그인하기</div>
       </a>
       <ul id="search">
         <li><a href="#">아이디찾기</a></li>
@@ -77,7 +77,7 @@
           </a>
         </li>
         <li id="facebook">
-          <a href="#">
+          <a href="">
             <img
               id="facebook"
               src="./imgs/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg.png"
@@ -88,5 +88,6 @@
         </li>
       </ul>
     </div>
+    <div class="gray_bg"></div>
   </body>
 </html>

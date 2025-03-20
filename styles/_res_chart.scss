@@ -37,7 +37,6 @@
 
 @media screen and (max-width: 1250px) {
   .chart_section {
-    margin-top: 90px;
     .wrapper {
       // chart_top
       .chart_top {
@@ -84,9 +83,7 @@
               font-size: 1.7rem;
             }
             .icon {
-              img {
-                width: 8px;
-              }
+              width: 8px;
             }
           }
 
@@ -241,9 +238,7 @@
               font-size: 1.5rem;
             }
             .icon {
-              img {
-                width: 7px;
-              }
+              width: 7px;
             }
           }
 
@@ -497,28 +492,26 @@
 }
 
 // main chart5 style
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1023px) {
   .chart_section {
     &.main_chart5 {
-      margin-top: inherit;
       .wrapper {
-        // chart head
-        .chart_head {
-          margin-top: inherit;
+        h2 {
+          font-size: 2.5rem;
+          margin-bottom: 30px;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 500px) {
   .chart_section {
     &.main_chart5 {
-      margin-top: inherit;
       .wrapper {
-        // chart head
-        .chart_head {
-          margin-top: inherit;
+        h2 {
+          font-size: 2.1rem;
+          margin-bottom: 20px;
         }
       }
     }

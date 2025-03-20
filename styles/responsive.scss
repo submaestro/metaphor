@@ -3,13 +3,21 @@
 @import "./res_common";
 
 // main index
+// main
+@import "./res_index";
 
 // contents
 //chart
 @import "./res_chart";
 
+// artist
+@import "./res_artist";
+
 // detail
 @import "./res_detail";
 
-@import "./res_main";
+// magazine
+@import "./res_magazine";
+
+// login & logon & my Page
 @import "./res_login";

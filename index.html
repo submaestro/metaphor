@@ -21,9 +21,10 @@
     <link rel="stylesheet" href="./styles/contents.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="./common.js"></script>
+    <script defer src="./mainchart.js"></script>
     <script src="./main_slider.js"></script>
 
-    <title>header</title>
+    <title>Metaphor</title>
   </head>
 
   <body>
@@ -43,7 +44,9 @@
               <li><a href="./magazine.html">MAGAZINE</a></li>
             </ul>
           </div>
+          <!-- full -->
           <div class="header_right">
+            <!--search-->
             <form
               id="search_form_pc"
               name="search_bar_pc"
@@ -60,19 +63,31 @@
                 placeholder="아티스트 검색"
               />
             </form>
+            <!--signup-->
             <a class="signup_btn" href="./login.html">
               <span>sign up</span>
             </a>
+            <!--mypage-->
+            <a class="mypage_btn" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search"/>
+              <span id="hiUser"><b id="hiUsername"></b>님 안녕하세요</span>
+            </a>
           </div>
+
+          <!-- mobile -->
           <div class="header_right_m">
+            <a class="signup_btn_m" href="./login.html">
+              <span>sign up</span>
+            </a>
+            <!--search-->
             <button class="search_btn_m">
               <img src="./imgs/h_search_m.svg" alt="search" />
-              <img src="./imgs/h_search_m_w.svg" alt="search" />
             </button>
-            <a class="signup_btn_m" href="./mypage.html">
-              <img src="./imgs/h_signup_m.svg" alt="search" />
-              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            <!--mypage-->
+            <a class="mypage_btn_m" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search"/>
             </a>
+            <!--trigger-->
             <div class="trigger_bar_m">
               <span></span>
               <span></span>
@@ -112,15 +127,19 @@
       <div class="single-item">
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider1.png" alt="mainVisual_slider1" />
+          <img src="./imgs/main_slider1_m.png" alt="mainVisual_slider1" />
         </div>
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider2.png" alt="mainVisual_slider2" />
+          <img src="./imgs/main_slider2_m.png" alt="mainVisual_slider1" />
         </div>
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider3.png" alt="mainVisual_slider3" />
+          <img src="./imgs/main_slider3_m.png" alt="mainVisual_slider1" />
         </div>
         <div class="mainVisual_slider">
           <img src="./imgs/main_slider4.png" alt="mainVisual_slider4" />
+          <img src="./imgs/main_slider4_m.png" alt="mainVisual_slider1" />
         </div>
       </div>
     </section>
@@ -130,7 +149,7 @@
       <div class="wrapper">
         <div class="favorite_artist">
           <!-- 타이틀 -->
-          <h2>
+          <h2 class="mtitle">
             <a href="#">
               <span class="clickable-text">관심있는 아티스트</span>
               <i class="fas fa-angle-right"></i>
@@ -188,24 +207,38 @@
     </section>
 
     <!-- music chart > -->
-    <section class="chart">
+
+    <section class="chart_section main_chart5">
       <div class="wrapper">
-        <div class="metaphor_chart">
-          <h2>
-            <a href="./chart.html">
-              <span class="clickable-text">Music Chart</span>
-              <i class="fas fa-angle-right"></i>
-            </a>
-          </h2>
+        <h2 class="mtitle">
+          <a href="./chart.html">
+            <span class="clickable-text">Music Chart</span>
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </h2>
+        <div class="chart_head">
+          <div class="head_info">
+            <h3>곡 정보</h3>
+          </div>
+          <div class="head_album">
+            <h3>앨범</h3>
+          </div>
+          <div class="head_favorite">
+            <h3>좋아요</h3>
+          </div>
+          <div class="head_play">
+            <h3>재생</h3>
+          </div>
         </div>
+        <ul class="chart_list"></ul>
       </div>
     </section>
 
-    <!-- magazine > -->
+    <!-- magazine -->
     <section class="magazine_content">
       <div class="wrapper">
         <div class="magazine">
-          <h2>
+          <h2 class="mtitle">
             <a href="./magazine.html">
               <span class="clickable-text">Magazine</span>
               <i class="fas fa-angle-right"></i>
@@ -213,58 +246,42 @@
           </h2>
           <div class="fade magazine_fade">
             <div class="magazine_slider">
+              <img class="mark" src="./imgs/magazine_mark.jpg" alt="mark" />
               <img src="./imgs/mz_slide_01.png" alt="magazine_slider1" />
               <div class="slider-text">
                 <h1 class="title">플레이브 미니 3집 초동 100만장 돌파</h1>
-                <h2 class="name">PLAVE</h2>
+                <h3 class="name">PLAVE</h3>
+                <div class="slider-line"></div>
               </div>
             </div>
             <div class="magazine_slider">
+              <img class="mark" src="./imgs/magazine_mark.jpg" alt="mark" />
               <img src="./imgs/mz_slide_02.png" alt="magazine_slider2" />
               <div class="slider-text">
-                <div class="slider-text">
-                  <h1 class="title">
-                    감정이 통제된 미래에서 온 4명의 소녀 '메이브'
-                  </h1>
-                  <h2 class="name">MAVE</h2>
-                </div>
+                <h1 class="title">
+                  감정이 통제된 미래에서 온 4명의 소녀 '메이브'
+                </h1>
+                <h3 class="name">MAVE</h3>
+                <div class="slider-line"></div>
               </div>
-              <!-- <div class="slick-arrows">
-                <div class="slick-prev">
-                  <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="slick-next">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </div> -->
             </div>
             <div class="magazine_slider">
+              <img class="mark" src="./imgs/magazine_mark.jpg" alt="mark" />
               <img src="./imgs/mz_slide_03.png" alt="magazine_slider3" />
               <div class="slider-text">
-                <div class="slider-text">
-                  <h1 class="title">르세라핌이 또 독기를 택했다</h1>
-                  <h2 class="name">LE SSERAFIM</h2>
-                </div>
+                <h1 class="title">르세라핌이 또 독기를 택했다</h1>
+                <h3 class="name">LE SSERAFIM</h3>
+                <div class="slider-line"></div>
               </div>
-              <!-- <div class="slick-arrows">
-                <div class="slick-prev">
-                  <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="slick-next">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </div> -->
             </div>
             <div class="magazine_slider">
+              <img class="mark" src="./imgs/magazine_mark.jpg" alt="mark" />
               <img src="./imgs/mz_slide_04.png" alt="magazine_slider4" />
-              <!-- <div class="slick-arrows">
-                <div class="slick-prev">
-                  <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="slick-next">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </div> -->
+              <div class="slider-text">
+                <h1 class="title"></h1>
+                <h3 class="name"></h3>
+                <div class="slider-line"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -275,7 +292,7 @@
     <section class="new_artist_content artist_contents">
       <div class="wrapper">
         <div class="new_artists">
-          <h2>
+          <h2 class="mtitle">
             <a href="./artist.html">
               <span class="clickable-text">새로운 아티스트를 만나보세요!</span>
               <i class="fas fa-angle-right"></i>
@@ -577,6 +594,17 @@
                 </div>
                 <div class="icon_text">
                   <div class="artist_name">CHANG KIHA</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <img src="./imgs/rose.png" alt="icon_32" />
+                </div>
+                <div class="icon_text">
+                  <div class="artist_name">ROSÉ</div>
                 </div>
               </a>
             </li>
