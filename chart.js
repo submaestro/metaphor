@@ -1,28 +1,76 @@
-const chart_info = "./chartdb.json";
+const top10_info = "./top10db.json";
+const week_info = "./weekdb.json";
+const month_info = "./monthdb.json";
+
 const chart_list = document.querySelector(".chart_list");
 
-// chartdb.json
-fetch(chart_info)
-  .then((response) => response.json())
-  .then((data) => {
-    const charts = {
-      data: data.data.map((item) => ({
-        ...item,
-      })),
-    };
+// chart category btns
+const cate_top10 = document.querySelector(".top10");
+const cate_week = document.querySelector(".week");
+const cate_month = document.querySelector(".month");
 
-    // 찾아온 json chart data로 dom 생성 함수
-    const createList = (chart) => {
-      const li = document.createElement("li");
-      const chart_bg = document.createElement("div");
-      chart_bg.className = "chart_bg";
-      chart_bg.style.backgroundImage = `url("${chart.chart_bg}")`;
+cate_top10.addEventListener("click", (e) => {
+  e.preventDefault();
+  cate_top10.classList.add("active");
+  cate_week.classList.remove("active");
+  cate_month.classList.remove("active");
+});
 
-      const favorite_number = new Intl.NumberFormat("ko-kr", {
-        currency: "KRW",
-      }).format(chart.favorite);
+cate_week.addEventListener("click", (e) => {
+  e.preventDefault();
+  cate_top10.classList.remove("active");
+  cate_week.classList.add("active");
+  cate_month.classList.remove("active");
+});
 
-      li.innerHTML = `
+cate_month.addEventListener("click", (e) => {
+  e.preventDefault();
+  cate_top10.classList.remove("active");
+  cate_week.classList.remove("active");
+  cate_month.classList.add("active");
+});
+
+//top10 DB
+const top10db = async () => {
+  const response = await fetch(top10_info);
+  const { data } = await response.json();
+  return data;
+};
+
+//week DB
+const weekdb = async () => {
+  const response = await fetch(week_info);
+  const { data } = await response.json();
+  return data;
+};
+
+//month DB
+const monthdb = async () => {
+  const response = await fetch(month_info);
+  const { data } = await response.json();
+  return data;
+};
+
+//Promise DBs
+const getCharts = async () => {
+  const [top10, week, month] = await Promise.all([
+    top10db(),
+    weekdb(),
+    monthdb(),
+  ]);
+
+  // 찾아온 json chart data로 dom 생성 함수
+  const createList = (chart) => {
+    const li = document.createElement("li");
+    const chart_bg = document.createElement("div");
+    chart_bg.className = "chart_bg";
+    chart_bg.style.backgroundImage = `url("${chart.chart_bg}")`;
+
+    const favorite_number = new Intl.NumberFormat("ko-kr", {
+      currency: "KRW",
+    }).format(chart.favorite);
+
+    li.innerHTML = `
         <div class="ranking">
           <h4 class="rank_num">${chart.rank}</h4>
           <figure class="icon ${chart.updown}">
@@ -62,20 +110,31 @@ fetch(chart_info)
         </div>
         `;
 
-      li.append(chart_bg);
+    li.append(chart_bg);
 
-      chart_list.append(li);
-    };
+    chart_list.append(li);
+  };
 
-    // json chart data로 dom 생성 및 브라우저 출력
-    const importData = () => {
-      charts.data.map((chart) => {
+  // category btns event
+  cate_top10.classList.add("active");
+
+  function updateChart() {
+    chart_list.innerHTML = "";
+    if (cate_top10.classList.contains("active")) {
+      top10.forEach((chart) => {
         createList(chart);
       });
-    };
-    importData();
+    } else if (cate_week.classList.contains("active")) {
+      week.forEach((chart) => {
+        createList(chart);
+      });
+    } else if (cate_month.classList.contains("active")) {
+      month.forEach((chart) => {
+        createList(chart);
+      });
+    }
 
-    // 뮤직플레이어 버튼 작동
+    //뮤직플레이어 버튼 작동
     const music_players = document.querySelectorAll(".music_player");
 
     let current_btn = null;
@@ -128,10 +187,27 @@ fetch(chart_info)
         fovorite_nums[index].innerText = favorite_count.toLocaleString();
       });
     });
-  })
-  .catch((error) => {
-    console.error(error);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    updateChart();
   });
+
+  const observer = new MutationObserver(updateChart);
+
+  const categories = [cate_top10, cate_week, cate_month];
+
+  categories.forEach((category) => {
+    observer.observe(category, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  });
+
+  updateChart();
+};
+
+getCharts();
 
 // 차트 시간 실시간 연동
 const chart_realtime = document.querySelector(".chart_realtime");
@@ -150,3 +226,7 @@ currentHours = currentHours < 10 ? "0" + currentHours : currentHours;
 
 chart_date.innerText = `${currentYear}.${currentMonth}.${currentDate}`;
 chart_time.innerText = `${currentHours}:00 기준`;
+
+//   .catch((error) => {
+//     console.error(error);
+//   });

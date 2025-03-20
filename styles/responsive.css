@@ -429,6 +429,43 @@
     width: 120px;
   }
 }
+@media screen and (max-width: 1250px) {
+  .paging_area {
+    height: 30px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+  }
+  .paging_area .paging_wrap .paging_list li {
+    margin: 0 2px;
+  }
+  .paging_area .paging_wrap .paging_list li a {
+    font-size: 1.5rem;
+    width: 30px;
+  }
+  .paging_area .paging_wrap .paging_btn {
+    width: 30px;
+  }
+  .paging_area .paging_wrap .paging_btn span {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .paging_area {
+    height: 26px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+  }
+  .paging_area .paging_wrap .paging_list li a {
+    font-size: 1.3rem;
+    width: 26px;
+  }
+  .paging_area .paging_wrap .paging_btn {
+    width: 26px;
+  }
+  .paging_area .paging_wrap .paging_btn span {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 1440px) {
   .main_visual {
     padding-top: 80px;
@@ -691,6 +728,9 @@
   }
 }
 @media screen and (max-width: 1250px) {
+  .chart_section.subchart {
+    margin-bottom: 100px;
+  }
   .chart_section .wrapper .chart_top .chart_cate {
     gap: 8px;
   }
@@ -771,25 +811,6 @@
   .chart_section .wrapper .chart_list li:hover {
     height: 250px;
   }
-  .paging_area {
-    margin-top: 35px;
-  }
-  .paging_area .paging_wrap {
-    gap: 4px;
-  }
-  .paging_area .paging_wrap .paging_list {
-    gap: 4px;
-  }
-  .paging_area .paging_wrap .paging_list li a {
-    font-size: 1.5rem;
-    width: 30px;
-  }
-  .paging_area .paging_wrap .paging_btn {
-    width: 30px;
-  }
-  .paging_area .paging_wrap .paging_btn span {
-    font-size: 1.9rem;
-  }
 }
 @media screen and (max-width: 1023px) {
   .chart_section {
@@ -802,6 +823,9 @@
 @media screen and (max-width: 767px) {
   .chart_section {
     margin-top: 60px;
+  }
+  .chart_section.subchart {
+    margin-bottom: 80px;
   }
   .chart_section .wrapper .chart_top .chart_cate {
     gap: 7px;
@@ -896,25 +920,6 @@
   }
   .chart_section .wrapper .chart_list li:hover {
     height: 160px;
-  }
-  .paging_area {
-    margin-top: 25px;
-  }
-  .paging_area .paging_wrap {
-    gap: 3px;
-  }
-  .paging_area .paging_wrap .paging_list {
-    gap: 3px;
-  }
-  .paging_area .paging_wrap .paging_list li a {
-    font-size: 1.3rem;
-    width: 26px;
-  }
-  .paging_area .paging_wrap .paging_btn {
-    width: 26px;
-  }
-  .paging_area .paging_wrap .paging_btn span {
-    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1509,4 +1514,4 @@
   .mypage .info .personal_info li {
     font-size: 1.6rem;
   }
-}/*# sourceMappingURL=responsive.css.map */
+}

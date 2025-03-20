@@ -548,3 +548,53 @@
     }
   }
 }
+
+// paging
+@media screen and (max-width: 1250px) {
+  .paging_area {
+    height: 30px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    .paging_wrap {
+      .paging_list {
+        li {
+          margin: 0 2px;
+          a {
+            font-size: 1.5rem;
+            width: 30px;
+          }
+        }
+      }
+      .paging_btn {
+        width: 30px;
+        span {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .paging_area {
+    height: 26px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    .paging_wrap {
+      .paging_list {
+        li {
+          a {
+            font-size: 1.3rem;
+            width: 26px;
+          }
+        }
+      }
+      .paging_btn {
+        width: 26px;
+        span {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

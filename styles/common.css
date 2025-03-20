@@ -449,4 +449,63 @@ body {
 }
 #detail_page .up_btn div i {
   color: #fff;
-}/*# sourceMappingURL=common.css.map */
+}
+
+.paging_area {
+  margin-top: 50px;
+  margin-bottom: 120px;
+  position: relative;
+  height: 36px;
+}
+.paging_area .paging_wrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.paging_area .paging_wrap .paging_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paging_area .paging_wrap .paging_list li {
+  margin: 0 3.5px;
+}
+.paging_area .paging_wrap .paging_list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-size: 1.9rem;
+}
+.paging_area .paging_wrap .paging_list li.active a {
+  background: #222;
+}
+.paging_area .paging_wrap .paging_list li.active a span {
+  color: #fff;
+  font-weight: 300;
+}
+.paging_area .paging_wrap .paging_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+.paging_area .paging_wrap .paging_btn span {
+  font-size: 2.2rem;
+  color: #666;
+  transform: translateX(3%);
+}
+.paging_area .paging_wrap .paging_btn.paging_prev {
+  left: 0;
+  transform: translate(-100%, -48%);
+}
+.paging_area .paging_wrap .paging_btn.paging_next {
+  right: 0%;
+  transform: translate(100%, -48%);
+}
