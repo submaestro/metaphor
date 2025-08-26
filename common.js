@@ -91,10 +91,10 @@ search_form_mb.addEventListener("submit", header_search);
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     document.querySelector(".up_btn").classList.add("active");
-    document.querySelector(".go_artist").classList.add("active");
+    // document.querySelector(".go_artist").classList.add("active");
   } else {
     document.querySelector(".up_btn").classList.remove("active");
-    document.querySelector(".go_artist").classList.remove("active");
+    // document.querySelector(".go_artist").classList.remove("active");
   }
 });
 
@@ -136,12 +136,12 @@ document.addEventListener("scroll", function () {
     button.style.bottom = "7vh"; // 기본 위치 유지
   }
 
-  const goArtist = document.querySelector(".go_artist");
-  if (scrollY >= maxBottom) {
-    goArtist.style.position = "absolute";
-    goArtist.style.bottom = `${footerThreshold}px`;
-  } else {
-    goArtist.style.position = "fixed"; // 기본 상태 유지
-    goArtist.style.bottom = "9vh"; // 기본 위치 유지
-  }
+  // const goArtist = document.querySelector(".go_artist");
+  // if (scrollY >= maxBottom) {
+  //   goArtist.style.position = "absolute";
+  //   goArtist.style.bottom = `${footerThreshold}px`;
+  // } else {
+  //   goArtist.style.position = "fixed"; // 기본 상태 유지
+  //   goArtist.style.bottom = "9vh"; // 기본 위치 유지
+  // }
 });
