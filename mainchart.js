@@ -1,8 +1,8 @@
-const chart_info = "./chartdb.json";
+const top10_info = "./top10db.json";
 const chart_list = document.querySelector(".chart_list");
 
 // chartdb.json
-fetch(chart_info)
+fetch(top10_info)
   .then((response) => response.json())
   .then((data) => {
     const charts = {

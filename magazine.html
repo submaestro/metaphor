@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/contents.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="./common.js"></script>
+    <script defer src="./pagination_mz.js"></script>
     <title>Magazine News | metaphor</title>
   </head>
   <body>
@@ -31,7 +32,9 @@
               <li><a href="./magazine.html">MAGAZINE</a></li>
             </ul>
           </div>
+          <!-- full -->
           <div class="header_right">
+            <!--search-->
             <form
               id="search_form_pc"
               name="search_bar_pc"
@@ -48,19 +51,31 @@
                 placeholder="아티스트 검색"
               />
             </form>
+            <!--signup-->
             <a class="signup_btn" href="./login.html">
               <span>sign up</span>
             </a>
+            <!--mypage-->
+            <a class="mypage_btn" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search" />
+              <span id="hiUser"><b id="hiUsername"></b>님 안녕하세요</span>
+            </a>
           </div>
+
+          <!-- mobile -->
           <div class="header_right_m">
+            <a class="signup_btn_m" href="./login.html">
+              <span>sign up</span>
+            </a>
+            <!--search-->
             <button class="search_btn_m">
               <img src="./imgs/h_search_m.svg" alt="search" />
-              <img src="./imgs/h_search_m_w.svg" alt="search" />
             </button>
-            <a class="signup_btn_m" href="./login.html">
+            <!--mypage-->
+            <a class="mypage_btn_m" href="./mypage.html">
               <img src="./imgs/h_signup_m.svg" alt="search" />
-              <img src="./imgs/h_signup_m_w.svg" alt="search" />
             </a>
+            <!--trigger-->
             <div class="trigger_bar_m">
               <span></span>
               <span></span>
@@ -277,35 +292,172 @@
                 </div>
               </a>
             </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_9.jpg" alt="magazine9" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>뉴진스 '슈퍼내추럴' 올해의 노래 선정</h4>
+                    <p>뉴욕타임스 선정 '2024 올해의 노래'</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_1.jpg" alt="magazine1" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>베이비몬스터, KSPO돔 초고속 입성!!</h4>
+                    <p>'괴물 신예' 증명의 첫 콘서트 D-DAY!</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_2.jpg" alt="magazine2" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>트레저, 3월 7일 초고속 컴백 확정!!</h4>
+                    <p>새 앨범명은 'PLEASURE'!</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_3.jpg" alt="magazine3" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>SM CAO 촉이 왔다는 말 경계</h4>
+                    <p>'K-팝 엔진 역할' 할 것</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_4.jpg" alt="magazine4" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>트레저, 팬 콘서트</h4>
+                    <p>오는 20일 선예매 오픈</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_5.jpg" alt="magazine5" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>김우진, 미니 3집 'What U Say'</h4>
+                    <p>퍼포먼스 비디오 공개! 실루엣 100% 활용법</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_6.jpg" alt="magazine6" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>사람 아닌데 왜 좋아하냐고?</h4>
+                    <p>버츄얼 아이돌 최초 앨범 판매 100만장 돌파</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_7.jpg" alt="magazine7" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>르세라핌이 또 독기를 택했다</h4>
+                    <p>미니 4집 "CRAZY"에서 선보인 컨셉 변화</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_8.jpg" alt="magazine8" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>블랙핑크 1년 5개월 만에 재결합</h4>
+                    <p>YG 올해 블랙핑크 WORLD TOUR 준비 공식화</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_10.jpg" alt="magazine10" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>에스파, 북미투어 전석 매진 행렬</h4>
+                    <p>케이팝 걸그룹 아티스트는?</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inner">
+                <figure class="img">
+                  <img src="./imgs/magazine/magazine_12.jpg" alt="magazine12" />
+                </figure>
+                <div class="con">
+                  <div class="txt">
+                    <h4>TWS 데뷔 1년 만에 첫 팬미팅 어떨까</h4>
+                    <p>올림픽공원 핸드볼경기장에서 첫 팬미팅</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
 
       <section class="paging_area">
         <div class="paging_wrap">
-          <ul class="paging_list">
-            <li class="active">
-              <a href="#" class="num">
-                <span>1</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>2</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>3</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>4</span>
-              </a>
-            </li>
-          </ul>
-          <button class="paging_btn">
+          <button class="paging_btn paging_prev">
+            <span class="material-symbols-rounded"> chevron_left </span>
+          </button>
+          <ul class="paging_list"></ul>
+          <button class="paging_btn paging_next">
             <span class="material-symbols-rounded"> chevron_right </span>
           </button>
         </div>

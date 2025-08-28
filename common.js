@@ -10,6 +10,32 @@ const search_close_m = search_area_m.querySelector(".search_close_m");
 const search_form_pc = document.querySelector("#search_form_pc");
 const search_form_mb = document.querySelector("#search_form_mb");
 
+const signup_btn_m = document.querySelector(".signup_btn_m");
+const signup_btn = document.querySelector(".signup_btn");
+const mypage_btn = document.querySelector(".mypage_btn");
+const mypage_btn_m = document.querySelector(".mypage_btn_m");
+const hiUsername = document.querySelector("#hiUsername");
+
+// 로컬스토리지에서 로그인된 사용자 확인
+let users = JSON.parse(localStorage.getItem("wsUsers")) || [];
+let currentUser = users.find((user) => user.isLoggedIn === true);
+
+if (currentUser) {
+  // 로그인한 상태 -> 아이콘 표시 & 로그인/회원가입 버튼 숨기기
+  signup_btn.style.display = "none";
+  signup_btn_m.style.display = "none";
+  mypage_btn.style.display = "flex";
+  mypage_btn_m.style.display = "flex";
+  search_btn_m.style.marginRight = 0;
+  hiUsername.innerText = `${currentUser.name}`;
+} else {
+  signup_btn.style.display = "flex";
+  signup_btn_m.style.display = "flex";
+  mypage_btn.style.display = "none";
+  mypage_btn_m.style.display = "none";
+  search_btn_m.style.marginRight = "35px";
+}
+
 // 모바일 gnb 사이드바 메뉴 토글
 trigger_bar_m.addEventListener("click", function () {
   this.classList.toggle("active");
@@ -65,8 +91,10 @@ search_form_mb.addEventListener("submit", header_search);
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     document.querySelector(".up_btn").classList.add("active");
+    // document.querySelector(".go_artist").classList.add("active");
   } else {
     document.querySelector(".up_btn").classList.remove("active");
+    // document.querySelector(".go_artist").classList.remove("active");
   }
 });
 
@@ -107,4 +135,13 @@ document.addEventListener("scroll", function () {
     button.style.position = "fixed"; // 기본 상태 유지
     button.style.bottom = "7vh"; // 기본 위치 유지
   }
+
+  // const goArtist = document.querySelector(".go_artist");
+  // if (scrollY >= maxBottom) {
+  //   goArtist.style.position = "absolute";
+  //   goArtist.style.bottom = `${footerThreshold}px`;
+  // } else {
+  //   goArtist.style.position = "fixed"; // 기본 상태 유지
+  //   goArtist.style.bottom = "9vh"; // 기본 위치 유지
+  // }
 });

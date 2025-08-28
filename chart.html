@@ -32,7 +32,9 @@
               <li><a href="./magazine.html">MAGAZINE</a></li>
             </ul>
           </div>
+          <!-- full -->
           <div class="header_right">
+            <!--search-->
             <form
               id="search_form_pc"
               name="search_bar_pc"
@@ -49,19 +51,31 @@
                 placeholder="아티스트 검색"
               />
             </form>
+            <!--signup-->
             <a class="signup_btn" href="./login.html">
               <span>sign up</span>
             </a>
+            <!--mypage-->
+            <a class="mypage_btn" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search"/>
+              <span id="hiUser"><b id="hiUsername"></b>님 안녕하세요</span>
+            </a>
           </div>
+
+          <!-- mobile -->
           <div class="header_right_m">
+            <a class="signup_btn_m" href="./login.html">
+              <span>sign up</span>
+            </a>
+            <!--search-->
             <button class="search_btn_m">
               <img src="./imgs/h_search_m.svg" alt="search" />
-              <img src="./imgs/h_search_m_w.svg" alt="search" />
             </button>
-            <a class="signup_btn_m" href="./mypage.html">
-              <img src="./imgs/h_signup_m.svg" alt="search" />
-              <img src="./imgs/h_signup_m_w.svg" alt="search" />
+            <!--mypage-->
+            <a class="mypage_btn_m" href="./mypage.html">
+              <img src="./imgs/h_signup_m.svg" alt="search"/>
             </a>
+            <!--trigger-->
             <div class="trigger_bar_m">
               <span></span>
               <span></span>
@@ -106,21 +120,18 @@
         </div>
       </section>
 
-      <section class="chart_section">
+      <section class="chart_section subchart">
         <div class="wrapper">
           <div class="chart_top">
             <ul class="chart_cate">
-              <li class="active">
-                <a href="#">TOP100</a>
+              <li class="top10">
+                <a href="#">TOP10</a>
               </li>
-              <li>
+              <li class="week">
                 <a href="#">주간</a>
               </li>
-              <li>
+              <li class="month">
                 <a href="#">월간</a>
-              </li>
-              <li>
-                <a href="#">NEW50</a>
               </li>
             </ul>
             <h6 class="chart_realtime">
@@ -143,36 +154,6 @@
             </div>
           </div>
           <ul class="chart_list"></ul>
-        </div>
-      </section>
-
-      <section class="paging_area">
-        <div class="paging_wrap">
-          <ul class="paging_list">
-            <li class="active">
-              <a href="#" class="num">
-                <span>1</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>2</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>3</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="num">
-                <span>4</span>
-              </a>
-            </li>
-          </ul>
-          <button class="paging_btn">
-            <span class="material-symbols-rounded"> chevron_right </span>
-          </button>
         </div>
       </section>
 

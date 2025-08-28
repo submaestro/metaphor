@@ -37,6 +37,9 @@
 
 @media screen and (max-width: 1250px) {
   .chart_section {
+    &.subchart {
+      margin-bottom: 100px;
+    }
     .wrapper {
       // chart_top
       .chart_top {
@@ -144,27 +147,6 @@
       }
     }
   }
-  .paging_area {
-    margin-top: 35px;
-    .paging_wrap {
-      gap: 4px;
-      .paging_list {
-        gap: 4px;
-        li {
-          a {
-            font-size: 1.5rem;
-            width: 30px;
-          }
-        }
-      }
-      .paging_btn {
-        width: 30px;
-        span {
-          font-size: 1.9rem;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -185,6 +167,9 @@
 @media screen and (max-width: 767px) {
   .chart_section {
     margin-top: 60px;
+    &.subchart {
+      margin-bottom: 80px;
+    }
     .wrapper {
       // chart_top
       .chart_top {
@@ -300,28 +285,6 @@
           &:hover {
             height: 160px;
           }
-        }
-      }
-    }
-  }
-
-  .paging_area {
-    margin-top: 25px;
-    .paging_wrap {
-      gap: 3px;
-      .paging_list {
-        gap: 3px;
-        li {
-          a {
-            font-size: 1.3rem;
-            width: 26px;
-          }
-        }
-      }
-      .paging_btn {
-        width: 26px;
-        span {
-          font-size: 1.6rem;
         }
       }
     }
