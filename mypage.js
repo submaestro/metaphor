@@ -22,4 +22,4 @@ if (mpcurrentUser) {
   });
 }
 
-console.log(mpcurrentUser.id, mpcurrentUser.name, mpcurrentUser.num);
+// console.log(mpcurrentUser.id, mpcurrentUser.name, mpcurrentUser.num);
